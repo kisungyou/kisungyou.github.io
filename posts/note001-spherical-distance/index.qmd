@@ -23,7 +23,8 @@ format:
     df-print: paged
     toc: true
 engine: knitr
-citation: true
+citation: false
+comments: false
 bibliography: references.bib
 biblio-style: plain
 google-scholar: true
