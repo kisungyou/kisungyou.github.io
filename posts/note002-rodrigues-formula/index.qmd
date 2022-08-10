@@ -1,0 +1,155 @@
+---
+title: "Rodrigues' formula for the Legendre polynomials"
+author: "Kisung You"
+description: " " 
+date: 2022-08-10
+categories:
+  - notes
+  - calculus
+format: 
+  html:
+    df-print: paged
+    toc: true
+engine: knitr
+citation: false
+comments: false
+#bibliography: references.bib
+#biblio-style: plain
+google-scholar: true
+number-sections: false
+---
+
+# Introduction
+
+Legendre polynomials $P_n (x)$ are solutions of Legendre's differential equation
+$$
+(1-x^2) y'' - 2x y' + n(n+1) y = 0\quad\text{for  } n \in \mathbb{N}\cup \{0\}
+$$ {#eq-legendre}
+and an explicit, compact expression for the polynomials is by Rodrigues' formula
+$$
+P_n (x) = \frac{1}{2^n n!} \frac{d^n}{dx^n} (x^2-1)^n.
+$$ {#eq-rodrigues}
+
+This means that when $P_n (x)$ is plugged in the position of $y$ for @eq-legendre, it must satisfy the equality to 0. In this note, we show indeed the expression of @eq-rodrigues  works, after a bit of tedious arithmetics. 
+
+# Main
+I will proceed in two steps. Let $f_n (x) = (x^2 - 1)^n$ then we first show that the $n$-th derivative of $f_n (x)$ is a solution of Legendre equation. Then, we find a proper scaling factor of $1/ 2^n n!$ to recover $P_n (x)$ in line with a common constraint that $P_n (x) = 1$ for all $n$ when $x=1$. For notational simplicity, we denote $g^{(n)}$ for the $n$-th derivative of a function $g(x)$, i.e,
+$$
+g^{(n)} = \frac{d^n}{dx^n} g(x).
+$$
+
+Before proceeding, we need (generalized) Leibniz's rule. Suppose we have $n$-times differentiable functions $f(x)$ and $g(x)$, then 
+$$
+\frac{d^n}{dx^n} f(x) g(x) = \sum_{k=0}^n
+\begin{pmatrix}
+n \\ k
+\end{pmatrix}
+f^{(n-k)} (x) g^{(k)} (x) = \sum_{k=0}^n \frac{n!}{k! (n-k)!} f^{(n-k)} (x) g^{(k)} (x) 
+$$ {#eq-leibniz}
+where the choice of $f$ and $g$ can help in reducing the number of terms when there exists a polynomial term. For example, when $g(x) = x^2$, $g^{(k)} = 0$ for all $k \geq 3$. 
+
+## Part 1. $f_n^{(n)} (x)$ is one solution.
+
+
+Our goal here is to show that $f_n^{(n)}(x)$ is a solution for @eq-legendre. As a first step, let's take derivative on $f_n (x)$,
+$$
+\begin{align*}
+\frac{d}{dx} f_n (x) &= 2 n (x^2  - 1)^{n-1} x \\
+&= 2nx (x^2 - 1)^{n-1}.
+\end{align*}
+$$
+By multiplying $(x^2 - 1)$ both side of the above, we have
+$$
+(x^2 - 1) \frac{d}{dx} f_n (x)  = 2nx (x^2 - 1)^n.
+$$
+
+Now, differentiate both sides $(n+1)$ times, which leads to 
+$$
+\begin{align*}
+\frac{d^{n+1}}{dx^{n+1}} \left[ \frac{d}{dx} f_n (x) \right]  (x^2 -1) 
+&= \sum_{k=0}^{n+1}
+\begin{pmatrix}
+n+1 \\ k
+\end{pmatrix}
+\left( \frac{d}{dx} f_n (x) \right)^{(n+1-k)} (x^2-1)^{(k)} \\
+&= 
+\begin{pmatrix}
+n+1 \\ 0
+\end{pmatrix}
+f_n^{(n+2)} (x) (x^2-1) + 
+\begin{pmatrix}
+n+1 \\ 1
+\end{pmatrix}
+2x f_n^{(n+1)}  (x) +
+\begin{pmatrix}
+n+1 \\ 2
+\end{pmatrix}
+f_n ^{(n)} (x) \cdot 2 \\
+&= (x^2-1) f_n^{(n+2)} (x) + 2(n+1)x f_n^{(n+1)} (x) + 
+n(n+1) f_n^{(n)} (x) 
+\end{align*}
+$$
+for the left-hand side. We also have that 
+$$
+\begin{align*}
+\frac{d^{n+1}}{dx^{n+1}} f_n(x) 2nx &=
+\begin{pmatrix}
+n+1 \\ 0
+\end{pmatrix} 
+f_n^{(n+1)} (x) 2nx + 
+\begin{pmatrix}
+n+1 \\ 1
+\end{pmatrix}
+f_n^{(n)} (x) 2n \\
+&= 2nx f_n^{(n+1)} (x) + 2n(n+1)f_n^{(n)}(x). 
+\end{align*}
+$$
+Therefore, we have the following arrangement,
+$$
+\begin{equation*}
+	\begin{gathered}
+	(x^2 - 1) f_n^{(n+2)} (x) + 2x(n+1)f_n^{(n+1)} (x) + n(n+1)f_n^{(n)} (x) = 
+	2nx f_n^{(n+1)} (x) + 2n(n+1) f_n^{(n)} (x) \\
+	(x^2-1) f_n^{(n+2)} (x) + 2x f_n^{(n+1)}(x) - n(n+1)f_n^{(n)} (x) = 0 \\
+	(1- x^2) f_n^{(n+2)} (x) - 2x f_n^{(n+1)}(x) + n(n+1)f_n^{(n)} (x) = 0
+	\end{gathered}
+\end{equation*}
+$$
+where the last line is in the form of @eq-legendre so that we have $f_n^{(n)} (x) $ as a solution. 
+
+## Part 2. Find a scaling factor.
+
+Even though $f_n^{(n)} (x)$ as a solution, we have a requirement for the standard Legendre polynomial that $P_n (x)=1$ for $x=1$. Let us take a closer look at $f_n^{(n)}(x)$ when evaluated at $x=1$.
+$$
+\begin{align*}
+f_n^{(n)} (x) &= \frac{d^n}{dx^n} (x^2-1)^n \\
+&= \frac{d^n}{dx^n} (x+1)^n (x-1)^n \\
+&= \sum_{k=0}^n \begin{pmatrix}
+n \\ k
+\end{pmatrix}
+\left( (x+1)^n \right)^{(k)} \left( (x-1)^n \right) ^{(n-k)} \quad \textrm{by the Leibniz's rule} \\
+&= \sum_{k=0}^n \begin{pmatrix}
+n \\ k
+\end{pmatrix}
+\frac{n!}{(n-k)!} (x+1)^{n-k} \frac{n!}{k!} (x-1)^k \qquad (*) \\
+&= n! \sum_{k=0}^n \begin{pmatrix}
+n \\ k
+\end{pmatrix} \frac{n!}{(n-k)! k!} (x+1)^{n-k} (x-1)^k \\
+&= n! \sum_{k=0}^n \begin{pmatrix}
+n \\ k
+\end{pmatrix}^2 (x+1)^{n-k} (x-1)^k,
+\end{align*}
+$$
+Since we want to evaluate $f_n^{(n)} (x)$ at $x=1$, the last line of equations above tells us that all the terms but $k=0$ become zero, 
+$$
+\begin{equation*}
+f_n^{(n)} (x=1) = n! \begin{pmatrix}
+n \\ 0
+\end{pmatrix}^2 2^{n-0} = n! 2^n
+\end{equation*}
+$$
+which finally leads to define $P_n (x)$ as
+$$
+P_n (x) = \frac{1}{n! 2^n}f_n^{(n)}(x)  = \frac{1}{n! 2^n} \frac{d^n}{dx^n} (x^2-1)^n
+$$
+to fulfill the condition of $P_n (x) =1$ for $x=1$. 

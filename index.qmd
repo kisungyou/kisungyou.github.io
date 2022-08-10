@@ -29,7 +29,7 @@ comments: false
 ::: column-page
 ### Welcome!
 
-I am a person.
+This site is under construction.
 
 ### Education
 
@@ -38,8 +38,8 @@ I am a person.
 
 **University of Notre Dame**\
 PhD in Statistics\
-Advisors: [Lizhen Lin](https://www3.nd.edu/~llin4/), [Ick Hoon Jin](https://scholar.google.com/citations?user=nDzKeGwAAAAJ&hl=en)\
-Thesis: Topics in Geometric and Topological Data Analysis
+&emsp;Advisors: [Lizhen Lin](https://www3.nd.edu/~llin4/), [Ick Hoon Jin](https://scholar.google.com/citations?user=nDzKeGwAAAAJ&hl=en)\
+&emsp;Thesis: Topics in Geometric and Topological Data Analysis
 
 </div>
 
@@ -52,22 +52,18 @@ August 2021
 ::: {.d-flex .justify-content-between}
 **Yonsei University**\
 MS in Applied Mathematics\
-Advisor: Yoon-Mo Jung\
-
-::: text-end
-Seoul, South Korea\
-August 2015
-:::
-:::
-
-::: {.d-flex .justify-content-between}
+&emsp;Advisor: Yoon-Mo Jung\
 BBA in Business Administration\
 BS in Mathematics
 
 ::: text-end
+Seoul, South Korea\
+August 2015\
+\
 August 2013
 :::
 :::
+
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.254225249731!2d-72.93592958329968!3d41.303332779271805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d852693eb02d%3A0xf79da3ec563c4bae!2sYale%20School%20of%20Medicine!5e0!3m2!1sen!2sus!4v1635886540913!5m2!1sen!2sus" width="99%" height="350px" frameborder="0" style="border:0;" allowfullscreen loading="lazy">
 
