@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "publication.html",
+    "href": "publication.html",
+    "title": "Publication",
+    "section": "",
+    "text": "2022\nParameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere KY and Changhee Suh.  Computational Statistics & Data Analysis (2022).\n        \n        arXiv\n     \n        \n        Code\n     \n        \n        Publisher's Site\n    \n Learning Subspaces of Different Dimensions Brian St. Thomas, KY, Lizhen Lin, Lek-Heng Lim, and Sayan Mukherjee.  Journal of Computational and Graphical Statistics (2022).\n        \n        arXiv\n     \n        \n        Code\n     \n        \n        Publisher's Site\n    \n2021\nRe-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity KY and Hae-Jeong Park.  NeuroImage (2021).\n        \n        Code\n     \n        \n        Publisher's Site\n    \n2020\nData transforming augmentation for heteroscedastic models Hyungsuk Tak, KY, Sujit K. Ghosh, Bingyue Su, and Joseph Kelly.  Journal of Computational and Graphical Statistics (2020).\n        \n        arXiv\n     \n        \n        Publisher's Site\n    \n2019\nVolume change pattern of decompression of mandibular odontogenic keratocyst Jin Hoo Park, Eun-Jung Kwak, KY, Young-Soo Jung, and Hwi-Dong Jung.  Maxillofacial Plastic and Reconstructive Surgery (2019).\n        \n        Publisher's Site\n    \n2016\nVision-based detection of loosened bolts using the Hough transform and support vector machines Young-Jin Cha, KY, and Wooram Choi.  Automation in Construction (2016).\n        \n        Publisher's Site\n    \nWork in Progress\nRdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation KY and Dennis Shung  Submitted to Software Impacts.\n        \n        arXiv\n    \nArchived Preprint\nNetwork Distance Based on Laplacian Flows on Graphs Dianbin Bao, KY, and Lizhen Lin (2018).\n        \n        arXiv\n     \n        \n        Code"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Kisung You",
+    "section": "",
+    "text": "Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere\n\n\n\n\n\n\n\nnotes\n\n\ngeometric statistics\n\n\ncomputation\n\n\n\n\n\n\n\n\n\n\n\nAug 9, 2022\n\n\nKisung You\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kisung You",
+    "section": "",
+    "text": "I am a person.\n\n\n\n\nUniversity of Notre Dame\nPhD in Statistics\nAdvisors: Lizhen Lin, Ick Hoon Jin\nThesis: Topics in Geometric and Topological Data Analysis\n\n\nNotre Dame, IN\nAugust 2021\n\n\n\nYonsei University\nMS in Applied Mathematics\nAdvisor: Yoon-Mo Jung\n\n\nSeoul, South Korea\nAugust 2015\n\n\n\nBBA in Business Administration\nBS in Mathematics\n\nAugust 2013"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Riemann\nLearning with Data on Riemannian manifold\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \nRiemBase\nFunctions and C++ Headers for Computation on Manifolds\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nTDAkit\nToolkit for Topological Data Analysis\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nNetwork\ngraphon\nA Collection of Graphon Estimation Methods\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nNetworkDistance\nDistance Measures for Networks\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nStatistical Inference\nCovTools\nStatistical Tools for Covariance Analysis\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nfilling\nMatrix Completion, Imputation, and Inpainting Methods\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nRdimtools\nDimension Reduction and Estimation Methods\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \nSBmedian\nScalable Bayes with Median of Subset Posteriors\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nSHT\nStatistical Hypothesis Testing Toolbox\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \nT4cluster\nTools for Cluster Analysis\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \nOptimization and Applied Mathematics\nmaotai\nTools for Matrix Algebra, Optimization and Inference\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \nRlinsolve\nIterative Solvers for (Sparse) Linear System of Equations\n\n        \n        View on Github\n      \n        \n        View on CRAN\n    \nT4transport\nTools for Computational Optimal Transport\n\n        \n        Website\n      \n        \n        View on Github\n      \n        \n        View on CRAN\n    \ntvR\nTotal Variation Regularization for Signals and Images\n\n        \n        View on Github\n      \n        \n        View on CRAN"
+  }
+]
