@@ -1,0 +1,57 @@
+---
+title: "About"
+comments: false
+---
+
+### Education
+
+::: {.d-flex .justify-content-between}
+<div>
+
+**University of Notre Dame**\
+PhD in Statistics\
+Advisors: Lizhen Lin, Ick Hoon Jin
+
+</div>
+
+::: text-end
+Notre Dame, IN\
+August 2021
+:::
+:::
+
+-   Dissertation: [*Topics in Geometric and Topological Data Analysis*](https://www.proquest.com/docview/2553834550?pq-origsite=gscholar&fromopenview=true)
+
+::: {.d-flex .justify-content-between}
+<div>
+
+**Yonsei University**\
+
+MS in Applied Mathematics\
+
+Advisor: You know?
+
+</div>
+
+::: text-end
+Seoul, South Korea\
+August 2015
+:::
+:::
+
+-   Dissertation: *Essays on Causal Inference and Machine Learning with Application to Nonprofits*
+
+::: {.d-flex .justify-content-between}
+<div>
+
+BBA in Business Administration\
+BS in Mathematics
+
+</div>
+
+::: text-end
+August 2013
+:::
+:::
+
+:::

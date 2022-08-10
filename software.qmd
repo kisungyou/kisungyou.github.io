@@ -1,0 +1,124 @@
+---
+title: "Software"
+echo: false
+jupyter: python3
+section-divs: false
+---
+
+
+```{python}
+#| label: "software"
+#| id: "software"
+#| output: asis
+import yaml
+from IPython.display import display, Markdown, HTML, Image
+def button(url, str, icon):
+    icon_base = icon[:2]
+    return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
+        <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
+        {str}
+    </a>"""
+yaml_data = yaml.safe_load(open("list_software.yaml"))
+```
+
+### Geometry and Topology
+
+```{python}
+#| label: "geometry-topology"
+#| id: "geometry-topology"
+#| output: asis
+data_part = []
+for data in yaml_data[::-1]:
+  if data["topic"] == "topology" or data["topic"] == "geometry":
+    data_part.append(data)
+data_part.sort(key=lambda k : k['title'].lower())
+
+for data in data_part:
+  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
+  display(Markdown(data["description"]))
+  buttons = []
+  if "website" in data:
+      buttons.append(button(data['website'], "Website", "bi-info"))
+  if "github" in data:
+      buttons.append(button(data['github'], "View on Github", "bi-github"))
+  if "CRAN" in data:
+      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
+  display(HTML("  ".join(buttons)))
+```
+
+### Network
+
+```{python}
+#| label: "network"
+#| id: "network"
+#| output: asis
+data_part = []
+for data in yaml_data[::-1]:
+  if data["topic"] == "network":
+    data_part.append(data)
+data_part.sort(key=lambda k : k['title'].lower())
+
+for data in data_part:
+  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
+  display(Markdown(data["description"]))
+  buttons = []
+  if "website" in data:
+      buttons.append(button(data['website'], "Website", "bi-info"))
+  if "github" in data:
+      buttons.append(button(data['github'], "View on Github", "bi-github"))
+  if "CRAN" in data:
+      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
+  display(HTML("  ".join(buttons)))
+```
+
+### Statistical Inference
+
+```{python}
+#| label: "statistical-inference"
+#| id: "statistical-inference"
+#| output: asis
+
+data_part = []
+for data in yaml_data[::-1]:
+  if data["topic"] == "statistical-inference":
+    data_part.append(data)
+data_part.sort(key=lambda k : k['title'].lower())
+
+for data in data_part:
+  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
+  display(Markdown(data["description"]))
+  buttons = []
+  if "website" in data:
+      buttons.append(button(data['website'], "Website", "bi-info"))
+  if "github" in data:
+      buttons.append(button(data['github'], "View on Github", "bi-github"))
+  if "CRAN" in data:
+      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
+  display(HTML("  ".join(buttons)))
+```
+
+
+### Optimization and Applied Mathematics
+
+```{python}
+#| label: "opt-applied"
+#| id: "opt-applied"
+#| output: asis
+data_part = []
+for data in yaml_data[::-1]:
+  if data["topic"] == "opt-applied":
+    data_part.append(data)
+data_part.sort(key=lambda k : k['title'].lower())
+
+for data in data_part:
+  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
+  display(Markdown(data["description"]))
+  buttons = []
+  if "website" in data:
+      buttons.append(button(data['website'], "Website", "bi-info"))
+  if "github" in data:
+      buttons.append(button(data['github'], "View on Github", "bi-github"))
+  if "CRAN" in data:
+      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
+  display(HTML("  ".join(buttons)))
+```

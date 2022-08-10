@@ -1,0 +1,120 @@
+# flags
+#   - submitted   : work in progress
+#   - preparation : in preparation
+#   - journal     : Peer-Reviewed Articles
+#   - preprint    : preprints (not published)
+
+# ---------------------------------------------------------------
+# submitted
+# ---------------------------------------------------------------
+Rdimtools:
+  title: "Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2020
+  preprint: https://doi.org/10.48550/arXiv.2005.11107
+  flag: submitted
+  github: https://github.com/kisungyou/Rdimtools
+  venue: Software Impacts
+  github: 
+
+
+# ---------------------------------------------------------------
+# preprint
+# ---------------------------------------------------------------
+network_distance_based_on_laplacian_flows:
+  title: "Network Distance Based on Laplacian Flows on Graphs"
+  authors:
+    - Dianbin Bao
+    - me
+    - Lizhen Lin
+  year: 2018
+  preprint: https://doi.org/10.48550/arXiv.1810.02906
+  flag: preprint
+  github: https://github.com/kisungyou/NetworkDistance
+  
+# ---------------------------------------------------------------
+# journal
+# ---------------------------------------------------------------
+spherical_normal:
+  title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
+  authors:
+    - me
+    - Changhee Suh
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2106.06375
+  published_url: https://doi.org/10.1016/j.csda.2022.107457
+  venue: Computational Statistics & Data Analysis
+  github: https://kisungyou.com/Riemann
+  flag: journal
+  
+learning_subspaces_of_different_dimensions:
+  title: " Learning Subspaces of Different Dimensions"
+  authors:
+    - Brian St. Thomas
+    - me
+    - Lizhen Lin
+    - Lek-Heng Lim
+    - Sayan Mukherjee
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.1404.6841
+  published_url: https://doi.org/10.1080/10618600.2021.2000420
+  venue: Journal of Computational and Graphical Statistics
+  github: https://kisungyou.com/T4cluster
+  flag: journal
+
+revisiting_riemannian_geometry:
+  title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
+  authors:
+    - me
+    - Hae-Jeong Park
+  year: 2021
+  preprint: 
+  published_url: https://doi.org/10.1016/j.neuroimage.2020.117464
+  venue: NeuroImage
+  github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
+  flag: journal
+
+data_transforming_augmentation:
+  title: "Data transforming augmentation for heteroscedastic models"
+  authors:
+    - Hyungsuk Tak
+    - me
+    - Sujit K. Ghosh
+    - Bingyue Su
+    - Joseph Kelly
+  year: 2020
+  preprint: https://doi.org/10.48550/arXiv.1911.02748
+  published_url: https://doi.org/10.1080/10618600.2019.1704295
+  venue: Journal of Computational and Graphical Statistics
+  github: 
+  flag: journal
+
+volume_change:
+  title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
+  authors:
+    - Jin Hoo Park
+    - Eun-Jung Kwak
+    - me
+    - Young-Soo Jung
+    - Hwi-Dong Jung
+  year: 2019
+  preprint:
+  published_url: https://doi.org/10.1186/s40902-018-0184-y
+  venue: Maxillofacial Plastic and Reconstructive Surgery
+  github: 
+  flag: journal
+  
+vision_based_detection:
+  title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
+  authors:
+    - Young-Jin Cha
+    - me
+    - Wooram Choi
+  year: 2016
+  preprint:
+  published_url: https://doi.org/10.1016/j.autcon.2016.06.008
+  venue: Automation in Construction
+  github:
+  flag: journal

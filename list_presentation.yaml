@@ -1,0 +1,15 @@
+- title: "Riemann"
+  description: |
+    `Riemann` for learning with data on Riemannian manifold.
+  website: https://kisungyou.com/Riemann
+  github: https://github.com/kisungyou/Riemann
+  CRAN: https://CRAN.R-project.org/package=Riemann
+  favicon: 'images/favicon_Riemann.png'
+  
+  
+- title: "Rdimtools"
+  description: |
+    `Riemann` for learning with data on Riemannian manifold.
+  website: https://kisungyou.com/Rdimtools
+  github: https://github.com/kisungyou/Rdimtools
+  CRAN: https://CRAN.R-project.org/package=Rdimtools

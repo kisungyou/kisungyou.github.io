@@ -1,0 +1,134 @@
+---
+title: "Publication"
+echo: false
+jupyter: python3
+section-divs: false
+keep-md: true
+---
+
+<!-- # flags -->
+<!-- #   - journal   : Peer-Reviewed Articles -->
+<!-- #   - preprint  : preprints (not published) -->
+<!-- #   - progress  : in-progress / submitted & preparation -->
+<!-- #       - submitted   : work in progress -->
+<!-- #       - preparation : in preparation -->
+
+```{python}
+import yaml
+from IPython.display import display, Markdown, HTML
+def readable_list(_s):
+  if len(_s) < 3:
+    return ' and '.join(map(str, _s))
+  *a, b = _s
+  return f"{', '.join(map(str, a))}, and {b}"
+def button(url, str, icon):
+    icon_base = icon[:2]
+    return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
+        <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
+        {str}
+    </a>"""
+yaml_data = yaml.safe_load(open("list_publication.yaml"))
+pub_strs = {"type-journal":{}, "type-preprint":{}, 
+             "type-submitted":{}, "type-preparation":{}}
+
+for _, data in yaml_data.items():
+    # extract relevant information
+    title_str = data["title"]
+    authors = data.get("authors", ["me"])
+    authors = [aut if aut != "me" else "<strong>KY</strong>" for aut in authors]
+    author_str = readable_list(authors)
+    year_str = data["year"]
+    buttons = []
+    preprint = data.get("preprint")
+    if preprint is not None:
+        buttons.append(button(preprint, "arXiv", "bi-file-earmark-pdf"))
+    github = data.get("github")
+    if github is not None:
+        buttons.append(button(github, "Code", "bi-github"))
+    pub_url = data.get("published_url")
+    venue = data.get("venue")
+    flag  = data.get("flag")
+    
+    
+    # DIFFERENT TYPES
+    # 1. journal  {journal}
+    # 2. preprint {preprint}
+    # 3. progress {submitted, preparation}
+    
+    
+    # TYPES-strings
+    if flag=="journal":
+      pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
+    elif flag=="preprint":
+      pub_str = f'<b>{title_str}</b><br> {author_str} ({year_str}).'
+    elif flag=="submitted":
+      pub_str =  f'<b>{title_str}</b><br> {author_str} <br> Submitted to <em>{venue}</em>.'
+    elif flag=="preparation":
+      pub_str =  f'<b>{title_str}</b><br> {author_str} <br> <em>In Preparation.</em>'
+      
+      
+    # TYPES-formatting
+    if flag=="journal":
+      if year_str not in pub_strs["type-journal"]:
+        pub_strs["type-journal"][year_str] = []
+      buttons.append(button(pub_url, "Publisher's Site", "ai-archive"))
+      pub_strs["type-journal"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+    elif flag=="preprint":
+      if year_str not in pub_strs["type-preprint"]:
+        pub_strs["type-preprint"][year_str] = []
+      pub_strs["type-preprint"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+    elif flag=="submitted":
+      if year_str not in pub_strs["type-submitted"]:
+        pub_strs["type-submitted"][year_str] = []
+      pub_strs["type-submitted"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+    elif flag=="preparation":
+      if year_str not in pub_strs["type-preparation"]:
+        pub_strs["type-preparation"][year_str] = []
+      pub_strs["type-preparation"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+        
+```
+
+## Published
+
+```{python}
+#| label: "journal-year"
+#| id: "journal-year"
+#| output: asis
+for year in sorted(pub_strs["type-journal"].keys(), reverse=True):
+    display(Markdown(f"### {year}"))
+    display(HTML(
+        "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-journal"][year]) + "</ul>"
+    ))
+```
+
+## Work in Progress
+
+```{python}
+#| label: "in-progress-year"
+#| id: "in-progress-year"
+#| output: asis
+for year in sorted(pub_strs["type-submitted"].keys(), reverse=True):
+    # display(Markdown(f"### In Preparation" + "{#" + f"not-published-{year}" + "}"))
+    # display(Markdown(f"### Submitted"))
+    display(HTML(
+        "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-submitted"][year]) + "</ul>"
+    ))
+for year in sorted(pub_strs["type-preparation"].keys(), reverse=True):
+    # display(Markdown(f"### In Preparation" + "{#" + f"not-published-{year}" + "}"))
+    display(Markdown(f"### In Preparation"))
+    display(HTML(
+        "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-preparation"][year]) + "</ul>"
+    ))
+```
+
+## Archived Preprint
+
+```{python}
+#| label: "preprint-year"
+#| id: "preprint-year"
+#| output: asis
+for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
+    display(HTML(
+        "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-preprint"][year]) + "</ul>"
+    ))
+```

@@ -1,0 +1,8 @@
+"0","#| label: ""journal-year"""
+"0","#| id: ""journal-year"""
+"0","#| output: asis"
+"0","for year in sorted(pub_strs[""type-journal""].keys(), reverse=True):"
+"0","    display(Markdown(f""### {year}""))"
+"0","    display(HTML("
+"0","        ""<ul class='list-group list-group-flush'>"" + '\n'.join(pub_strs[""type-journal""][year]) + ""</ul>"""
+"0","    ))"

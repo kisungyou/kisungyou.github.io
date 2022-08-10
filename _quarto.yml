@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Kisung You"
+  description: "Postdoc needs a real job."
+  open-graph: true
+  twitter-card: 
+    creator: "@kisung_you"
+    site: "@kisung_you"
+    card-style: "summary_large_image"
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "Publications"
+        file: publication.qmd
+      - text: "Software"
+        file: software.qmd
+      - text: "Blog"
+        file: blog.qmd
+  page-footer: "© Kisung You 2022"
+
+format:
+  html:
+    #theme: flatly # {simplex : minimal}
+    theme:
+      light: flatly
+      drak: darkly
+    fontsize: 1.1em
+    linestretch: 1.75
+    css: styles.css
+    toc: true
+    toc-dept: 4
+    toc-title: "Contents"
+    html-math-method: mathjax # katex
+    highlight-style: github
+
+editor: source
+
+execute:
+  freeze: auto

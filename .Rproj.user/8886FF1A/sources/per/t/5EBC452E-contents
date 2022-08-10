@@ -1,0 +1,9 @@
+# universal options for all posts
+# licence appendix
+licence: "CC BY"
+
+# free computational output
+freeze: auto
+
+# make a big title block
+title-block-banner: true
