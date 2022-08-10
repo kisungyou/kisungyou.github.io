@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kisungyou.github.io/publication.html</loc>
-    <lastmod>2022-08-10T12:49:32.192Z</lastmod>
+    <lastmod>2022-08-10T13:14:55.983Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/blog.html</loc>
-    <lastmod>2022-08-10T12:49:32.852Z</lastmod>
+    <lastmod>2022-08-10T13:14:56.599Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/index.html</loc>
-    <lastmod>2022-08-10T12:49:33.312Z</lastmod>
+    <lastmod>2022-08-10T13:14:57.115Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/software.html</loc>
-    <lastmod>2022-08-10T12:49:40.924Z</lastmod>
+    <lastmod>2022-08-10T13:15:05.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.github.io/posts/note001-spherical-distance/index.html</loc>
+    <lastmod>2022-08-10T13:15:16.527Z</lastmod>
   </url>
 </urlset>
