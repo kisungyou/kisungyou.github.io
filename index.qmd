@@ -27,7 +27,7 @@ comments: false
 ---
 
 ::: column-page
-## Welcome!
+### Welcome!
 
 I am a person.
 

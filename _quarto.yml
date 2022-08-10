@@ -5,7 +5,7 @@ project:
 website:
   title: "Kisung You"
   description: "Postdoc needs a real job."
-  site-url: https://kisungyou.com
+  site-url: https://kisungyou.github.io
   open-graph: true
   twitter-card: 
     creator: "@kisung_you"
