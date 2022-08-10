@@ -55,6 +55,9 @@ $$ where the last term gets better approximation as $N\rightarrow \infty$.
 ::: {#refs}
 :::
 
+# Download the note {.unnumbered .unlisted} -->
+If you would like to download the pdf version of this note, [click here](index.pdf)
+
 ::: {.content-visible unless-format="pdf"}
 # Download the note {.unnumbered .unlisted}
 If you would like to download the pdf version of this note, [click here](index.pdf).
