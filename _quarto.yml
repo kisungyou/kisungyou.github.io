@@ -14,6 +14,7 @@ website:
   navbar:
     background: primary
     search: true
+    type: textbox
     right:
       - text: "Home"
         file: index.qmd
