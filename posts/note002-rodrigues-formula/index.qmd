@@ -17,6 +17,7 @@ comments: false
 #biblio-style: plain
 google-scholar: true
 number-sections: false
+image: pic-rodrigues.png
 ---
 
 # Introduction
