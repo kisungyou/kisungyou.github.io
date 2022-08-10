@@ -8,17 +8,6 @@ categories:
   - geometric statistics
   - computation
 format: 
-  pdf: 
-    toc: false
-    papersize: a4
-    colorlinks: true
-    pdf-engine: pdflatex
-    fontfamily: lmodern
-    fontsize: 11pt
-    linestretch: 1.25
-    geometry: 
-      - margin=2cm
-      - heightrounded
   html:
     df-print: paged
     toc: true
@@ -53,12 +42,4 @@ $$ where the last term gets better approximation as $N\rightarrow \infty$.
 # References {.unnumbered .unlisted}
 
 ::: {#refs}
-:::
-
-# Download the note {.unnumbered .unlisted} -->
-If you would like to download the pdf version of this note, [click here](index.pdf)
-
-::: {.content-visible unless-format="pdf"}
-# Download the note {.unnumbered .unlisted}
-If you would like to download the pdf version of this note, [click here](index.pdf).
 :::

@@ -21,6 +21,13 @@
     "text": "I am a person.\n\n\n\n\n\nUniversity of Notre Dame\nPhD in Statistics\nAdvisors: Lizhen Lin, Ick Hoon Jin\nThesis: Topics in Geometric and Topological Data Analysis\n\n\nNotre Dame, IN\nAugust 2021\n\n\n\nYonsei University\nMS in Applied Mathematics\nAdvisor: Yoon-Mo Jung\n\n\nSeoul, South Korea\nAugust 2015\n\n\n\nBBA in Business Administration\nBS in Mathematics\n\nAugust 2013"
   },
   {
+    "objectID": "posts/note001-spherical-distance/index.html",
+    "href": "posts/note001-spherical-distance/index.html",
+    "title": "Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere",
+    "section": "",
+    "text": "Computation\nImportance sampling requires a proposal density. The easiest choice is to use uniform density \\(u(x)\\) as an importance proposal since sampling from \\(u(x)\\) is trivial. First, take a random sample from standard normal distribution \\(x \\sim \\mathcal{N}(0,I)\\) in \\(\\mathbb{R}^{d+1}\\). Then, the rest is to take \\(L_2\\) normalization, i.e., \\(x \\leftarrow x / \\|x\\|_2\\), which makes a sampled vector to have a unit norm. Given the sample generation process, we have the following\n\\[\\begin{aligned}\nL_p (f,g)^p &= \\int_{\\mathbb{S}^d} |f(x)-g(x)|^p dx \\\\\n&= \\int_{\\mathbb{S}^d} \\frac{|f(x)-g(x)|^p}{u(x)} u(x)  dx \\\\\n&= \\mathbb{E}_{u(x)} \\left\\lbrack \\frac{|f(x)-g(x)|^p}{u(x)} \\right\\rbrack\\\\\n&\\approx \\frac{1}{N} \\sum_{n=1}^N \\frac{|f(x)-g(x)|^p}{u(x)} \\,\\,\\textrm{for}\\,\\, x_n \\overset{iid}{\\sim} u(x),\n\\end{aligned}\n\\] where the last term gets better approximation as \\(N\\rightarrow \\infty\\).\n\n\nReferences\n\n\nMarron, James Stephen, and I. L. Dryden. 2021. Object Oriented Data Analysis. Boca Raton: Taylor & Francis Group, LLC."
+  },
+  {
     "objectID": "software.html",
     "href": "software.html",
     "title": "Software",
