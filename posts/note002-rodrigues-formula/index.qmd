@@ -24,14 +24,14 @@ image: pic-rodrigues.png
 
 Legendre polynomials $P_n (x)$ are solutions of Legendre's differential equation
 $$
-(1-x^2) y'' - 2x y' + n(n+1) y = 0\quad\text{for  } n \in \mathbb{N}\cup \{0\}
+(1-x^2) y'' - 2x y' + n(n+1) y = 0
 $$ {#eq-legendre}
-and an explicit, compact expression for the polynomials is by Rodrigues' formula
+for some $n \in \mathbb{N}\cup \{0\}$. An explicit, compact expression for the polynomials is provided by Rodrigues' formula
 $$
 P_n (x) = \frac{1}{2^n n!} \frac{d^n}{dx^n} (x^2-1)^n.
 $$ {#eq-rodrigues}
 
-This means that when $P_n (x)$ is plugged in the position of $y$ for @eq-legendre, it must satisfy the equality to 0. In this note, we show indeed the expression of @eq-rodrigues  works, after a bit of tedious arithmetics. 
+This means that when $P_n (x)$ is plugged in the position of $y$ for @eq-legendre, it must satisfy the equality to 0. In this post, we show (a bit tedious) derivations to attain @eq-rodrigues.
 
 # Approach
 I will proceed in two steps. Let $f_n (x) = (x^2 - 1)^n$ then we first show that the $n$-th derivative of $f_n (x)$ is a solution of Legendre equation. Then, we find a proper scaling factor of $1/ 2^n n!$ to recover $P_n (x)$ in line with a common constraint that $P_n (x) = 1$ for all $n$ when $x=1$. For notational simplicity, we denote $g^{(n)}$ for the $n$-th derivative of a function $g(x)$, i.e,

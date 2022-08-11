@@ -172,13 +172,13 @@ ul.task-list{list-style: none;}
 <h1>Introduction</h1>
 <p>Legendre polynomials <span class="math inline">\(P_n (x)\)</span> are solutions of Legendre’s differential equation</p>
 <p><span id="eq-legendre"><span class="math display">\[
-(1-x^2) y'' - 2x y' + n(n+1) y = 0\quad\text{for  } n \in \mathbb{N}\cup \{0\}
+(1-x^2) y'' - 2x y' + n(n+1) y = 0
 \tag{1}\]</span></span></p>
-<p>and an explicit, compact expression for the polynomials is by Rodrigues’ formula</p>
+<p>for some <span class="math inline">\(n \in \mathbb{N}\cup \{0\}\)</span>. An explicit, compact expression for the polynomials is provided by Rodrigues’ formula</p>
 <p><span id="eq-rodrigues"><span class="math display">\[
 P_n (x) = \frac{1}{2^n n!} \frac{d^n}{dx^n} (x^2-1)^n.
 \tag{2}\]</span></span></p>
-<p>This means that when <span class="math inline">\(P_n (x)\)</span> is plugged in the position of <span class="math inline">\(y\)</span> for <a href="#eq-legendre">Equation&nbsp;1</a>, it must satisfy the equality to 0. In this note, we show indeed the expression of <a href="#eq-rodrigues">Equation&nbsp;2</a> works, after a bit of tedious arithmetics.</p>
+<p>This means that when <span class="math inline">\(P_n (x)\)</span> is plugged in the position of <span class="math inline">\(y\)</span> for <a href="#eq-legendre">Equation&nbsp;1</a>, it must satisfy the equality to 0. In this post, we show (a bit tedious) derivations to attain <a href="#eq-rodrigues">Equation&nbsp;2</a>.</p>
 </section>
 <section id="approach" class="level1">
 <h1>Approach</h1>
