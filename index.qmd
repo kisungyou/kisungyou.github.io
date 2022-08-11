@@ -54,14 +54,14 @@ August 2021
 ::: {.d-flex .justify-content-between}
 **Yonsei University**\
 MS in Applied Mathematics\
-&emsp;Advisor: Yoon-Mo Jung\
+#&emsp;Advisor: Yoon-Mo Jung\
 BBA in Business Administration\
 BS in Mathematics
 
 ::: text-end
 Seoul, South Korea\
 August 2015\
-\
+#\
 August 2013
 :::
 :::
