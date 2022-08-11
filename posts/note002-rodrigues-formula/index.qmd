@@ -13,8 +13,8 @@ format:
 engine: knitr
 citation: false
 comments: false
-#bibliography: references.bib
-#biblio-style: plain
+bibliography: ref002.bib
+biblio-style: plain
 google-scholar: true
 number-sections: false
 image: pic-rodrigues.png
@@ -22,7 +22,7 @@ image: pic-rodrigues.png
 
 # Introduction
 
-Legendre polynomials $P_n (x)$ are solutions of Legendre's differential equation
+Proposed by @Legendre2007, Legendre polynomials $P_n (x)$ are solutions of the following Legendre's differential equation
 $$
 (1-x^2) y'' - 2x y' + n(n+1) y = 0
 $$ {#eq-legendre}

@@ -14,7 +14,7 @@ format:
 engine: knitr
 citation: false
 comments: false
-bibliography: references.bib
+bibliography: bib-for-note001.bib
 biblio-style: plain
 google-scholar: true
 number-sections: false

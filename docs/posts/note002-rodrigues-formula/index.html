@@ -17,6 +17,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -81,6 +100,7 @@ ul.task-list{list-style: none;}
 <meta name="citation_fulltext_html_url" content="https://kisungyou.github.io/posts/note002-rodrigues-formula">
 <meta name="citation_publication_date" content="2022-08-10">
 <meta name="citation_journal_title" content="undefined">
+<meta name="citation_reference" content="citation_title=Recherches sur l´attraction des spheroides homogenes;,citation_author=Adrien Marie Legendre;,citation_publication_date=2007;,citation_volume=1785;,citation_journal_title=Memoires de mathematique et de physique : pres. à l´Academie Royale des Sciences, par divers savans, et lûs dans ses assemblees;">
 </head>
 
 <body class="nav-fixed">
@@ -170,7 +190,7 @@ ul.task-list{list-style: none;}
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Legendre polynomials <span class="math inline">\(P_n (x)\)</span> are solutions of Legendre’s differential equation</p>
+<p>Proposed by <span class="citation" data-cites="Legendre2007">Legendre (<a href="#ref-Legendre2007" role="doc-biblioref">2007</a>)</span>, Legendre polynomials <span class="math inline">\(P_n (x)\)</span> are solutions of the following Legendre’s differential equation</p>
 <p><span id="eq-legendre"><span class="math display">\[
 (1-x^2) y'' - 2x y' + n(n+1) y = 0
 \tag{1}\]</span></span></p>
@@ -301,9 +321,14 @@ P_n (x) = \frac{1}{n! 2^n}f_n^{(n)}(x)  = \frac{1}{n! 2^n} \frac{d^n}{dx^n} (x^2
 <p>to fulfill the condition of <span class="math inline">\(P_n (x) =1\)</span> for <span class="math inline">\(x=1\)</span>.</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Legendre2007" class="csl-entry" role="doc-biblioentry">
+Legendre, Adrien Marie. 2007. <span>“Recherches Sur l´attraction Des Spheroides Homogenes.”</span> <em>M<span>e</span>moires de Math<span>e</span>matique Et de Physique : Pr<span>e</span>s. <span>À</span> l´Acad<span>e</span>mie Royale Des Sciences, Par Divers Savans, Et l<span>û</span>s Dans Ses Assembl<span>e</span>es</em> 1785: 411–34.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
