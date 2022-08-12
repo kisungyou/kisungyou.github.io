@@ -12,7 +12,7 @@ format:
     df-print: paged
     toc: true
 engine: knitr
-citation: false
+citation: true
 comments: false
 bibliography: bib-for-note001.bib
 biblio-style: plain

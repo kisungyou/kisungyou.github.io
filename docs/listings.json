@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/note003-angular-gaussian/index.html",
       "/posts/note002-rodrigues-formula/index.html",
       "/posts/note001-spherical-distance/index.html"
     ]

@@ -11,7 +11,7 @@ format:
     df-print: paged
     toc: true
 engine: knitr
-citation: false
+citation: true
 comments: false
 google-scholar: true
 number-sections: false
