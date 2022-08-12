@@ -40,7 +40,7 @@ My research focuses on the use of mathematical tools from statistics, geometry, 
 
 **University of Notre Dame**\
 PhD in Statistics\
-&emsp;Advisors: [Lizhen Lin](https://www3.nd.edu/~llin4/), [Ick Hoon Jin](https://scholar.google.com/citations?user=nDzKeGwAAAAJ&hl=en)\
+&emsp;Advisors: [Lizhen Lin](https://www3.nd.edu/~llin4/), [Ick Hoon Jin](https://jininus.github.io/)\
 &emsp;Thesis: Topics in Geometric and Topological Data Analysis
 
 </div>
