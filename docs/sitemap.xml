@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kisungyou.github.io/publication.html</loc>
-    <lastmod>2022-08-12T18:42:48.330Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.github.io/index.html</loc>
-    <lastmod>2022-08-12T18:42:48.734Z</lastmod>
+    <lastmod>2022-08-26T03:41:39.308Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/blog.html</loc>
-    <lastmod>2022-08-12T18:42:49.198Z</lastmod>
+    <lastmod>2022-08-26T03:41:40.344Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.github.io/posts/note003-angular-gaussian/index.html</loc>
-    <lastmod>2022-08-12T18:42:49.994Z</lastmod>
+    <loc>https://kisungyou.github.io/index.html</loc>
+    <lastmod>2022-08-26T03:41:41.168Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/posts/note002-rodrigues-formula/index.html</loc>
-    <lastmod>2022-08-12T18:42:51.114Z</lastmod>
+    <lastmod>2022-08-26T03:41:42.296Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/posts/note001-spherical-distance/index.html</loc>
-    <lastmod>2022-08-12T18:42:52.322Z</lastmod>
+    <lastmod>2022-08-26T03:41:43.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.github.io/posts/note003-angular-gaussian/index.html</loc>
+    <lastmod>2022-08-26T03:41:45.052Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.github.io/software.html</loc>
-    <lastmod>2022-08-12T18:42:55.030Z</lastmod>
+    <lastmod>2022-08-26T03:41:52.228Z</lastmod>
   </url>
 </urlset>

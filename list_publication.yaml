@@ -12,14 +12,56 @@ Rdimtools:
   authors: 
     - me
     - Dennis Shung
-  year: 2020
+  year: 2022
   preprint: https://doi.org/10.48550/arXiv.2005.11107
   flag: submitted
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts
+  
+splaplace:
+  title: "On the spherical Laplace distribution"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  flag: submitted
   github: 
+  venue: Journal of Multivariate Analysis
 
+bayesian_optimal_twosample:
+  title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
+  authors: 
+    - Kyoungjae Lee
+    - me
+    - Lizhen Lin
+  year: 2021
+  preprint: https://doi.org/10.48550/arXiv.2112.02580
+  flag: submitted
+  github: 
+  venue: Bayesian Analysis
 
+shape_preserving_dimensionality_reduction:
+  title: "Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence"
+  authors: 
+    - Byeongsu Yu
+    - me
+  year: 2021
+  preprint: https://doi.org/10.48550/arXiv.2106.02096
+  flag: submitted
+  github: 
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
+
+functional_connectivity_correlation:
+  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
+  authors: 
+    - me
+    - Hae-Jeong Park
+  year: 2022
+  preprint: 
+  flag: submitted
+  github: 
+  venue: Scientific Reports
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
