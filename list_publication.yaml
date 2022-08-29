@@ -69,7 +69,7 @@ functional_connectivity_correlation:
 # preparation
 # ---------------------------------------------------------------
 Rdimtools:
-  title: "Wasserstein median of probability measure"
+  title: "Wasserstein median of probability measures"
   authors: 
     - me
     - Dennis Shung

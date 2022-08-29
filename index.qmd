@@ -31,7 +31,7 @@ comments: false
 
 I am a postdoctoral associate in the Department of Internal Medicine at Yale 
 School of Medicine working with Prof. [Dennis Shung](https://medicine.yale.edu/profile/dennis_shung/). 
-My research focuses on the use of mathematical tools from statistics, geometry, and topology in developing novel methods to answer abstruse scientific questions. The primary application area is biomedical science including neuroimaging, electronic health record, and genomic data. I am also deeply interested in high-performance computing and statistical software development to democratize methodological innovations for practitioners. 
+My research focuses on the use of mathematical tools from statistics, geometry, and topology in developing novel methods to answer abstruse scientific questions. The primary application domain is biomedical data anaysis with neuroimaging, electronic health record, genomic data. I am also deeply interested in high-performance computing and statistical software development to democratize methodological innovations for practitioners. 
 
 ### Education
 

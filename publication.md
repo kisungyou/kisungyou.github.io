@@ -38,7 +38,7 @@ keep-md: true
 ```
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Wasserstein median of probability measure</b><br> <strong>KY</strong> and Dennis Shung <br> <em>In Preparation.</em><br></li></ul>
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Wasserstein median of probability measures</b><br> <strong>KY</strong> and Dennis Shung <br> <em>In Preparation.</em><br></li></ul>
 ```
 
 
