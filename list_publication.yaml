@@ -62,6 +62,23 @@ functional_connectivity_correlation:
   flag: submitted
   github: 
   venue: Scientific Reports
+  
+  
+  
+# ---------------------------------------------------------------
+# preparation
+# ---------------------------------------------------------------
+Rdimtools:
+  title: "Wasserstein median of probability measure"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2022
+  preprint: 
+  flag: preparation
+  github: 
+  venue:   
+  
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
@@ -76,6 +93,19 @@ network_distance_based_on_laplacian_flows:
   flag: preprint
   github: https://github.com/kisungyou/NetworkDistance
   
+topological_latent_embedding:
+  title: "Comparing multiple latent space embeddings using topological analysis"
+  authors:
+    - me
+    - Ilmun Kim
+    - Ick Hoon Jin
+    - Minjeong Jeon
+    - Dennis Shung
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2208.12435
+  flag: preprint
+  github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
+
 # ---------------------------------------------------------------
 # journal
 # ---------------------------------------------------------------

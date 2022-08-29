@@ -19,14 +19,7 @@ keep-md: true
 
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Software Impacts</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2005.11107" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-        arXiv
-    </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/Rdimtools" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github" role='img' aria-label='Code'></i>
-        Code
-    </a></li>
-<li class='list-group-item'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Journal of Multivariate Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Journal of Multivariate Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a></li>
@@ -42,6 +35,10 @@ keep-md: true
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a></li></ul>
+```
+
+```{=html}
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Wasserstein median of probability measure</b><br> <strong>KY</strong> and Dennis Shung <br> <em>In Preparation.</em><br></li></ul>
 ```
 
 
@@ -119,6 +116,16 @@ keep-md: true
 
 ## Archived Preprint
 
+
+```{=html}
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Comparing multiple latent space embeddings using topological analysis</b><br> <strong>KY</strong>, Ilmun Kim, Ick Hoon Jin, Minjeong Jeon, and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.12435" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+        arXiv
+    </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/03_TopLSM" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github" role='img' aria-label='Code'></i>
+        Code
+    </a></li></ul>
+```
 
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'><b>Network Distance Based on Laplacian Flows on Graphs</b><br> Dianbin Bao, <strong>KY</strong>, and Lizhen Lin (2018).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1810.02906" target="_blank" rel="noopener noreferrer">

@@ -102,7 +102,7 @@ for year in sorted(pub_strs["type-submitted"].keys(), reverse=True):
     ))
 for year in sorted(pub_strs["type-preparation"].keys(), reverse=True):
     # display(Markdown(f"### In Preparation" + "{#" + f"not-published-{year}" + "}"))
-    display(Markdown(f"### In Preparation"))
+    # display(Markdown(f"### In Preparation"))
     display(HTML(
         "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-preparation"][year]) + "</ul>"
     ))
