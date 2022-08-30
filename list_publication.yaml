@@ -7,17 +7,6 @@
 # ---------------------------------------------------------------
 # submitted
 # ---------------------------------------------------------------
-Rdimtools:
-  title: "Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2005.11107
-  flag: submitted
-  github: https://github.com/kisungyou/Rdimtools
-  venue: Software Impacts
-  
 splaplace:
   title: "On the spherical Laplace distribution"
   authors: 
@@ -190,3 +179,16 @@ vision_based_detection:
   venue: Automation in Construction
   github:
   flag: journal
+  
+  
+Rdimtools:
+  title: "Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2005.11107
+  published_url: https://doi.org/10.1016/j.simpa.2022.100414
+  flag: journal
+  github: https://github.com/kisungyou/Rdimtools
+  venue: Software Impacts
