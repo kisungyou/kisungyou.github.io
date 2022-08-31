@@ -7,6 +7,7 @@
 # ---------------------------------------------------------------
 # submitted
 # ---------------------------------------------------------------
+
 splaplace:
   title: "On the spherical Laplace distribution"
   authors: 
@@ -17,6 +18,17 @@ splaplace:
   flag: submitted
   github: 
   venue: Journal of Multivariate Analysis
+  
+functional_connectivity_correlation:
+  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
+  authors: 
+    - me
+    - Hae-Jeong Park
+  year: 2022
+  preprint: 
+  flag: submitted
+  github: 
+  venue: Scientific Reports
 
 bayesian_optimal_twosample:
   title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
@@ -40,19 +52,18 @@ shape_preserving_dimensionality_reduction:
   flag: submitted
   github: 
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
-
-functional_connectivity_correlation:
-  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
-  authors: 
+  
+network_distance_based_on_laplacian_flows:
+  title: "Network Distance Based on Laplacian Flows on Graphs"
+  authors:
+    - Dianbin Bao
     - me
-    - Hae-Jeong Park
+    - Lizhen Lin
   year: 2022
-  preprint: 
+  preprint: https://doi.org/10.48550/arXiv.1810.02906
   flag: submitted
-  github: 
-  venue: Scientific Reports
-  
-  
+  github: https://github.com/kisungyou/NetworkDistance
+  venue: IEEE Big Data 2022
   
 # ---------------------------------------------------------------
 # preparation
@@ -71,17 +82,6 @@ Rdimtools:
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
-network_distance_based_on_laplacian_flows:
-  title: "Network Distance Based on Laplacian Flows on Graphs"
-  authors:
-    - Dianbin Bao
-    - me
-    - Lizhen Lin
-  year: 2018
-  preprint: https://doi.org/10.48550/arXiv.1810.02906
-  flag: preprint
-  github: https://github.com/kisungyou/NetworkDistance
-  
 topological_latent_embedding:
   title: "Comparing multiple latent space embeddings using topological analysis"
   authors:

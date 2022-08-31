@@ -1,0 +1,393 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage{marvosym} % For cool symbols.
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{helvet} % Default font is the helvetica postscript font
+\usepackage{fancyhdr} % For fancyfoot and fancyhead
+\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.3in} % Text width of the document (original: 5.3in)
+
+\renewcommand{\headrulewidth}{0pt} % To remove the top horizontal bar
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.2pt}
+\makeatletter
+\def\footrule{{\if@fancyplain\let\footrulewidth\plainfootrulewidth\fi
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\leavevmode\rlap{\hspace*{-1.3in}\rule{0.78\paperwidth}{\footrulewidth}}
+		\vskip\footruleskip}}
+\makeatother
+\lfoot{\hspace*{-1.3in}Kisung You}
+\cfoot{}
+\rfoot{\thepage}
+%\pagenumbering{gobble}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Kisung You} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+\moveleft.5\hoffset\centerline{B02 Hayes-Healy Center} % Your address
+\moveleft.5\hoffset\centerline{Notre Dame, IN 46556}
+\moveleft.5\hoffset\centerline{\href{mailto:kyou@nd.edu}{kyou@nd.edu}}
+\moveleft.5\hoffset\centerline{\href{http://kyou.io}{\texttt{kyou.io}}}
+
+%\moveleft.5\hoffset\centerline{Updated \today}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{\sf RESEARCH \\ INTERESTS}
+My research interests broadly lie on the theory, methodology and application of Bayesian statistics.
+%My research interests broadly lie on theoretical and methodological aspects of Bayesian statistics. 
+I have worked on high-dimensional mean and covariance estimations, nonparametric Bayesian models, differential equation models and sequential Monte Carlo methods. 
+My thesis deals with the posterior convergence rate for high-dimensional covariance/precision matrix based on a new decision theoretical prior selection framework.
+%My thesis deals with a new decision theoretic framework for the minimax posterior convergence rate and its application to the high-dimensional covariance/precision matrix estimation.
+\vspace{.2cm}
+
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{\sf PROFESSIONAL\\EXPERIENCE}
+
+{\sl Postdoctoral Research Associate} \hfill January 2017 -- Present  \\
+Department of Applied and Computational Mathematics and Statistics, The University of Notre Dame, USA  
+\begin{itemize} \itemsep -1.0pt % Reduce space between items
+	\item {\bf Mentor:} Professor Lizhen Lin
+\end{itemize}
+\vspace{.2cm}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf EDUCATION}
+
+{\sl Ph.D.,} Statistics  \hfill February 2017 \\
+Department of Statistics, Seoul National University, Korea
+\begin{itemize} \itemsep -1.0pt % Reduce space between items
+\item {\bf Advisor:} Professor Jaeyong Lee
+\item {\bf Thesis:} \emph{Asymptotic Properties of Posteriors for Large Covariance Matrices}
+\end{itemize}
+
+{\sl Bachelor of Science,} Statistics  \hfill February 2010 \\
+Department of Statistics, Seoul National University, Korea
+\vspace{.2cm}
+
+%----------------------------------------------------------------------------------------
+%	HONORS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf FELLOWSHIPS AND AWARDS} 
+
+\begin{itemize}
+	\item Travel Support Award for attending ISBA 2018 World Meeting, Edinburgh, UK
+	\item Fellowship for Next Generation Scholars: type B, Seoul National University, September 2013 - August 2016
+	\item Fellowship for Next Generation Scholars: type A, Seoul National University, September 2012 - February 2013
+\end{itemize}
+\vspace{.2cm}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf PUBLICATIONS} 
+
+\begin{enumerate}[label={[\arabic*]}]
+	\item[]{($*$ $\to$ Corresponding author)}
+	\item {\bf Lee, K.}, Lee, J. and Dass, S. C. (2018). Inference for differential equation models using relaxation via dynamical systems. {\it Computational Statistics $\&$ Data Analysis}. {\bf 127}: 116-134. \href{https://www.sciencedirect.com/science/article/pii/S0167947318301233}{\texttt{[pdf]}}
+	\item {\bf Lee, K.}$^*$ and Lee, J. (2018). Optimal Bayesian minimax rate for unconstrained large covariance matrices. \emph{Bayesian Analysis}. Accepted. \href{https://projecteuclid.org/euclid.ba/1519355083}{\texttt{[pdf]}}
+	\item Dass, S. C., Lee, J., {\bf Lee, K.}$^*$ and Park, J. (2017). Laplace based approximate posterior inference for differential equation models. \emph{Statistics and Computing}, {\bf 27}(3): 679-698. \href{https://link.springer.com/article/10.1007/s11222-016-9647-0}{\texttt{[pdf]}}
+	\item Dass, S. C., Lee, J. and {\bf Lee, K.} (2016). Bayesian inference using two-stage Laplace approximation for differential equation models. \emph{AIP Conference Proceedings}, Eds. Aamir Hussain Bhat, et al. {\bf 1787}(1). \href{https://leekjstat.files.wordpress.com/2015/12/dass2016bayesian-inference-using-two-stage-laplace-approximation-for-differential-equation-models.pdf}{\texttt{[pdf]}}
+	\item Lee, Y., {\bf Lee, K.}$^*$, Lee, K., Lee, J. and Seo, J. (2015). Introduction to the Indian buffet process: theory and applications. (in Korean) \emph{The Korean Journal of Applied Statistics}, {\bf 28}(2): 251-268.
+	\item Lee, J., {\bf Lee, K.}$^*$ and Lee, Y. (2014). History and future of Bayesian statistics. (in Korean) \emph{The Korean Journal of Applied Statistics}, {\bf 27}(6): 855-863.
+	\item Kim, N., Nam, G., Kim, Y., Lee, D., Park, S., {\bf Lee, K.} and Lee, J. (2014). Identification and classification of fresh lubricants and used engine Oils by GC/MS and Bayesian model. (in Korean) \emph{Analytical Science and Technology}, {\bf 27}(1): 41-59.
+\end{enumerate}
+\vspace{.2cm}
+
+%----------------------------------------------------------------------------------------
+%	WORKING PAPERS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf PAPERS \\ UNDER REVIEW \\ AND PREPRINTS} 
+
+%\begin{enumerate}[label={[\Roman*]}] 
+\begin{enumerate}[label={[\roman*]}] 
+	\item {\bf Lee, K.} and Lin, L. Bayesian test and selection for bandwidth of high-dimensional banded precision matrices. {\it Submitted}
+	\item {\bf Lee, K.}, Lee, J. and Lin, L. Minimax posterior convergence rates and model selection consistency in high-dimensional DAG models based on sparse Cholesky factors. {\it Major revision submitted to The Annals of Statistics}
+	\item {\bf Lee, K.}, Chae, M. and Lin, L. Bayesian high-dimensional semi-parameteric inference beyond sub-Gaussian errors. {\it Submitted}
+	\item {\bf Lee, K.} and Lee, J. Estimating large precision matrices via Cholesky decomposition. {\it Submitted}
+\end{enumerate}
+\vspace{.2cm}
+
+
+
+
+%%----------------------------------------------------------------------------------------
+%%	PRESENTATIONS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{\sf PRESENTATION} 
+%
+%
+%\begin{itemize}% Reduce space between items
+%\item Approximate posterior inference for differential equation models. The Korean Statistical Society, Spring Conference, Hankuk University of Foreign Studies, Korea, 2015. \href{https://www.dropbox.com/s/yco2lcoz1l6o0al/ODElaplace.pdf?dl=0}{\texttt{[Link]}}
+%\end{itemize}
+%\vspace{.2cm}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf RESEARCH EXPERIENCE}
+
+
+High-dimensional covariance matrix estimation    \hfill July 2013 -- January 2017\\
+{\sl Seoul National University} 
+\begin{itemize} 
+	\item I developed a decision theoretical prior selection framework for the Bayesian minimax theory and verified that the inverse-Wishart prior achieves the minimax rate for unconstrained covariance matrix ([2]). I also attained the posterior convergence rate for bandable precision matrices via Cholesky decomposition ([iv]). 
+\end{itemize}
+
+Differential equation models  \hfill April 2012 -- January 2017 \\
+{\sl Seoul National University}  
+\begin{itemize}
+	\item I developed a Laplace-based approximation method for obtaining the posterior distribution of parameters in differential equation models with Prof. Sarat C. Dass (at Universiti Teknologi PETRONAS) and Prof. Jaeyong Lee ([3] and [4]).
+	\item I have studied the sequential Monte Carlo methods for the inference of dynamic models. I adopted dynamic models to approximate differential equation models for the fast on-line Bayesian inference ([1]). 
+\end{itemize}
+
+Nonparametric Bayesian models	\hfill December 2014 -- April 2015\\
+{\sl Seoul National University}   
+\begin{itemize}
+	\item I have studied various nonparametric Bayesian models including Dirichlet process, Indian buffet process, Poisson process and their variants. In [5], we reviewed several algorithms for the Indian buffet process and described its application to find features in the image data set.
+\end{itemize}
+
+%Classification of engine oils by GC/MS	\hfill September 2012 -- December 2012\\
+%National Institute of Scientific Investigation   
+%\begin{itemize}
+%	\item The aims of this work were the identification and the classification of fresh lubricants and used engine oils of vehicles for the application in forensic science field ([4]).
+%\end{itemize}
+\vspace{.2cm}
+ 
+ 
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS
+%----------------------------------------------------------------------------------------
+\section{\sf PRESENTATIONS}
+
+\begin{itemize}
+	\item Contributed talk. 
+	Minimax posterior convergence rates and model selection consistency in high-dimensional DAG models based on sparse Cholesky factors. 
+	EAC-ISBA 2018. \emph{Seoul, Korea}, 07/2018.
+	\item Poster presentation.
+	Maximum pairwise Bayes factors (mxPBF): hypothesis tests for large covariance matrices.
+	ISBA 2018 World Meeting. \emph{Edinburgh, UK}, 06/2018.
+	\item Statistics seminar. Minimax posterior convergence rates and model selection consistency in high-dimensional DAG models based on sparse Cholesky factors. \emph{The University of Notre Dame, USA}, 03/2017.
+	\item Statistics seminar. Bayesian high-dimensional semi-parameteric inference beyond sub-Gaussian errors. \emph{The University of Notre Dame, USA}, 09/2018.
+	\item Contributed talk.  
+	Bayesian high-dimensional semi-parameteric inference beyond sub-Gaussian errors.
+	The Joint Statistical Meetings 2017. \emph{Baltimore, USA}, 08/2017.
+	\item Contributed talk.  
+	Estimating high-dimensional precision matrices via Cholesky decomposition.
+	The 10th ICSA International Conference. \emph{Shanghai Jiao Tong University, China}, 12/2016.
+	\item Contributed talk.  
+	Laplace based approximate posterior inference for differential equation models. 
+	The First Eastern Asia Meeting on Bayesian Statistics. \emph{Shanghai Jiao Tong University, China}, 12/2016.
+	\item Statistics seminar. 
+	Asymptotic properties of posteriors for large covariance matrices.
+	\emph{Seoul National University, Korea}, 11/2016.
+	\item Contributed talk.
+	Approximate posterior inference for differential equation models.
+	KSS Fall Conference. \emph{Hankuk University of Foreign Studies, Korea}, 11/2015.
+	\item Contributed talk.
+	Approximate posterior inference for differential equation models.
+	KDMS Fall Conference. \emph{Pusan Bexco, Korea}, 12/2014.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{\sf TEACHING AND\\ ADVISING EXPERIENCE}
+
+Teaching Assistant \hfill Spring 2010 -- Spring 2016  \\
+{\sl Seoul National University, Korea}
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item Advanced Bayesian Statistics (Spring 2016)
+	\item Bayesian Statistics and lab with R (Spring 2015)
+	\item Mathematical Statistics 2 (Fall 2014)
+	\item Statistical computing and lab with C and R (Fall 2013)
+	\item Multivariate data analysis and lab with SAS (Fall 2012)
+	\item Computational statistics and lab with C and R (Fall 2011, Fall 2015)
+	\item Introduction to statistics (Spring 2010, Fall 2010)
+\end{itemize} 
+
+Instructor \hfill Fall 2012 \\
+{\sl Chung-Ang University, Korea}
+\begin{itemize}\itemsep -2pt % Reduce space between items
+	\item Statistics
+\end{itemize}
+
+\vspace{.2cm}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{\sf COMPUTER \\ SKILLS} 
+%
+%{\sl Languages \& Software:} 
+%R, MATLAB, C/C++, Fortran and SAS \\
+%{\sl Operating Systems:} Mac and Windows
+%\vspace{.2cm}
+ 
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\sf REFERENCES} 
+
+\centering
+\begin{tabular}{lr}
+% Reference 1
+\begin{minipage}[t]{2.6in}
+Dr. Jaeyong Lee\\
+Professor\\
+Department of Statistics\\
+Seoul National University\\
+Seoul 08826, Korea\\
+\Telefon\ +82 2 880 1321\\
+\Letter\ \href{mailto:leejyc@gmail.com}{\texttt{leejyc@gmail.com}}
+\end{minipage}
+&
+% Reference 2
+\hspace{-1.7cm}
+\begin{minipage}[t]{5.6in}
+Dr. Lizhen Lin\\
+Assistant Professor\\
+Department of ACMS\\
+The University of Notre Dame\\
+Notre Dame 46445, USA\\
+\Telefon\ +1 574 631 0301\\
+\Letter\ \href{mailto:lizhen.lin@nd.edu}{\texttt{lizhen.lin@nd.edu}}
+\end{minipage}
+\\
+\\
+\\ % Additional newline for spacing.
+
+% Reference 3
+\begin{minipage}[t]{2.6in}
+Dr. Hee-Seok Oh\\
+Professor\\
+Department of Statistics\\
+Seoul National University\\
+Seoul 08826, Korea\\
+\Telefon\ +82 2 880 9242\\
+\Letter\ \href{mailto:heeseok.oh@gmail.com}{\texttt{heeseok.oh@gmail.com}}
+\end{minipage}
+&
+% Reference 4
+\hspace{-1.7cm}
+\begin{minipage}[t]{5.6in}
+	Dr. Sarat C. Dass\\
+	Associate Professor\\
+	Department of Fundamental and Applied Sciences\\
+	Universiti Teknologi PETRONAS\\
+	Seri Iskandar, 32610, Malaysia\\
+	\Telefon\ +60 5 368 7038\\
+	\Letter\ \href{mailto:saratcdass@gmail.com}{\texttt{saratcdass@gmail.com}}
+\end{minipage}
+
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+%{\sl Business Applications Programmer} \hfill Fall 1990 \\
+%Allied-Signal Bendix Friction Materials Division, Financial Planning Department, Latham, NY 
+%
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item Developed four ``user friendly" forecasting systems each of which produces 18 to 139 individual reports. 
+%\item Developed or improved almost all IFPS programs used for financial reports. 
+%\end{itemize}
+% 
+%{\sl Research Programmer} \hfill Summer 1990 \\
+%Psychology Department, Rensselaer Polytechnic Institute 
+%\begin{itemize} 
+%\item Performed computer aided statistical analysis of data. 
+%\end{itemize} 
+%
+%{\sl Assistant Manager} \hfill Summers 1988-89 \\
+%Thunder Restaurant, Canton, CT
+%\begin{itemize}
+%\item Recognized need for, developed, and wrote employee training manual. Performed various duties including cooking, employee training, ordering, and inventory control. 
+%\end{itemize} 
+
+%%----------------------------------------------------------------------------------------
+%%	COMMUNITY SERVICE SECTION
+%%---------------------------------------------------------------------------------------- 
+%
+%\section{\sf COMMUNITY \\ SERVICE}
+%
+%Organized and directed the 1988 and 1989 Grand Marshall Week \\
+%``Basketball Marathon.'' A 24 hour charity event to benefit the Troy Boys Club. Over 250 people participated each year. 
+%
+%%----------------------------------------------------------------------------------------
+%%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{\sf EXTRA-CURRICULAR \\ ACTIVITIES} 
+%
+%Elected {\it House Manager}, Rho Phi Sorority \\
+%Elected {\it Sports Chairman} \\
+%Attended Krannet Leadership Conference \\
+%Headed delegation to Rho Phi Congress \\
+%Junior varsity basketball team \\
+%Participant, seven intramural athletic teams 
+%
+%%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}

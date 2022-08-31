@@ -23,7 +23,14 @@ keep-md: true
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a></li>
-<li class='list-group-item'><b>Geometric Learning of Functional Connectivity on the Correlation Manifold</b><br> <strong>KY</strong> and Hae-Jeong Park <br> Submitted to <em>Scientific Reports</em>.<br></li></ul>
+<li class='list-group-item'><b>Geometric Learning of Functional Connectivity on the Correlation Manifold</b><br> <strong>KY</strong> and Hae-Jeong Park <br> Submitted to <em>Scientific Reports</em>.<br></li>
+<li class='list-group-item'><b>Network Distance Based on Laplacian Flows on Graphs</b><br> Dianbin Bao, <strong>KY</strong>, and Lizhen Lin <br> Submitted to <em>IEEE Big Data 2022</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1810.02906" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+        arXiv
+    </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/NetworkDistance" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github" role='img' aria-label='Code'></i>
+        Code
+    </a></li></ul>
 ```
 
 ```{=html}
@@ -128,16 +135,6 @@ keep-md: true
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/03_TopLSM" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github" role='img' aria-label='Code'></i>
-        Code
-    </a></li></ul>
-```
-
-```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Network Distance Based on Laplacian Flows on Graphs</b><br> Dianbin Bao, <strong>KY</strong>, and Lizhen Lin (2018).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1810.02906" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-        arXiv
-    </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/NetworkDistance" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
     </a></li></ul>
