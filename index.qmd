@@ -53,7 +53,7 @@ August 2021
 
 ::: {.d-flex .justify-content-between}
 **Yonsei University**\
-MS in Applied Mathematics\
+MS in Mathematics\
 <!-- #&emsp;Advisor: Yoon-Mo Jung\ -->
 BBA in Business Administration\
 BS in Mathematics
