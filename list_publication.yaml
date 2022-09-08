@@ -8,17 +8,17 @@
 # submitted
 # ---------------------------------------------------------------
 
-splaplace:
-  title: "On the spherical Laplace distribution"
+WassMedian:
+  title: "On the Wasserstein median of probability measures"
   authors: 
     - me
     - Dennis Shung
   year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  preprint: https://doi.org/10.48550/arXiv.2209.03318
   flag: submitted
   github: 
-  venue: Journal of Multivariate Analysis
-  
+  venue: Journal of American Statistical Association
+
 functional_connectivity_correlation:
   title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
   authors: 
@@ -29,6 +29,17 @@ functional_connectivity_correlation:
   flag: submitted
   github: 
   venue: Scientific Reports
+
+splaplace:
+  title: "On the spherical Laplace distribution"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  flag: submitted
+  github: 
+  venue: Journal of Multivariate Analysis
 
 bayesian_optimal_twosample:
   title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
@@ -68,16 +79,7 @@ network_distance_based_on_laplacian_flows:
 # ---------------------------------------------------------------
 # preparation
 # ---------------------------------------------------------------
-Rdimtools:
-  title: "Wasserstein median of probability measures"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2022
-  preprint: 
-  flag: preparation
-  github: 
-  venue:   
+
   
 # ---------------------------------------------------------------
 # preprint
