@@ -31,7 +31,7 @@ format:
     #theme: flatly # {simplex : minimal}
     theme:
       light: flatly
-      drak: darkly
+      dark: darkly
     fontsize: 1.1em
     linestretch: 1.75
     css: styles.css
