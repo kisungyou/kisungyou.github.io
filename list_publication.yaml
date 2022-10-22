@@ -90,7 +90,7 @@ topological_latent_embedding:
 # journal
 # ---------------------------------------------------------------
 2022_functional_connectivity_correlation:
-  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
+  title: "Geometric learning of functional brain network on the correlation manifold"
   authors: 
     - me
     - Hae-Jeong Park

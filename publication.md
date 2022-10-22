@@ -7,11 +7,9 @@ keep-md: true
 
 
 <!-- # flags -->
-<!-- #   - journal   : Peer-Reviewed Articles -->
-<!-- #   - preprint  : preprints (not published) -->
-<!-- #   - progress  : in-progress / submitted & preparation -->
-<!-- #       - submitted   : work in progress -->
-<!-- #       - preparation : in preparation -->
+<!-- - 'submitted' : Work In Progress -->
+<!-- - 'journal'   : Publication : Peer-Reviewed Journal -->
+<!-- - 'preprint'  : Preprint -->
 
 
 
@@ -49,12 +47,12 @@ keep-md: true
 
 
 
-## Published
+## Publication : Peer-Reviewed Journal
 
 ### 2022
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric Learning of Functional Connectivity on the Correlation Manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric learning of functional brain network on the correlation manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
     </a> <a class="btn btn-outline-dark btn-sm", href="https://www.nature.com/articles/s41598-022-21376-0" target="_blank" rel="noopener noreferrer">

@@ -7,11 +7,10 @@ keep-md: true
 ---
 
 <!-- # flags -->
-<!-- #   - journal   : Peer-Reviewed Articles -->
-<!-- #   - preprint  : preprints (not published) -->
-<!-- #   - progress  : in-progress / submitted & preparation -->
-<!-- #       - submitted   : work in progress -->
-<!-- #       - preparation : in preparation -->
+<!-- - 'submitted' : Work In Progress -->
+<!-- - 'journal'   : Publication : Peer-Reviewed Journal -->
+<!-- - 'preprint'  : Preprint -->
+
 
 ```{python}
 import yaml
@@ -109,7 +108,7 @@ for year in sorted(pub_strs["type-preparation"].keys(), reverse=True):
 ```
 
 
-## Published
+## Publication : Peer-Reviewed Journal
 
 ```{python}
 #| label: "journal-year"
