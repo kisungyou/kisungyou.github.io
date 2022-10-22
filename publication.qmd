@@ -122,7 +122,7 @@ for year in sorted(pub_strs["type-journal"].keys(), reverse=True):
     ))
 ```
 
-## Archived Preprint
+## Preprint
 
 ```{python}
 #| label: "preprint-year"

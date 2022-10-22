@@ -19,17 +19,6 @@ WassMedian:
   github: 
   venue: Journal of American Statistical Association
 
-functional_connectivity_correlation:
-  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
-  authors: 
-    - me
-    - Hae-Jeong Park
-  year: 2022
-  preprint: 
-  flag: submitted
-  github: 
-  venue: Scientific Reports
-
 splaplace:
   title: "On the spherical Laplace distribution"
   authors: 
@@ -100,7 +89,18 @@ topological_latent_embedding:
 # ---------------------------------------------------------------
 # journal
 # ---------------------------------------------------------------
-spherical_normal:
+2022_functional_connectivity_correlation:
+  title: "Geometric Learning of Functional Connectivity on the Correlation Manifold"
+  authors: 
+    - me
+    - Hae-Jeong Park
+  year: 2022
+  published_url: https://www.nature.com/articles/s41598-022-21376-0
+  venue: Scientific Reports
+  github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
+  flag: journal
+
+2022_spherical_normal:
   title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
   authors:
     - me
@@ -112,7 +112,7 @@ spherical_normal:
   github: https://kisungyou.com/Riemann
   flag: journal
   
-learning_subspaces_of_different_dimensions:
+2022_learning_subspaces_of_different_dimensions:
   title: " Learning Subspaces of Different Dimensions"
   authors:
     - Brian St. Thomas

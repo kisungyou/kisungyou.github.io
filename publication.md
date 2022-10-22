@@ -23,7 +23,6 @@ keep-md: true
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a></li>
-<li class='list-group-item'><b>Geometric Learning of Functional Connectivity on the Correlation Manifold</b><br> <strong>KY</strong> and Hae-Jeong Park <br> Submitted to <em>Scientific Reports</em>.<br></li>
 <li class='list-group-item'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Journal of Multivariate Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
@@ -55,7 +54,14 @@ keep-md: true
 ### 2022
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere</b><br> <strong>KY</strong> and Changhee Suh. <br> <em>Computational Statistics & Data Analysis</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.06375" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric Learning of Functional Connectivity on the Correlation Manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github" role='img' aria-label='Code'></i>
+        Code
+    </a> <a class="btn btn-outline-dark btn-sm", href="https://www.nature.com/articles/s41598-022-21376-0" target="_blank" rel="noopener noreferrer">
+        <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
+        Publisher's Site
+    </a></li>
+<li class='list-group-item'><b>Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere</b><br> <strong>KY</strong> and Changhee Suh. <br> <em>Computational Statistics & Data Analysis</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.06375" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://kisungyou.com/Riemann" target="_blank" rel="noopener noreferrer">
@@ -131,7 +137,7 @@ keep-md: true
 
 
 
-## Archived Preprint
+## Preprint
 
 
 ```{=html}
