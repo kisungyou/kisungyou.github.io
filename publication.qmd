@@ -57,7 +57,8 @@ for _, data in yaml_data.items():
     
     # TYPES-strings
     if flag=="journal":
-      pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
+      #pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
+      pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>.'
     elif flag=="preprint":
       pub_str = f'<b>{title_str}</b><br> {author_str} ({year_str}).'
     elif flag=="submitted":

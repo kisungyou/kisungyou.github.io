@@ -52,14 +52,14 @@ keep-md: true
 ### 2022
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric learning of functional brain network on the correlation manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric learning of functional brain network on the correlation manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
     </a> <a class="btn btn-outline-dark btn-sm", href="https://www.nature.com/articles/s41598-022-21376-0" target="_blank" rel="noopener noreferrer">
         <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
         Publisher's Site
     </a></li>
-<li class='list-group-item'><b>Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere</b><br> <strong>KY</strong> and Changhee Suh. <br> <em>Computational Statistics & Data Analysis</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.06375" target="_blank" rel="noopener noreferrer">
+<li class='list-group-item'><b>Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere</b><br> <strong>KY</strong> and Changhee Suh. <br> <em>Computational Statistics & Data Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.06375" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://kisungyou.com/Riemann" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ keep-md: true
         <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
         Publisher's Site
     </a></li>
-<li class='list-group-item'><b> Learning Subspaces of Different Dimensions</b><br> Brian St. Thomas, <strong>KY</strong>, Lizhen Lin, Lek-Heng Lim, and Sayan Mukherjee. <br> <em>Journal of Computational and Graphical Statistics</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1404.6841" target="_blank" rel="noopener noreferrer">
+<li class='list-group-item'><b> Learning Subspaces of Different Dimensions</b><br> Brian St. Thomas, <strong>KY</strong>, Lizhen Lin, Lek-Heng Lim, and Sayan Mukherjee. <br> <em>Journal of Computational and Graphical Statistics</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1404.6841" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://kisungyou.com/T4cluster" target="_blank" rel="noopener noreferrer">
@@ -79,7 +79,7 @@ keep-md: true
         <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
         Publisher's Site
     </a></li>
-<li class='list-group-item'><b>Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation</b><br> <strong>KY</strong> and Dennis Shung. <br> <em>Software Impacts</em> (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2005.11107" target="_blank" rel="noopener noreferrer">
+<li class='list-group-item'><b>Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation</b><br> <strong>KY</strong> and Dennis Shung. <br> <em>Software Impacts</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2005.11107" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/Rdimtools" target="_blank" rel="noopener noreferrer">
@@ -94,7 +94,7 @@ keep-md: true
 ### 2021
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>NeuroImage</em> (2021).<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>NeuroImage</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
     </a> <a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.neuroimage.2020.117464" target="_blank" rel="noopener noreferrer">
@@ -106,7 +106,7 @@ keep-md: true
 ### 2020
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Data transforming augmentation for heteroscedastic models</b><br> Hyungsuk Tak, <strong>KY</strong>, Sujit K. Ghosh, Bingyue Su, and Joseph Kelly. <br> <em>Journal of Computational and Graphical Statistics</em> (2020).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1911.02748" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Data transforming augmentation for heteroscedastic models</b><br> Hyungsuk Tak, <strong>KY</strong>, Sujit K. Ghosh, Bingyue Su, and Joseph Kelly. <br> <em>Journal of Computational and Graphical Statistics</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1911.02748" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1080/10618600.2019.1704295" target="_blank" rel="noopener noreferrer">
@@ -118,7 +118,7 @@ keep-md: true
 ### 2019
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Volume change pattern of decompression of mandibular odontogenic keratocyst</b><br> Jin Hoo Park, Eun-Jung Kwak, <strong>KY</strong>, Young-Soo Jung, and Hwi-Dong Jung. <br> <em>Maxillofacial Plastic and Reconstructive Surgery</em> (2019).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1186/s40902-018-0184-y" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Volume change pattern of decompression of mandibular odontogenic keratocyst</b><br> Jin Hoo Park, Eun-Jung Kwak, <strong>KY</strong>, Young-Soo Jung, and Hwi-Dong Jung. <br> <em>Maxillofacial Plastic and Reconstructive Surgery</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1186/s40902-018-0184-y" target="_blank" rel="noopener noreferrer">
         <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
         Publisher's Site
     </a></li></ul>
@@ -127,7 +127,7 @@ keep-md: true
 ### 2016
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Vision-based detection of loosened bolts using the Hough transform and support vector machines</b><br> Young-Jin Cha, <strong>KY</strong>, and Wooram Choi. <br> <em>Automation in Construction</em> (2016).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.autcon.2016.06.008" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Vision-based detection of loosened bolts using the Hough transform and support vector machines</b><br> Young-Jin Cha, <strong>KY</strong>, and Wooram Choi. <br> <em>Automation in Construction</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.autcon.2016.06.008" target="_blank" rel="noopener noreferrer">
         <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
         Publisher's Site
     </a></li></ul>
