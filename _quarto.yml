@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Kisung You"
-  description: "Postdoc needs a real job."
+  description: "Personal Website."
   site-url: https://kisungyou.com
   open-graph: true
   twitter-card: 
@@ -24,7 +24,8 @@ website:
         file: software.qmd
       - text: "Blog"
         file: blog.qmd
-  page-footer: "© Kisung You 2022"
+  page-footer: "© Kisung You 2023"
+  page-navigation: true
 
 format:
   html:

@@ -26,7 +26,7 @@ def button(url, str, icon):
         {str}
     </a>"""
 yaml_data = yaml.safe_load(open("list_publication.yaml"))
-pub_strs = {"type-published":{}, "type-preprint":{}}
+pub_strs = {"type-published":{}, "type-preprint":{}, "type-test":{}}
 
 for _, data in yaml_data.items():
     # extract relevant information
@@ -46,18 +46,18 @@ for _, data in yaml_data.items():
     venue = data.get("venue")
     flag  = data.get("flag")
     
-    
+
     # DIFFERENT TYPES
     # 1. published (anywhere)
     # 2. preprint  
-    
+
     # TYPES-strings
     if flag=="published":
       #pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
       pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>.'
     elif flag=="preprint":
       pub_str = f'<b>{title_str}</b><br> {author_str} ({year_str}).'
-    
+
     # TYPES-formatting
     if flag=="published":
       if year_str not in pub_strs["type-published"]:
@@ -94,3 +94,15 @@ for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
         "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["type-preprint"][year]) + "</ul>"
     ))
 ```
+
+<!-- ## manual test -->
+
+<!-- ```{python} -->
+<!-- #| label: "manual-test" -->
+<!-- #| id: "manual-test" -->
+<!-- #| output: asis -->
+<!-- display(HTML( -->
+<!--   '<div class="container">'+ -->
+<!--   '<div class="row"><div class="col-md-3"><img src="images/teaser.png" class="img-fluid"></div>'+ -->
+<!--   '<div class="col-md-6"><div class="description"><b>Benchmarking Generative Latent Variable Models for Speech</b> <br>Jakob Drachmann Havtorn, Lasse Borgholt, Søren Hauberg, Jes Frellsen and Lars Maaløe.<br>Deep Generative Models for Highly Structured Data (ICLR 2022 Workshop).<br><a class="btn btn-default" href="benchmark2022/benchmarking_generative_latent.pdf">PDF</a><a class="btn btn-default" href="https://openreview.net/forum?id=SEe-shVOPbc">OpenReview</a></div></div> <!-- col-md-6 --></div> <!-- row --> </div>')) -->
+<!-- ``` -->

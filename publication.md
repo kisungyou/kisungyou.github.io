@@ -149,3 +149,18 @@ keep-md: true
         arXiv
     </a></li></ul>
 ```
+
+
+
+<!-- ## manual test -->
+
+<!-- ```{python} -->
+<!-- #| label: "manual-test" -->
+<!-- #| id: "manual-test" -->
+<!-- #| output: asis -->
+<!-- display(HTML( -->
+<!--   '<div class="container">'+ -->
+<!--   '<div class="row"><div class="col-md-3"><img src="images/teaser.png" class="img-fluid"></div>'+ -->
+<!--   '<div class="col-md-6"><div class="description"><b>Benchmarking Generative Latent Variable Models for Speech</b> <br>Jakob Drachmann Havtorn, Lasse Borgholt, Søren Hauberg, Jes Frellsen and Lars Maaløe.<br>Deep Generative Models for Highly Structured Data (ICLR 2022 Workshop).<br><a class="btn btn-default" href="benchmark2022/benchmarking_generative_latent.pdf">PDF</a><a class="btn btn-default" href="https://openreview.net/forum?id=SEe-shVOPbc">OpenReview</a></div></div> <!-- col-md-6 --></div> <!-- row --> </div>')) -->
+<!-- ``` -->
+

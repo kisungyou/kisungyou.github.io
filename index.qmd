@@ -6,7 +6,7 @@ about:
   template: trestles
   image: images/me_twain.jpg
   image-shape: rounded
-  image-width: 80%
+  image-width: 75%
   links:
     - text: LinkedIn
       icon: linkedin
@@ -27,6 +27,7 @@ comments: false
 ---
 
 ::: column-page
+
 ### Welcome!
 
 I am a postdoctoral associate in the Department of Internal Medicine at Yale 
