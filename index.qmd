@@ -44,7 +44,7 @@ PhD in Statistics\
 <!--&emsp;Advisors: Lizhen Lin, Ick Hoon Jin\-->
 <!--&emsp;Thesis: Topics in Geometric and Topological Data Analysis-->
 
-</div>
+<!-- </div> -->
 
 ::: text-end
 Notre Dame, IN\
