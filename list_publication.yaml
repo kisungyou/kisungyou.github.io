@@ -1,12 +1,35 @@
 # flags
-#   - submitted   : work in progress
-#   - preparation : in preparation
-#   - journal     : Peer-Reviewed Articles
-#   - preprint    : preprints (not published)
+#   - published : Peer-Reviewed Articles
+#   - preprint  : preprints 
+
+
+
+
+
+  
+
+  
 
 # ---------------------------------------------------------------
-# submitted
+# preprint
 # ---------------------------------------------------------------
+shape_preserving_dimensionality_reduction:
+  title: "Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence"
+  authors: 
+    - Byeongsu Yu
+    - me
+  year: 2021
+  preprint: https://doi.org/10.48550/arXiv.2106.02096
+  flag: preprint
+  
+splaplace:
+  title: "On the spherical Laplace distribution"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  flag: preprint
 
 WassMedian:
   title: "On the Wasserstein median of probability measures"
@@ -15,64 +38,9 @@ WassMedian:
     - Dennis Shung
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2209.03318
-  flag: submitted
-  github: 
-  venue: Journal of American Statistical Association
+  flag: preprint
 
-splaplace:
-  title: "On the spherical Laplace distribution"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2208.11929
-  flag: submitted
-  github: 
-  venue: Journal of Multivariate Analysis
 
-bayesian_optimal_twosample:
-  title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
-  authors: 
-    - Kyoungjae Lee
-    - me
-    - Lizhen Lin
-  year: 2021
-  preprint: https://doi.org/10.48550/arXiv.2112.02580
-  flag: submitted
-  github: 
-  venue: Bayesian Analysis
-
-shape_preserving_dimensionality_reduction:
-  title: "Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence"
-  authors: 
-    - Byeongsu Yu
-    - me
-  year: 2021
-  preprint: https://doi.org/10.48550/arXiv.2106.02096
-  flag: submitted
-  github: 
-  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
-  
-network_distance_based_on_laplacian_flows:
-  title: "Network Distance Based on Laplacian Flows on Graphs"
-  authors:
-    - Dianbin Bao
-    - me
-    - Lizhen Lin
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.1810.02906
-  flag: submitted
-  github: https://github.com/kisungyou/NetworkDistance
-  venue: IEEE Big Data 2022
-  
-# ---------------------------------------------------------------
-# preparation
-# ---------------------------------------------------------------
-
-  
-# ---------------------------------------------------------------
-# preprint
-# ---------------------------------------------------------------
 topological_latent_embedding:
   title: "Comparing multiple latent space embeddings using topological analysis"
   authors:
@@ -87,8 +55,34 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
 
 # ---------------------------------------------------------------
-# journal
+# published
 # ---------------------------------------------------------------
+2023_bayesian_optimal_twosample:
+  title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
+  authors: 
+    - Kyoungjae Lee
+    - me
+    - Lizhen Lin
+  year: 2023
+  preprint: https://doi.org/10.48550/arXiv.2112.02580
+  flag: submitted
+  venue: Bayesian Analysis
+  published_url: https://doi.org/10.1214/23-BA1373
+  flag: published
+
+2022_network_distance_based_on_laplacian_flows:
+  title: "Network Distance Based on Laplacian Flows on Graphs"
+  authors:
+    - Dianbin Bao
+    - me
+    - Lizhen Lin
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.1810.02906
+  flag: published
+  github: https://github.com/kisungyou/NetworkDistance
+  venue: IEEE International Conference on Big Data (Big Data)
+  published_url: https://doi.org/10.1109/BigData55660.2022.10020500
+
 2022_functional_connectivity_correlation:
   title: "Geometric learning of functional brain network on the correlation manifold"
   authors: 
@@ -98,7 +92,7 @@ topological_latent_embedding:
   published_url: https://www.nature.com/articles/s41598-022-21376-0
   venue: Scientific Reports
   github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
-  flag: journal
+  flag: published
 
 2022_spherical_normal:
   title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
@@ -110,7 +104,7 @@ topological_latent_embedding:
   published_url: https://doi.org/10.1016/j.csda.2022.107457
   venue: Computational Statistics & Data Analysis
   github: https://kisungyou.com/Riemann
-  flag: journal
+  flag: published
   
 2022_learning_subspaces_of_different_dimensions:
   title: " Learning Subspaces of Different Dimensions"
@@ -125,7 +119,7 @@ topological_latent_embedding:
   published_url: https://doi.org/10.1080/10618600.2021.2000420
   venue: Journal of Computational and Graphical Statistics
   github: https://kisungyou.com/T4cluster
-  flag: journal
+  flag: published
 
 revisiting_riemannian_geometry:
   title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
@@ -137,7 +131,7 @@ revisiting_riemannian_geometry:
   published_url: https://doi.org/10.1016/j.neuroimage.2020.117464
   venue: NeuroImage
   github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
-  flag: journal
+  flag: published
 
 data_transforming_augmentation:
   title: "Data transforming augmentation for heteroscedastic models"
@@ -152,7 +146,7 @@ data_transforming_augmentation:
   published_url: https://doi.org/10.1080/10618600.2019.1704295
   venue: Journal of Computational and Graphical Statistics
   github: 
-  flag: journal
+  flag: published
 
 volume_change:
   title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
@@ -167,7 +161,7 @@ volume_change:
   published_url: https://doi.org/10.1186/s40902-018-0184-y
   venue: Maxillofacial Plastic and Reconstructive Surgery
   github: 
-  flag: journal
+  flag: published
   
 vision_based_detection:
   title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
@@ -180,7 +174,7 @@ vision_based_detection:
   published_url: https://doi.org/10.1016/j.autcon.2016.06.008
   venue: Automation in Construction
   github:
-  flag: journal
+  flag: published
   
   
 Rdimtools:
@@ -191,6 +185,6 @@ Rdimtools:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2005.11107
   published_url: https://doi.org/10.1016/j.simpa.2022.100414
-  flag: journal
+  flag: published
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts

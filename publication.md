@@ -7,52 +7,39 @@ keep-md: true
 
 
 <!-- # flags -->
-<!-- - 'submitted' : Work In Progress -->
-<!-- - 'journal'   : Publication : Peer-Reviewed Journal -->
+<!-- - 'published' : Publication -->
 <!-- - 'preprint'  : Preprint -->
 
 
 
-## Work in Progress
+## Published 
 
+### 2023
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>On the Wasserstein median of probability measures</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Journal of American Statistical Association</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2209.03318" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations</b><br> Kyoungjae Lee, <strong>KY</strong>, and Lizhen Lin. <br> <em>Bayesian Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2112.02580" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
-    </a></li>
-<li class='list-group-item'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung <br> Submitted to <em>Journal of Multivariate Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-        arXiv
-    </a></li>
-<li class='list-group-item'><b>Network Distance Based on Laplacian Flows on Graphs</b><br> Dianbin Bao, <strong>KY</strong>, and Lizhen Lin <br> Submitted to <em>IEEE Big Data 2022</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1810.02906" target="_blank" rel="noopener noreferrer">
+    </a> <a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1214/23-BA1373" target="_blank" rel="noopener noreferrer">
+        <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
+        Publisher's Site
+    </a></li></ul>
+```
+
+### 2022
+
+```{=html}
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Network Distance Based on Laplacian Flows on Graphs</b><br> Dianbin Bao, <strong>KY</strong>, and Lizhen Lin. <br> <em>IEEE International Conference on Big Data (Big Data)</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.1810.02906" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/NetworkDistance" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
-    </a></li></ul>
-```
-
-```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations</b><br> Kyoungjae Lee, <strong>KY</strong>, and Lizhen Lin <br> Submitted to <em>Bayesian Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2112.02580" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-        arXiv
+    </a> <a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1109/BigData55660.2022.10020500" target="_blank" rel="noopener noreferrer">
+        <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
+        Publisher's Site
     </a></li>
-<li class='list-group-item'><b>Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence</b><br> Byeongsu Yu and <strong>KY</strong> <br> Submitted to <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.02096" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-        arXiv
-    </a></li></ul>
-```
-
-
-
-## Publication : Peer-Reviewed Journal
-
-### 2022
-
-```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Geometric learning of functional brain network on the correlation manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
+<li class='list-group-item'><b>Geometric learning of functional brain network on the correlation manifold</b><br> <strong>KY</strong> and Hae-Jeong Park. <br> <em>Scientific Reports</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/02_CORRbox" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
     </a> <a class="btn btn-outline-dark btn-sm", href="https://www.nature.com/articles/s41598-022-21376-0" target="_blank" rel="noopener noreferrer">
@@ -139,11 +126,26 @@ keep-md: true
 
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><b>Comparing multiple latent space embeddings using topological analysis</b><br> <strong>KY</strong>, Ilmun Kim, Ick Hoon Jin, Minjeong Jeon, and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.12435" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+        arXiv
+    </a></li>
+<li class='list-group-item'><b>On the Wasserstein median of probability measures</b><br> <strong>KY</strong> and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2209.03318" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+        arXiv
+    </a></li>
+<li class='list-group-item'><b>Comparing multiple latent space embeddings using topological analysis</b><br> <strong>KY</strong>, Ilmun Kim, Ick Hoon Jin, Minjeong Jeon, and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.12435" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
         arXiv
     </a> <a class="btn btn-outline-dark btn-sm", href="https://github.com/kisungyou/papers/tree/master/03_TopLSM" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github" role='img' aria-label='Code'></i>
         Code
+    </a></li></ul>
+```
+
+```{=html}
+<ul class='list-group list-group-flush'><li class='list-group-item'><b>Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence</b><br> Byeongsu Yu and <strong>KY</strong> (2021).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2106.02096" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+        arXiv
     </a></li></ul>
 ```
