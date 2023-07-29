@@ -25,6 +25,12 @@ def button(url, str, icon):
         <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
         {str}
     </a>"""
+
+def create_pub_grid_column_html(pub_str: str, buttons: list[str]) -> str:
+  buttons_str = " ".join(buttons)
+  return f"<div class='g-col-12 g-col-sm-8'>{pub_str}<br>{buttons_str}</div>"
+
+
 yaml_data = yaml.safe_load(open("list_publication.yaml"))
 pub_strs = {"type-published":{}, "type-preprint":{}, "type-test":{}}
 
@@ -46,6 +52,10 @@ for _, data in yaml_data.items():
     venue = data.get("venue")
     flag  = data.get("flag")
     
+    thumbnail_url = data.get("thumbnail_url")
+    thumbnail_html = ""
+    if thumbnail_url is not None:
+      thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
 
     # DIFFERENT TYPES
     # 1. published (anywhere)
@@ -53,7 +63,7 @@ for _, data in yaml_data.items():
 
     # TYPES-strings
     if flag=="published":
-      #pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
+       #pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em> ({year_str}).'
       pub_str = f'<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>.'
     elif flag=="preprint":
       pub_str = f'<b>{title_str}</b><br> {author_str} ({year_str}).'
@@ -63,11 +73,21 @@ for _, data in yaml_data.items():
       if year_str not in pub_strs["type-published"]:
         pub_strs["type-published"][year_str] = []
       buttons.append(button(pub_url, "Publisher's Site", "ai-archive"))
-      pub_strs["type-published"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+      pub_strs["type-published"][year_str].append(
+        "<li class='list-group-item'><div class='grid'>"
+        + thumbnail_html
+        + create_pub_grid_column_html(pub_str, buttons)
+        + "</div></li>"
+      )
     elif flag=="preprint":
       if year_str not in pub_strs["type-preprint"]:
         pub_strs["type-preprint"][year_str] = []
-      pub_strs["type-preprint"][year_str].append("<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>")
+      pub_strs["type-preprint"][year_str].append(
+        "<li class='list-group-item'><div class='grid'>"
+        + thumbnail_html
+        + create_pub_grid_column_html(pub_str, buttons)
+        + "</div></li>"
+      )
 ```
 
 ## Published 
@@ -104,5 +124,5 @@ for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
 <!-- display(HTML( -->
 <!--   '<div class="container">'+ -->
 <!--   '<div class="row"><div class="col-md-3"><img src="images/teaser.png" class="img-fluid"></div>'+ -->
-<!--   '<div class="col-md-6"><div class="description"><b>Benchmarking Generative Latent Variable Models for Speech</b> <br>Jakob Drachmann Havtorn, Lasse Borgholt, Søren Hauberg, Jes Frellsen and Lars Maaløe.<br>Deep Generative Models for Highly Structured Data (ICLR 2022 Workshop).<br><a class="btn btn-default" href="benchmark2022/benchmarking_generative_latent.pdf">PDF</a><a class="btn btn-default" href="https://openreview.net/forum?id=SEe-shVOPbc">OpenReview</a></div></div> <!-- col-md-6 --></div> <!-- row --> </div>')) -->
+<!--   '<div class="col-md-6"><div class="description"><b>Benchmarking Generative Latent Variable Models for Speech</b> <br>Jakob Drachmann Havtorn, Lasse Borgholt, Søren Hauberg, Jes Frellsen and Lars Maaløe.<br>Deep Generative Models for Highly Structured Data (ICLR 2022 Workshop).<br><a class="btn btn-default" href="benchmark2022/benchmarking_generative_latent.pdf">PDF</a><a class="btn btn-default" href="https://openreview.net/forum?id=SEe-shVOPbc">OpenReview</a></div></div><!-- col-md-6 --><!-- </div> --><!-- row --> <!-- </div>')) -->
 <!-- ``` -->

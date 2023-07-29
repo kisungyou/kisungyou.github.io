@@ -13,6 +13,7 @@ shape_preserving_dimensionality_reduction:
   year: 2021
   preprint: https://doi.org/10.48550/arXiv.2106.02096
   flag: preprint
+  thumbnail_url: /images/me_jumping.jpeg
   
 splaplace:
   title: "On the spherical Laplace distribution"
@@ -22,6 +23,7 @@ splaplace:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2208.11929
   flag: preprint
+  thumbnail_url: /images/me_jumping.jpeg
 
 WassMedian:
   title: "On the Wasserstein median of probability measures"
@@ -31,6 +33,7 @@ WassMedian:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2209.03318
   flag: preprint
+  thumbnail_url: /images/me_jumping.jpeg
 
 
 topological_latent_embedding:
@@ -45,6 +48,7 @@ topological_latent_embedding:
   preprint: https://doi.org/10.48550/arXiv.2208.12435
   flag: preprint
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
+  thumbnail_url: /images/me_jumping.jpeg
 
 # ---------------------------------------------------------------
 # published
@@ -61,6 +65,7 @@ topological_latent_embedding:
   venue: Bayesian Analysis
   published_url: https://doi.org/10.1214/23-BA1373
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
 
 2022_network_distance_based_on_laplacian_flows:
   title: "Network Distance Based on Laplacian Flows on Graphs"
@@ -74,6 +79,7 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/NetworkDistance
   venue: IEEE International Conference on Big Data (Big Data)
   published_url: https://doi.org/10.1109/BigData55660.2022.10020500
+  thumbnail_url: /images/me_jumping.jpeg
 
 2022_functional_connectivity_correlation:
   title: "Geometric learning of functional brain network on the correlation manifold"
@@ -85,6 +91,7 @@ topological_latent_embedding:
   venue: Scientific Reports
   github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
 
 2022_spherical_normal:
   title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
@@ -97,6 +104,7 @@ topological_latent_embedding:
   venue: Computational Statistics & Data Analysis
   github: https://kisungyou.com/Riemann
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
   
 2022_learning_subspaces_of_different_dimensions:
   title: " Learning Subspaces of Different Dimensions"
@@ -112,6 +120,7 @@ topological_latent_embedding:
   venue: Journal of Computational and Graphical Statistics
   github: https://kisungyou.com/T4cluster
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
 
 revisiting_riemannian_geometry:
   title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
@@ -124,6 +133,7 @@ revisiting_riemannian_geometry:
   venue: NeuroImage
   github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
 
 data_transforming_augmentation:
   title: "Data transforming augmentation for heteroscedastic models"
@@ -139,6 +149,7 @@ data_transforming_augmentation:
   venue: Journal of Computational and Graphical Statistics
   github: 
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
 
 volume_change:
   title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
@@ -154,6 +165,7 @@ volume_change:
   venue: Maxillofacial Plastic and Reconstructive Surgery
   github: 
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
   
 vision_based_detection:
   title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
@@ -167,6 +179,7 @@ vision_based_detection:
   venue: Automation in Construction
   github:
   flag: published
+  thumbnail_url: /images/me_jumping.jpeg
   
   
 Rdimtools:
@@ -180,3 +193,4 @@ Rdimtools:
   flag: published
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts
+  thumbnail_url: /images/me_jumping.jpeg
