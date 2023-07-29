@@ -1,18 +1,26 @@
 ---
 pagetitle: "KY-Blog"
 title: ""
+# control is available at
+# > https://quarto.org/docs/websites/website-listings.html
+# listing:
+#   fields: [image, date, title, description, categories]
+#   type: default
+#   #feed: true
+#   sort-ui: [title, date]
+#   filter-ui: false
 listing:
   contents: posts
-  fields: [image, date, title, description, categories]
-  sort: "date desc"
-  type: default
   categories: true
-  #feed: true
+  type: default
+  sort: "date desc"
   sort-ui: [title, date]
-  filter-ui: false
-page-layout: full
+  filter-ui: [title, date]
+  date-format: medium
+  fields: [date, title, image, categories]
+page-layout: article
 title-block-banner: true
 ---
 
-::: column-page
-:::
+<!-- ::: column-page -->
+<!-- ::: -->
