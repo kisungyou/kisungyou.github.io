@@ -19,7 +19,7 @@ format:
 <!-- - 'preprint'  : Preprint -->
 
 
-:::{.column-body-inset-left}
+:::{.column-page-left}
 # Publications 
 
 ```{python}

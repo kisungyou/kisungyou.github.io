@@ -30,9 +30,10 @@ website:
 format:
   html:
     #theme: flatly # {simplex : minimal}
-    theme:
-      light: flatly
-      dark: darkly
+    #theme:
+    #  light: flatly
+    #  dark: darkly
+    theme: flatly
     fontsize: 1.1em
     linestretch: 1.75
     css: styles.css
