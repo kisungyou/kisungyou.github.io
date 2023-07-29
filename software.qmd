@@ -1,10 +1,16 @@
 ---
-title: "Software"
+pagetitle: "KY-Software"
+title: " "
 echo: false
 jupyter: python3
 section-divs: false
+toc: true
+toc-location: right
+toc-expand: true
+toc-title: " "
 ---
-
+:::{.column-body-inset-left}
+# Software 
 
 ```{python}
 #| label: "software"
@@ -122,3 +128,4 @@ for data in data_part:
       buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
   display(HTML("  ".join(buttons)))
 ```
+:::

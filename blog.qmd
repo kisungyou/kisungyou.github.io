@@ -1,11 +1,12 @@
 ---
+pagetitle: "KY-Blog"
 title: ""
 listing:
   contents: posts
   fields: [image, date, title, description, categories]
   sort: "date desc"
   type: default
-  #categories: unnumbered
+  categories: true
   #feed: true
   sort-ui: [title, date]
   filter-ui: false

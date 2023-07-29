@@ -1,15 +1,26 @@
 ---
-title: "Publication"
+pagetitle: "KY-Publications"
+title: " "
 echo: false
 jupyter: python3
+toc: true
+toc-location: right
+toc-expand: true
+toc-title: " "
 section-divs: false
 keep-md: true
+format:
+  html:
+    page-layout: article
 ---
 
 <!-- # flags -->
 <!-- - 'published' : Publication -->
 <!-- - 'preprint'  : Preprint -->
 
+
+:::{.column-body-inset-left}
+# Publications 
 
 ```{python}
 import yaml
@@ -66,6 +77,7 @@ for _, data in yaml_data.items():
     thumbnail_html = ""
     if thumbnail_url is not None:
       thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
+      #thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
 
     # DIFFERENT TYPES
     # 1. published (anywhere)
@@ -101,7 +113,11 @@ for _, data in yaml_data.items():
       )
 ```
 
+<!--
 ## Published 
+-->
+
+## Published
 
 ```{python}
 #| label: "journal-year"
@@ -129,3 +145,4 @@ for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
     + "</ul>"
   ))
 ```
+:::

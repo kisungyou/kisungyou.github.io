@@ -13,7 +13,7 @@ shape_preserving_dimensionality_reduction:
   year: 2021
   preprint: https://doi.org/10.48550/arXiv.2106.02096
   flag: preprint
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/templates/test_set1.png
   
 splaplace:
   title: "On the spherical Laplace distribution"
@@ -23,7 +23,7 @@ splaplace:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2208.11929
   flag: preprint
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/templates/test_set2.png
 
 WassMedian:
   title: "On the Wasserstein median of probability measures"
@@ -33,7 +33,7 @@ WassMedian:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2209.03318
   flag: preprint
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/templates/test_set3.png
 
 
 topological_latent_embedding:
@@ -133,7 +133,7 @@ revisiting_riemannian_geometry:
   venue: NeuroImage
   github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
   flag: published
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/paper-2021-neuroimage2.png
 
 data_transforming_augmentation:
   title: "Data transforming augmentation for heteroscedastic models"
@@ -149,7 +149,7 @@ data_transforming_augmentation:
   venue: Journal of Computational and Graphical Statistics
   github: 
   flag: published
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/paper-2020-tak.png
 
 volume_change:
   title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
@@ -165,7 +165,7 @@ volume_change:
   venue: Maxillofacial Plastic and Reconstructive Surgery
   github: 
   flag: published
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/paper-2019-dental.png
   
 vision_based_detection:
   title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
@@ -179,7 +179,7 @@ vision_based_detection:
   venue: Automation in Construction
   github:
   flag: published
-  thumbnail_url: /images/me_jumping.jpeg
+  thumbnail_url: /images/paper-2016-bolts.png
   
   
 Rdimtools:

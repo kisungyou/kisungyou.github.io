@@ -1,4 +1,5 @@
 ---
+pagetitle: "KY-Home"
 title: "Kisung You"
 about:
   # see "https://quarto.org/docs/reference/projects/websites.html#about"
