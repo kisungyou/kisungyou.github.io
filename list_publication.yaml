@@ -19,7 +19,7 @@ shape_preserving_dimensionality_reduction:
   year: 2021
   preprint: https://doi.org/10.48550/arXiv.2106.02096
   flag: preprint
-  thumbnail_url: /images/templates/example.png
+  thumbnail_url: /images/publication/preprint-PHdimred.png
   
 splaplace:
   title: "On the spherical Laplace distribution"
