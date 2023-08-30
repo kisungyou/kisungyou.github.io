@@ -33,7 +33,14 @@ format:
 ### 2023
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations</b><br> Kyoungjae Lee, <strong>KY</strong>, and Lizhen Lin. <br> <em>Bayesian Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2112.02580" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>On the Spherical Laplace Distribution</b><br> <strong>KY</strong> and Dennis Shung. <br> <em>International Conference on Information Fusion (FUSION)</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
+    arXiv
+  </a> <a class="btn btn-outline-dark btn-sm", href="http://dx.doi.org/10.23919/FUSION52260.2023.10224108" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
+    Publisher's Site
+  </a></div></div></li>
+<li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations</b><br> Kyoungjae Lee, <strong>KY</strong>, and Lizhen Lin. <br> <em>Bayesian Analysis</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2112.02580" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
     arXiv
   </a> <a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1214/23-BA1373" target="_blank" rel="noopener noreferrer">
@@ -149,11 +156,7 @@ format:
 ```
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>On the spherical Laplace distribution</b><br> <strong>KY</strong> and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2208.11929" target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
-    arXiv
-  </a></div></div></li>
-<li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>On the Wasserstein median of probability measures</b><br> <strong>KY</strong> and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2209.03318" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-4'><img src='/images/templates/no-image-yet.png' class='img-fluid'></div><div class='g-col-12 g-col-sm-8'><b>On the Wasserstein median of probability measures</b><br> <strong>KY</strong> and Dennis Shung (2022).<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.48550/arXiv.2209.03318" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-file-earmark-pdf" role='img' aria-label='arXiv'></i>
     arXiv
   </a></div></div></li>

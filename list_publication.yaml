@@ -30,16 +30,6 @@ shape_preserving_dimensionality_reduction:
   preprint: https://doi.org/10.48550/arXiv.2106.02096
   flag: preprint
   thumbnail_url: /images/publication/preprint-PHdimred.png
-  
-splaplace:
-  title: "On the spherical Laplace distribution"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2208.11929
-  flag: preprint
-  thumbnail_url: /images/templates/no-image-yet.png
 
 WassMedian:
   title: "On the Wasserstein median of probability measures"
@@ -69,6 +59,19 @@ topological_latent_embedding:
 # ---------------------------------------------------------------
 # published
 # ---------------------------------------------------------------
+
+2023_on_the_spherical_laplace_distribution:
+  title: "On the Spherical Laplace Distribution"
+  authors: 
+    - me
+    - Dennis Shung
+  year: 2023
+  flag: published
+  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  venue: International Conference on Information Fusion (FUSION)
+  published_url: http://dx.doi.org/10.23919/FUSION52260.2023.10224108
+  thumbnail_url: /images/templates/no-image-yet.png
+
 2023_bayesian_optimal_twosample:
   title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
   authors: 
@@ -77,7 +80,6 @@ topological_latent_embedding:
     - Lizhen Lin
   year: 2023
   preprint: https://doi.org/10.48550/arXiv.2112.02580
-  flag: submitted
   venue: Bayesian Analysis
   published_url: https://doi.org/10.1214/23-BA1373
   flag: published
@@ -210,3 +212,4 @@ Rdimtools:
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts
   thumbnail_url: /images/templates/no-image-yet.png
+  
