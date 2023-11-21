@@ -1,4 +1,5 @@
 ---
+pagetitle: "KY-Blog"
 title: "Rodrigues' formula for the Legendre polynomials"
 author: "Kisung You"
 description: " " 

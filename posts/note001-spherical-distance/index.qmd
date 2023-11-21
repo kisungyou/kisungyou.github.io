@@ -1,4 +1,5 @@
 ---
+pagetitle: "KY-Blog"
 title: "Monte Carlo computation of $L_p$ distance between two densities on the unit hypersphere"
 author: "Kisung You"
 description: " " 
@@ -35,9 +36,15 @@ $$\begin{aligned}
 L_p (f,g)^p &= \int_{\mathbb{S}^d} |f(x)-g(x)|^p dx \\ 
 &= \int_{\mathbb{S}^d} \frac{|f(x)-g(x)|^p}{u(x)} u(x)  dx \\
 &= \mathbb{E}_{u(x)} \left\lbrack \frac{|f(x)-g(x)|^p}{u(x)} \right\rbrack\\
-&\approx \frac{1}{N} \sum_{n=1}^N \frac{|f(x)-g(x)|^p}{u(x)} \,\,\textrm{for}\,\, x_n \overset{iid}{\sim} u(x),
+&\approx \frac{1}{N} \sum_{n=1}^N \frac{|f(x_n)-g(x_n)|^p}{u(x_n)} \,\,\textrm{for}\,\, x_n \overset{iid}{\sim} u(x),
 \end{aligned}
 $$ where the last term gets better approximation as $N\rightarrow \infty$.
+
+Here the uniform density $u(x)$ is an inverse of the surface area of the $d$-dimensional sphere $S_n$, which is defined as 
+$$
+S_n = \frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)},
+$$
+where $\Gamma(x)$ is the gamma function. 
 
 # References {.unnumbered .unlisted}
 

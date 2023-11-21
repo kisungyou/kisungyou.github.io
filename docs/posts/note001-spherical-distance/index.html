@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kisung You">
 <meta name="dcterms.date" content="2022-08-09">
 
-<title>Kisung You - Monte Carlo computation of \(L_p\) distance between two densities on the unit hypersphere</title>
+<title>KY-Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,10 +88,10 @@ div.csl-indent {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Kisung You - Monte Carlo computation of \(L_p\) distance between two densities on the unit hypersphere">
+<meta property="og:title" content="KY-Blog">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Kisung You">
-<meta name="twitter:title" content="Kisung You - Monte Carlo computation of \(L_p\) distance between two densities on the unit hypersphere">
+<meta name="twitter:title" content="KY-Blog">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@kisung_you">
 <meta name="twitter:site" content="@kisung_you">
@@ -202,22 +202,22 @@ div.csl-indent {
 
 <section id="problem-statement" class="level1">
 <h1>Problem Statement</h1>
-<p>A <span class="math inline">\(d\)</span>-dimensional unit hypersphere <span class="math inline">\(\mathbb{S}^d = \lbrace x \in \mathbb{R}^{d+1}~|~ \|x\|_2^2 = \sum_{i=1}^{d+1} x_i^2 = 1\rbrace\)</span> is one of the standard mathematical spaces in the field of <a href="https://doi.org/10.1201/9781351189675">objected-oriented data analysis</a> <span class="citation" data-cites="marron_2021_ObjectOrientedData">(<a href="#ref-marron_2021_ObjectOrientedData" role="doc-biblioref">Marron and Dryden 2021</a>)</span>. Let <span class="math inline">\(\mathcal{P}(\mathbb{S}^d)\)</span> denote a space of probability densities on <span class="math inline">\(\mathbb{S}^d\)</span>. For two densities <span class="math inline">\(f,g\in\mathcal{P}(\mathbb{S}^d)\)</span>, it is frequently needed to measure dissimilarity between the two. Unfortunately, even for the most well-known distributions on the hypersphere, analytic formula for any discrepancy measure is rarely available, leading to require numerical schemes for approximation. Here we focus on <span class="math inline">\(L_p\)</span> distance between the two densities,</p>
-<p><span id="eq-objective"><span class="math display">\[
+<p>A <span class="math inline">\(d\)</span>-dimensional unit hypersphere <span class="math inline">\(\mathbb{S}^d = \lbrace x \in \mathbb{R}^{d+1}~|~ \|x\|_2^2 = \sum_{i=1}^{d+1} x_i^2 = 1\rbrace\)</span> is one of the standard mathematical spaces in the field of <a href="https://doi.org/10.1201/9781351189675">objected-oriented data analysis</a> <span class="citation" data-cites="marron_2021_ObjectOrientedData">(<a href="#ref-marron_2021_ObjectOrientedData" role="doc-biblioref">Marron and Dryden 2021</a>)</span>. Let <span class="math inline">\(\mathcal{P}(\mathbb{S}^d)\)</span> denote a space of probability densities on <span class="math inline">\(\mathbb{S}^d\)</span>. For two densities <span class="math inline">\(f,g\in\mathcal{P}(\mathbb{S}^d)\)</span>, it is frequently needed to measure dissimilarity between the two. Unfortunately, even for the most well-known distributions on the hypersphere, analytic formula for any discrepancy measure is rarely available, leading to require numerical schemes for approximation. Here we focus on <span class="math inline">\(L_p\)</span> distance between the two densities, <span id="eq-objective"><span class="math display">\[
 L_p (f,g) = \left( \int_{\mathbb{S}^d} |f(x) - g(x)|^p \right)^{1/p}
-\tag{1}\]</span></span></p>
-<p>and we show how to combine Monte Carlo way of integration by means of <a href="https://en.wikipedia.org/wiki/Importance_sampling">importance sampling</a> to approximate <a href="#eq-objective">Equation&nbsp;1</a>.</p>
+\tag{1}\]</span></span> and we show how to combine Monte Carlo way of integration by means of <a href="https://en.wikipedia.org/wiki/Importance_sampling">importance sampling</a> to approximate <a href="#eq-objective">Equation&nbsp;1</a>.</p>
 </section>
 <section id="computation" class="level1">
 <h1>Computation</h1>
-<p>Importance sampling requires a proposal density. The easiest choice is to use uniform density <span class="math inline">\(u(x)\)</span> as an importance proposal since sampling from <span class="math inline">\(u(x)\)</span> is trivial. First, take a random sample from standard normal distribution <span class="math inline">\(x \sim \mathcal{N}(0,I)\)</span> in <span class="math inline">\(\mathbb{R}^{d+1}\)</span>. Then, the rest is to take <span class="math inline">\(L_2\)</span> normalization, i.e., <span class="math inline">\(x \leftarrow x / \|x\|_2\)</span>, which makes a sampled vector to have a unit norm. Given the sample generation process, we have the following</p>
-<p><span class="math display">\[\begin{aligned}
+<p>Importance sampling requires a proposal density. The easiest choice is to use uniform density <span class="math inline">\(u(x)\)</span> as an importance proposal since sampling from <span class="math inline">\(u(x)\)</span> is trivial. First, take a random sample from standard normal distribution <span class="math inline">\(x \sim \mathcal{N}(0,I)\)</span> in <span class="math inline">\(\mathbb{R}^{d+1}\)</span>. Then, the rest is to take <span class="math inline">\(L_2\)</span> normalization, i.e., <span class="math inline">\(x \leftarrow x / \|x\|_2\)</span>, which makes a sampled vector to have a unit norm. Given the sample generation process, we have the following <span class="math display">\[\begin{aligned}
 L_p (f,g)^p &amp;= \int_{\mathbb{S}^d} |f(x)-g(x)|^p dx \\
 &amp;= \int_{\mathbb{S}^d} \frac{|f(x)-g(x)|^p}{u(x)} u(x)  dx \\
 &amp;= \mathbb{E}_{u(x)} \left\lbrack \frac{|f(x)-g(x)|^p}{u(x)} \right\rbrack\\
-&amp;\approx \frac{1}{N} \sum_{n=1}^N \frac{|f(x)-g(x)|^p}{u(x)} \,\,\textrm{for}\,\, x_n \overset{iid}{\sim} u(x),
+&amp;\approx \frac{1}{N} \sum_{n=1}^N \frac{|f(x_n)-g(x_n)|^p}{u(x_n)} \,\,\textrm{for}\,\, x_n \overset{iid}{\sim} u(x),
 \end{aligned}
 \]</span> where the last term gets better approximation as <span class="math inline">\(N\rightarrow \infty\)</span>.</p>
+<p>Here the uniform density <span class="math inline">\(u(x)\)</span> is an inverse of the surface area of the <span class="math inline">\(d\)</span>-dimensional sphere <span class="math inline">\(S_n\)</span>, which is defined as <span class="math display">\[
+S_n = \frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)},
+\]</span> where <span class="math inline">\(\Gamma(x)\)</span> is the gamma function.</p>
 </section>
 <section id="references" class="level1 unnumbered unlisted">
 <h1 class="unnumbered unlisted">References</h1>

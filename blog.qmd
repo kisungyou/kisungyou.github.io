@@ -9,18 +9,23 @@ title: ""
 #   #feed: true
 #   sort-ui: [title, date]
 #   filter-ui: false
+
 listing:
   contents: posts
   categories: true
   type: default
   sort: "date desc"
   sort-ui: [title, date]
-  filter-ui: [title, date]
+  # filter-ui: [title, date]
+  filter-ui: false
   date-format: medium
-  fields: [date, title, image, categories]
-page-layout: article
-title-block-banner: true
+  # fields: [date, title, image, categories]
+page-layout: full
+title-block-banner: false
 ---
+
+
+
 
 <!-- ::: column-page -->
 <!-- ::: -->
