@@ -31,7 +31,7 @@ comments: false
 
 ### Welcome!
 
-I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at [Baruch College](https://www.baruch.cuny.edu/), [City University of New York](https://www.cuny.edu/). My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners.
+I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine. My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners.
 
 
 ### Contact

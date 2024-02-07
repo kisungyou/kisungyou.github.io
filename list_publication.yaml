@@ -11,6 +11,27 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+assessing_usability_of_gutgpt:
+  title: "Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical Decision Support System for Gastrointestinal Bleeding Risk"
+  authors:
+    - Colleen Chan
+    - me
+    - Sunny Chung
+    - Mauro Giuffrè
+    - Theo Saarinen
+    - Niroop Rajashekar
+    - Yuan Pu
+    - Yeo Eun Shin
+    - Loren Laine
+    - Ambrose Wong
+    - René Kizilcec
+    - Jasjeet Sekhon
+    - Dennis Shung
+  year: 2023
+  preprint: https://arxiv.org/abs/2312.10072
+  flag: preprint
+  thumbnail_url: /images/templates/no-image-yet.png
+
 pca_and_svd:
   title: "PCA, SVD, and Centering of Data"
   authors:
@@ -213,3 +234,16 @@ Rdimtools:
   venue: Software Impacts
   thumbnail_url: /images/templates/no-image-yet.png
   
+letter_chatgpt_medical_contexts:
+  title: "Evaluating ChatGPT in Medical Contexts: The Imperative to Guard Against Hallucinations and Partial Accuracies"
+  authors: 
+    - Mauro Giuffrè
+    - me
+    - Dennis Shung
+  year: 2023
+  preprint: 
+  published_url: https://doi.org/10.1016/j.cgh.2023.09.035
+  flag: published
+  github:
+  venue: Clinical Gastroenterology and Hepatology
+  thumbnail_url: /images/templates/no-image-yet.png

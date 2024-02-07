@@ -18,7 +18,6 @@ format:
 <!-- - 'published' : Publication -->
 <!-- - 'preprint'  : Preprint -->
 
-
 :::{.column-page-left}
 # Publications 
 
@@ -145,4 +144,9 @@ for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
     + "</ul>"
   ))
 ```
+
+
+
+
+
 :::
