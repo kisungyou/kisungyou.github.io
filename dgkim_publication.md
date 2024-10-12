@@ -32,7 +32,7 @@ format:
 ### 2024
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-8'><b>Human-Algorithmic Interaction Using a Large Language Model-Augmented Artificial Intelligence Clinical Decision Support System</b><br> Niroop Rajashekar, Yeo Eun Shin, Yuan Pu, Sunng Chung, <strong>KY</strong>, Mauro Giuffrè, Colleen Chan, Theo Saarinen, Allen Hsiao, Jasjeet Sekhon, Ambrose Wong, Leigh Evans, Rene Kizilcec, Loren Laine, Terika Mccall, and Dennis Shung. <br> <em>CHI Conference on Human Factors in Computing Systems</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1145/3613904.3642024" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'><div class='grid'><div class='g-col-12 g-col-sm-8'><b>Human-Algorithmic Interaction Using a Large Language Model-Augmented Artificial Intelligence Clinical Decision Support System</b><br> Niroop Rajashekar, Yeo Eun Shin, Yuan Pu, Sunny Chung, <strong>KY</strong>, Mauro Giuffrè, Colleen Chan, Theo Saarinen, Allen Hsiao, Jasjeet Sekhon, Ambrose Wong, Leigh Evans, Rene Kizilcec, Loren Laine, Terika Mccall, and Dennis Shung. <br> <em>CHI Conference on Human Factors in Computing Systems</em>.<br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1145/3613904.3642024" target="_blank" rel="noopener noreferrer">
     <i class="ai ai-archive" role='img' aria-label='Publisher's Site'></i>
     Publisher's Site
   </a></div></div></li>

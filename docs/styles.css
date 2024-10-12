@@ -24,4 +24,13 @@ a {
 .navbar {
     background-color: #00205B; /* Your existing background color */
     color: white; /* Text color */
+    padding-top: 0.5rem; /* Adjust this value to reduce the top padding */
+    padding-bottom: 0.5rem; /* Adjust this value to reduce the bottom padding */
+    min-height: 3rem; /* Optionally, set a minimum height */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    font-size: 1rem; /* Optionally, adjust the font size for smaller text */
+    padding-top: 0.25rem; /* Fine-tune the padding within items */
+    padding-bottom: 0.25rem; /* Fine-tune the padding within items */
 }
