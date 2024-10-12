@@ -1,0 +1,152 @@
+---
+pagetitle: "KY-Publications"
+title: " "
+echo: false
+jupyter: python3
+toc: true
+toc-location: right
+toc-expand: true
+toc-title: " "
+section-divs: false
+keep-md: true
+format:
+  html:
+    page-layout: article
+---
+
+<!-- # flags -->
+<!-- - 'published' : Publication -->
+<!-- - 'preprint'  : Preprint -->
+
+:::{.column-page-left}
+# Publications 
+
+```{python}
+import yaml
+from IPython.display import display, Markdown, HTML
+
+
+def readable_list(_s):
+  if len(_s) < 3:
+    return ' and '.join(map(str, _s))
+  *a, b = _s
+  return f"{', '.join(map(str, a))}, and {b}"
+
+
+def button(url, str, icon):
+  icon_base = icon[:2]
+  return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
+    <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
+    {str}
+  </a>"""
+
+
+def create_pub_grid_column_html(pub_str: str, buttons: list[str]) -> str:
+  buttons_str = " ".join(buttons)
+  return f"<div class='g-col-12 g-col-sm-8'>{pub_str}<br>{buttons_str}</div>"
+
+
+yaml_data = yaml.safe_load(open("list_publication.yaml"))
+pub_strs = {"type-published":{}, "type-preprint":{}, "type-test":{}}
+
+for _, data in yaml_data.items():
+    # extract relevant information
+    title_str = data["title"]
+    authors = data.get("authors", ["me"])
+    authors = [
+      aut if aut != "me" else "<strong>KY</strong>"
+      for aut in authors
+    ]
+    author_str = readable_list(authors)
+    year_str = data["year"]
+
+    buttons = []
+    preprint = data.get("preprint")
+    if preprint is not None:
+        buttons.append(button(preprint, "arXiv", "bi-file-earmark-pdf"))
+    github = data.get("github")
+    if github is not None:
+        buttons.append(button(github, "Code", "bi-github"))
+
+    pub_url = data.get("published_url")
+    venue = data.get("venue")
+    flag  = data.get("flag")
+    
+    thumbnail_url = data.get("thumbnail_url")
+    thumbnail_html = ""
+    if thumbnail_url is not None:
+      thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
+      #thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
+
+    # DIFFERENT TYPES
+    # 1. published (anywhere)
+    # 2. preprint  
+
+    # TYPES-strings
+    if flag=="published":
+      pub_str = f"<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>."
+    elif flag=="preprint":
+      pub_str = f"<b>{title_str}</b><br> {author_str} ({year_str})."
+
+    # TYPES-formatting
+    if flag=="published":
+      if year_str not in pub_strs["type-published"]:
+        pub_strs["type-published"][year_str] = []
+
+      buttons.append(button(pub_url, "Publisher's Site", "ai-archive"))
+      pub_strs["type-published"][year_str].append(
+        "<li class='list-group-item'><div class='grid'>"
+        + thumbnail_html
+        + create_pub_grid_column_html(pub_str, buttons)
+        + "</div></li>"
+      )
+    elif flag=="preprint":
+      if year_str not in pub_strs["type-preprint"]:
+        pub_strs["type-preprint"][year_str] = []
+
+      pub_strs["type-preprint"][year_str].append(
+        "<li class='list-group-item'><div class='grid'>"
+        + thumbnail_html
+        + create_pub_grid_column_html(pub_str, buttons)
+        + "</div></li>"
+      )
+```
+
+<!--
+## Published 
+-->
+
+## Published
+
+```{python}
+#| label: "journal-year"
+#| id: "journal-year"
+#| output: asis
+for year in sorted(pub_strs["type-published"].keys(), reverse=True):
+  display(Markdown(f"### {year}"))
+  display(HTML(
+    "<ul class='list-group list-group-flush'>"
+    + "\n".join(pub_strs["type-published"][year])
+    + "</ul>"
+  ))
+```
+
+## Preprint
+
+```{python}
+#| label: "preprint-year"
+#| id: "preprint-year"
+#| output: asis
+for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
+  display(HTML(
+    "<ul class='list-group list-group-flush'>"
+    + "\n".join(pub_strs["type-preprint"][year])
+    + "</ul>"
+  ))
+```
+
+
+
+
+
+:::

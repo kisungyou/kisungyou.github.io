@@ -1,0 +1,24 @@
+ /* Reduce the font size of list items */
+.list-group-item {
+    font-size: 1.0rem; /* Adjust the value as needed */
+}
+
+/* Reduce the font size of headings */
+h3 {
+    font-size: 1.2rem; /* Adjust the value as needed */
+}
+
+/* Reduce the font size of buttons */
+.btn {
+    font-size: 0.9rem; /* Adjust the value as needed */
+}
+
+/* Remove underlines for all links */
+a {
+    text-decoration: none;
+}
+
+/* Optionally, you can add a hover effect */
+a:hover {
+    text-decoration: underline; /* Underline on hover if desired */
+}

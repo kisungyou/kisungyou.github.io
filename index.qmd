@@ -25,6 +25,9 @@ about:
       icon: envelope
       url: "mailto:kisungyou@outlook.com"
 comments: false
+format:
+  html:
+    css: styles.css
 ---
 
 ::: column-page

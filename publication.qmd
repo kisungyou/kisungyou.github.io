@@ -18,52 +18,56 @@ format:
 <!-- - 'published' : Publication -->
 <!-- - 'preprint'  : Preprint -->
 
-:::{.column-page-left}
+<!-- :::{.column-page-left} -->
 # Publications 
 
 ```{python}
 import yaml
 from IPython.display import display, Markdown, HTML
 
+# load centralized author URLs
+with open('list_authors.yaml') as file:
+    author_urls = yaml.safe_load(file)
+    
+centralized_author_urls = author_urls.get("author_urls", {})
 
 def readable_list(_s):
-  if len(_s) < 3:
-    return ' and '.join(map(str, _s))
-  *a, b = _s
+  authors_with_links = [
+    f"<a href='{centralized_author_urls.get(aut, '#')}' target='_blank'>{aut}</a>" if aut in centralized_author_urls else aut 
+    for aut in _s
+  ]
+  if len(authors_with_links) < 3:
+    return ' and '.join(map(str, authors_with_links))
+  *a, b = authors_with_links
   return f"{', '.join(map(str, a))}, and {b}"
-
+  # if len(_s) < 3:
+  #   return ' and '.join(map(str, _s))
+  # *a, b = _s
+  # return f"{', '.join(map(str, a))}, and {b}"
 
 def button(url, str, icon):
-  icon_base = icon[:2]
-  return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
-    <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
-    {str}
-  </a>"""
-
-
-def create_pub_grid_column_html(pub_str: str, buttons: list[str]) -> str:
-  buttons_str = " ".join(buttons)
-  return f"<div class='g-col-12 g-col-sm-8'>{pub_str}<br>{buttons_str}</div>"
-
+    icon_base = icon[:2]
+    return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
+        <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
+        {str}
+    </a>"""
 
 yaml_data = yaml.safe_load(open("list_publication.yaml"))
-pub_strs = {"type-published":{}, "type-preprint":{}, "type-test":{}}
-
+pub_strs = {"pubs": {}, "wps": {}}
 for _, data in yaml_data.items():
-    # extract relevant information
     title_str = data["title"]
+    #print(f"Processing: {title_str}")  # Debugging step
+    
     authors = data.get("authors", ["me"])
-    authors = [
-      aut if aut != "me" else "<strong>KY</strong>"
-      for aut in authors
-    ]
+    authors = [aut if aut != "me" else "<strong>KY</strong>" for aut in authors]
     author_str = readable_list(authors)
     year_str = data["year"]
 
     buttons = []
     preprint = data.get("preprint")
     if preprint is not None:
-        buttons.append(button(preprint, "arXiv", "bi-file-earmark-pdf"))
+        buttons.append(button(preprint, "Preprint", "bi-file-earmark-pdf"))
+
     github = data.get("github")
     if github is not None:
         buttons.append(button(github, "Code", "bi-github"))
@@ -71,12 +75,9 @@ for _, data in yaml_data.items():
     pub_url = data.get("published_url")
     venue = data.get("venue")
     flag  = data.get("flag")
+    working_paper = pub_url is None
     
-    thumbnail_url = data.get("thumbnail_url")
-    thumbnail_html = ""
-    if thumbnail_url is not None:
-      thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
-      #thumbnail_html = f"<div class='g-col-12 g-col-sm-4'><img src='{thumbnail_url}' class='img-fluid'></div>"
+    pub_str = f'{author_str}. ({year_str}) "{title_str}."'
 
     # DIFFERENT TYPES
     # 1. published (anywhere)
@@ -87,28 +88,22 @@ for _, data in yaml_data.items():
       pub_str = f"<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>."
     elif flag=="preprint":
       pub_str = f"<b>{title_str}</b><br> {author_str} ({year_str})."
-
-    # TYPES-formatting
-    if flag=="published":
-      if year_str not in pub_strs["type-published"]:
-        pub_strs["type-published"][year_str] = []
-
-      buttons.append(button(pub_url, "Publisher's Site", "ai-archive"))
-      pub_strs["type-published"][year_str].append(
-        "<li class='list-group-item'><div class='grid'>"
-        + thumbnail_html
-        + create_pub_grid_column_html(pub_str, buttons)
-        + "</div></li>"
+    
+    if flag == "published":
+      if pub_url:
+        buttons.append(button(pub_url, "Publisher's site", "ai-archive"))
+      # Ensure you append to the list even if the year already exists
+      if year_str not in pub_strs["pubs"]:
+        pub_strs["pubs"][year_str] = []
+      pub_strs["pubs"][year_str].append(
+        "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
       )
-    elif flag=="preprint":
-      if year_str not in pub_strs["type-preprint"]:
-        pub_strs["type-preprint"][year_str] = []
-
-      pub_strs["type-preprint"][year_str].append(
-        "<li class='list-group-item'><div class='grid'>"
-        + thumbnail_html
-        + create_pub_grid_column_html(pub_str, buttons)
-        + "</div></li>"
+    # For preprints
+    elif flag == "preprint":
+      if year_str not in pub_strs["wps"]:
+        pub_strs["wps"][year_str] = []
+      pub_strs["wps"][year_str].append(
+        "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
       )
 ```
 
@@ -122,11 +117,11 @@ for _, data in yaml_data.items():
 #| label: "journal-year"
 #| id: "journal-year"
 #| output: asis
-for year in sorted(pub_strs["type-published"].keys(), reverse=True):
+for year in sorted(pub_strs["pubs"].keys(), reverse=True):
   display(Markdown(f"### {year}"))
   display(HTML(
     "<ul class='list-group list-group-flush'>"
-    + "\n".join(pub_strs["type-published"][year])
+    + "\n".join(pub_strs["pubs"][year])
     + "</ul>"
   ))
 ```
@@ -137,11 +132,10 @@ for year in sorted(pub_strs["type-published"].keys(), reverse=True):
 #| label: "preprint-year"
 #| id: "preprint-year"
 #| output: asis
-for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
+for year in sorted(pub_strs["wps"].keys(), reverse=True):
+  #display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
   display(HTML(
-    "<ul class='list-group list-group-flush'>"
-    + "\n".join(pub_strs["type-preprint"][year])
-    + "</ul>"
+    "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["wps"][year]) + "</ul>"
   ))
 ```
 
@@ -149,4 +143,4 @@ for year in sorted(pub_strs["type-preprint"].keys(), reverse=True):
 
 
 
-:::
+<!-- ::: -->

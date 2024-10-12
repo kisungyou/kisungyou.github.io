@@ -4,34 +4,12 @@
 #
 # Image Ratio 
 #   Ratio   : use 3:2 = width:height  
-#   Program : GThumb >>
-#             https://askubuntu.com/questions/164473/simple-image-editor
+#           : use powerpoint to crop or resize
 #           
 
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
-assessing_usability_of_gutgpt:
-  title: "Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical Decision Support System for Gastrointestinal Bleeding Risk"
-  authors:
-    - Colleen Chan
-    - me
-    - Sunny Chung
-    - Mauro Giuffrè
-    - Theo Saarinen
-    - Niroop Rajashekar
-    - Yuan Pu
-    - Yeo Eun Shin
-    - Loren Laine
-    - Ambrose Wong
-    - René Kizilcec
-    - Jasjeet Sekhon
-    - Dennis Shung
-  year: 2023
-  preprint: https://arxiv.org/abs/2312.10072
-  flag: preprint
-  thumbnail_url: /images/templates/no-image-yet.png
-
 pca_and_svd:
   title: "PCA, SVD, and Centering of Data"
   authors:
@@ -40,7 +18,8 @@ pca_and_svd:
   year: 2023
   preprint: https://arxiv.org/abs/2307.15213
   flag: preprint
-  thumbnail_url: /images/templates/no-image-yet.png
+  thumbnail_url: /images/publication/preprint_pca_and_svd.png
+
 
 shape_preserving_dimensionality_reduction:
   title: "Shape-Preserving Dimensionality Reduction : An Algorithm and Measures of Topological Equivalence"
@@ -50,19 +29,9 @@ shape_preserving_dimensionality_reduction:
   year: 2021
   preprint: https://doi.org/10.48550/arXiv.2106.02096
   flag: preprint
-  thumbnail_url: /images/publication/preprint-PHdimred.png
-
-WassMedian:
-  title: "On the Wasserstein median of probability measures"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2209.03318
-  flag: preprint
-  thumbnail_url: /images/templates/no-image-yet.png
-
-
+  thumbnail_url: /images/publication/preprint_shape_preserving_dimensionality_reduction.png
+  
+  
 topological_latent_embedding:
   title: "Comparing multiple latent space embeddings using topological analysis"
   authors:
@@ -77,36 +46,11 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
   thumbnail_url: /images/templates/no-image-yet.png
 
+
 # ---------------------------------------------------------------
 # published
 # ---------------------------------------------------------------
-
-2023_on_the_spherical_laplace_distribution:
-  title: "On the Spherical Laplace Distribution"
-  authors: 
-    - me
-    - Dennis Shung
-  year: 2023
-  flag: published
-  preprint: https://doi.org/10.48550/arXiv.2208.11929
-  venue: International Conference on Information Fusion (FUSION)
-  published_url: http://dx.doi.org/10.23919/FUSION52260.2023.10224108
-  thumbnail_url: /images/templates/no-image-yet.png
-
-2023_bayesian_optimal_twosample:
-  title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
-  authors: 
-    - Kyoungjae Lee
-    - me
-    - Lizhen Lin
-  year: 2023
-  preprint: https://doi.org/10.48550/arXiv.2112.02580
-  venue: Bayesian Analysis
-  published_url: https://doi.org/10.1214/23-BA1373
-  flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
-
-2022_network_distance_based_on_laplacian_flows:
+c2022_network_distance_based_on_laplacian_flows:
   title: "Network Distance Based on Laplacian Flows on Graphs"
   authors:
     - Dianbin Bao
@@ -118,79 +62,69 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/NetworkDistance
   venue: IEEE International Conference on Big Data (Big Data)
   published_url: https://doi.org/10.1109/BigData55660.2022.10020500
-  thumbnail_url: /images/templates/no-image-yet.png
-
-2022_functional_connectivity_correlation:
-  title: "Geometric learning of functional brain network on the correlation manifold"
+  
+c2023_on_the_spherical_laplace_distribution:
+  title: "On the Spherical Laplace Distribution"
   authors: 
     - me
-    - Hae-Jeong Park
-  year: 2022
-  published_url: https://www.nature.com/articles/s41598-022-21376-0
-  venue: Scientific Reports
-  github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
+    - Dennis Shung
+  year: 2023
   flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
-
-2022_spherical_normal:
-  title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
-  authors:
-    - me
-    - Changhee Suh
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.2106.06375
-  published_url: https://doi.org/10.1016/j.csda.2022.107457
-  venue: Computational Statistics & Data Analysis
-  github: https://kisungyou.com/Riemann
-  flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
+  preprint: https://doi.org/10.48550/arXiv.2208.11929
+  venue: International Conference on Information Fusion (FUSION)
+  published_url: http://dx.doi.org/10.23919/FUSION52260.2023.10224108
   
-2022_learning_subspaces_of_different_dimensions:
-  title: " Learning Subspaces of Different Dimensions"
+c2024_human_algorithmic_interaction:
+  title: "Human-Algorithmic Interaction Using a Large Language Model-Augmented Artificial Intelligence Clinical Decision Support System"
   authors:
-    - Brian St. Thomas
+    - Niroop Rajashekar
+    - Yeo Eun Shin
+    - Yuan Pu
+    - Sunng Chung
     - me
-    - Lizhen Lin
-    - Lek-Heng Lim
-    - Sayan Mukherjee
-  year: 2022
-  preprint: https://doi.org/10.48550/arXiv.1404.6841
-  published_url: https://doi.org/10.1080/10618600.2021.2000420
+    - Mauro Giuffrè
+    - Colleen Chan
+    - Theo Saarinen
+    - Allen Hsiao
+    - Jasjeet Sekhon
+    - Ambrose Wong
+    - Leigh Evans
+    - Rene Kizilcec
+    - Loren Laine
+    - Terika Mccall
+    - Dennis Shung
+  year: 2024
+  flag: published
+  venue: CHI Conference on Human Factors in Computing Systems
+  published_url: https://doi.org/10.1145/3613904.3642024
+  
+j2024_wasserstein_median:
+  title: "On the Wasserstein median of probability measures"
+  authors: 
+    - me
+    - Dennis Shung
+    - Mauro Giuffrè
+  year: 2024
+  preprint: https://doi.org/10.48550/arXiv.2209.03318
+  flag: published
   venue: Journal of Computational and Graphical Statistics
-  github: https://kisungyou.com/T4cluster
-  flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
-
-revisiting_riemannian_geometry:
-  title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
+  published_url: https://doi.org/10.1080/10618600.2024.2374580
+  github: https://github.com/kisungyou/papers/tree/master/05-WassersteinMedian
+  
+j2016_vision_based_detection:
+  title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
   authors:
+    - Young-Jin Cha
     - me
-    - Hae-Jeong Park
-  year: 2021
-  preprint: 
-  published_url: https://doi.org/10.1016/j.neuroimage.2020.117464
-  venue: NeuroImage
-  github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
+    - Wooram Choi
+  year: 2016
+  preprint:
+  published_url: https://doi.org/10.1016/j.autcon.2016.06.008
+  venue: Automation in Construction
+  github:
   flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
-
-data_transforming_augmentation:
-  title: "Data transforming augmentation for heteroscedastic models"
-  authors:
-    - Hyungsuk Tak
-    - me
-    - Sujit K. Ghosh
-    - Bingyue Su
-    - Joseph Kelly
-  year: 2020
-  preprint: https://doi.org/10.48550/arXiv.1911.02748
-  published_url: https://doi.org/10.1080/10618600.2019.1704295
-  venue: Journal of Computational and Graphical Statistics
-  github: 
-  flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
-
-volume_change:
+  
+j2019_volume_change:
   title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
   authors:
     - Jin Hoo Park
@@ -204,24 +138,47 @@ volume_change:
   venue: Maxillofacial Plastic and Reconstructive Surgery
   github: 
   flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
   
-vision_based_detection:
-  title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
+j2020_data_transforming_augmentation:
+  title: "Data transforming augmentation for heteroscedastic models"
   authors:
-    - Young-Jin Cha
+    - Hyungsuk Tak
     - me
-    - Wooram Choi
-  year: 2016
-  preprint:
-  published_url: https://doi.org/10.1016/j.autcon.2016.06.008
-  venue: Automation in Construction
-  github:
+    - Sujit K. Ghosh
+    - Bingyue Su
+    - Joseph Kelly
+  year: 2020
+  preprint: https://doi.org/10.48550/arXiv.1911.02748
+  published_url: https://doi.org/10.1080/10618600.2019.1704295
+  venue: Journal of Computational and Graphical Statistics
+  github: 
   flag: published
-  thumbnail_url: /images/templates/no-image-yet.png
   
+j2021_revisiting_riemannian_geometry:
+  title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
+  authors:
+    - me
+    - Hae-Jeong Park
+  year: 2021
+  preprint: 
+  published_url: https://doi.org/10.1016/j.neuroimage.2020.117464
+  venue: NeuroImage
+  github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
+  flag: published
+
+j2022_spherical:
+  title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
+  authors:
+    - me
+    - Changhee Suh
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.2106.06375
+  published_url: https://doi.org/10.1016/j.csda.2022.107457
+  venue: Computational Statistics and Data Analysis
+  github: https://kisungyou.com/Riemann
+  flag: published
   
-Rdimtools:
+j2022_Rdimtools:
   title: "Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation"
   authors: 
     - me
@@ -232,9 +189,67 @@ Rdimtools:
   flag: published
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts
-  thumbnail_url: /images/templates/no-image-yet.png
   
-letter_chatgpt_medical_contexts:
+j2022_learning_subspaces_of_different_dimensions:
+  title: " Learning Subspaces of Different Dimensions"
+  authors:
+    - Brian St. Thomas
+    - me
+    - Lizhen Lin
+    - Lek-Heng Lim
+    - Sayan Mukherjee
+  year: 2022
+  preprint: https://doi.org/10.48550/arXiv.1404.6841
+  published_url: https://doi.org/10.1080/10618600.2021.2000420
+  venue: Journal of Computational and Graphical Statistics
+  github: https://kisungyou.com/T4cluster
+  flag: published  
+  
+j2022_functional_connectivity_correlation:
+  title: "Geometric learning of functional brain network on the correlation manifold"
+  authors: 
+    - me
+    - Hae-Jeong Park
+  year: 2022
+  published_url: https://www.nature.com/articles/s41598-022-21376-0
+  venue: Scientific Reports
+  github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
+  flag: published
+  
+j2023_single_cell_inflammatory:
+  title: "Single-cell analysis reveals inflammatory interactions driving macular degeneration"
+  authors: 
+    - Manik Kuchroo
+    - Marcello DiStasio
+    - Eric Song
+    - Eda Calapkulu
+    - Le Zhang
+    - Maryam Ige
+    - Amar Sheth
+    - Abdelilah Majdoubi
+    - Madhvi Menon
+    - Alexander Tong
+    - Abhinav Godavarthi
+    - Yu Xing
+    - Scott Gigante
+    - Holly Steach
+    - Jessie Huang
+    - Guillaume Huguet
+    - Janhavi Narain
+    - me
+    - George Mourgkos
+    - Rahul Dhodapkar
+    - Matthew Hirn
+    - Bastian Rieck
+    - Guy Wolf
+    - Smita Krishnaswamy
+    - Brian Hafler     
+  year: 2023
+  published_url: https://www.nature.com/articles/s41467-023-37025-7
+  venue: Nature Communications
+  flag: published
+
+j2023_evaluating_chatgpt:
   title: "Evaluating ChatGPT in Medical Contexts: The Imperative to Guard Against Hallucinations and Partial Accuracies"
   authors: 
     - Mauro Giuffrè
@@ -246,4 +261,139 @@ letter_chatgpt_medical_contexts:
   flag: published
   github:
   venue: Clinical Gastroenterology and Hepatology
-  thumbnail_url: /images/templates/no-image-yet.png
+
+j2024_systematic_review:
+  title: "Systematic review: The use of large language models as medical chatbots in digestive diseases"
+  authors:
+    - Mauro Giuffrè
+    - Simone Kresevic
+    - me
+    - Johannes Dupont
+    - Jack Huebner
+    - Alyssa Grimshaw
+    - Dennis Shung
+  year: 2024
+  preprint:
+  published_url: https://doi.org/10.1111/apt.18058
+  flag: published
+  github:
+  venue: Alimentary Pharmacology & Therapeutics
+  
+j2024_bayesian_optimal_twosample:
+  title: "Bayesian Optimal Two-sample Tests for High-dimensional Gaussian Populations"
+  authors: 
+    - Kyoungjae Lee
+    - me
+    - Lizhen Lin
+  year: 2024
+  preprint: https://doi.org/10.48550/arXiv.2112.02580
+  venue: Bayesian Analysis
+  published_url: https://doi.org/10.1214/23-BA1373
+  flag: published
+  
+j2024_adaoption_hospitalist:
+  title: "Adoption of a gastroenterology hospitalist model and the impact on inpatient endoscopic practice volume: a controlled interrupted time-series analysis"
+  authors:
+    - Dennis Shung
+    - Darrick Li
+    - me
+    - Kenneth Hung
+    - Loren Laine
+    - Michelle Hughes
+  year: 2024
+  preprint:
+  venue: iGIE
+  published_url: https://doi.org/10.1016/j.igie.2024.04.008
+  flag: published
+
+j2024_detection_gi_bleeding:
+  title: "Detection of Gastrointestinal Bleeding with Large Language Models to Aid Quality Improvement and Appropriate Reimbursement"
+  authors:
+    - Neil Zheng
+    - Vipina Keloth
+    - me
+    - Daniel Kats
+    - Darrick Li
+    - Ohm Deshpande
+    - Hamita Sachar
+    - Hua Xu
+    - Loren Laine
+    - Dennis Shung
+  flag: published
+  year: 2024
+  venue: Gastroenterology
+  published_url: https://doi.org/10.1053/j.gastro.2024.09.014
+  preprint: 
+  
+j2024_predicting_response:
+  title: "Predicting response to non-selective beta-blockers with liver–spleen stiffness and heart rate in patients with liver cirrhosis and high-risk varices"
+  authors:
+    - Mauro Giuffrè
+    - Johannes Dupont
+    - Alessia Visintin
+    - Flora Masutti
+    - Fabio Monica
+    - me
+    - Dennis Shung
+    - Lory Crocè
+    - The NSBB-Elasto-Response-Prediction Group
+  flag: published
+  year: 2024
+  venue: Hepatology International
+  published_url: https://doi.org/10.1007/s12072-024-10649-7
+  
+j2024_optimizing_llm:
+  title: "Optimizing large language models in digestive disease: strategies and challenges to improve clinical outcomes"
+  authors:
+    - Mauro Giuffrè
+    - Simone Kresevic
+    - Nicola Pugliese
+    - me
+    - Dennis Shung
+  flag: published
+  year: 2024
+  venue: Liver International
+  published_url: https://doi.org/10.1111/liv.15974
+
+j2024_validation_ehr_ml:
+  title: "Validation of an Electronic Health Record–Based Machine Learning Model Compared With Clinical Risk Scores for Gastrointestinal Bleeding"
+  authors:
+    - Dennis Shung
+    - Colleen Chan
+    - me
+    - Shinpei Nakamura
+    - Theo Saarinen
+    - Neil Zheng
+    - Michael Simonov
+    - Darrick Li
+    - Cynthia Tsay
+    - Yuki Kawamura
+    - Matthew Shen
+    - Allen Hsiao
+    - Jasjeet Sekhon
+    - Loren Laine
+  flag: published
+  year: 2024
+  venue: Gastroenterology
+  published_url: https://doi.org/10.1053/j.gastro.2024.06.030
+
+c2023_assessing_the_usability_of_gutgpt:
+  title: "Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical Decision Support System for Gastrointestinal Bleeding Risk"
+  authors:
+    - Colleen Chan
+    - me
+    - Sunny Chung
+    - Mauro Giuffrè
+    - Theo Saarinen
+    - Niroop Rajashekar
+    - Yuan Pu
+    - Yeo Eun Shin
+    - Loren Laine
+    - Ambrose Wong
+    - Rene Kizilcec
+    - Jasjeet Sekhon
+    - Dennis Shung
+  year: 2023
+  preprint: https://arxiv.org/abs/2312.10072
+  flag: published
+  venue: Machine Learning for Health (ML4H) Symposium

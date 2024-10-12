@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kisungyou.com/blog.html</loc>
-    <lastmod>2024-02-07T21:13:05.975Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/index.html</loc>
-    <lastmod>2024-02-07T21:17:25.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note001-spherical-distance/index.html</loc>
-    <lastmod>2023-11-20T23:59:33.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note002-rodrigues-formula/index.html</loc>
-    <lastmod>2023-11-20T23:59:32.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note003-angular-gaussian/index.html</loc>
-    <lastmod>2024-02-07T21:13:12.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/publication.html</loc>
-    <lastmod>2024-02-07T21:12:55.542Z</lastmod>
+    <lastmod>2024-10-12T03:14:19.720Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.com/software.html</loc>
-    <lastmod>2024-02-07T21:13:04.143Z</lastmod>
+    <lastmod>2024-10-12T03:14:16.873Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/publication-complex.html</loc>
-    <lastmod>2024-02-07T19:31:34.195Z</lastmod>
+    <loc>https://kisungyou.com/publication.html</loc>
+    <lastmod>2024-10-12T03:14:14.477Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/posts/note003-angular-gaussian/index.html</loc>
+    <lastmod>2024-10-12T03:14:11.477Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/posts/note002-rodrigues-formula/index.html</loc>
+    <lastmod>2024-10-12T03:14:10.513Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/posts/note001-spherical-distance/index.html</loc>
+    <lastmod>2024-10-12T03:14:12.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/index.html</loc>
+    <lastmod>2024-10-12T03:14:14.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/dgkim_publication.html</loc>
+    <lastmod>2024-10-12T03:14:19.164Z</lastmod>
   </url>
 </urlset>
