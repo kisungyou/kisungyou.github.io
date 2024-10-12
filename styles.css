@@ -34,3 +34,24 @@ a {
     padding-top: 0.25rem; /* Fine-tune the padding within items */
     padding-bottom: 0.25rem; /* Fine-tune the padding within items */
 }
+
+/* Regular link color */
+a {
+    color: #407EC9; /* Set your preferred color for regular links */
+}
+
+/* Hovered link color */
+a:hover {
+    color: #ff6600; /* Set your preferred color when hovering over a link */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Active link color (when the link is clicked) */
+a:active {
+    color: #ff0000; /* Set your preferred color for active links */
+}
+
+/* Hide the main title beneath the main photo */
+.page-title, h1 {  /* Adjust this selector based on the HTML structure */
+    display: none;  /* This will hide the title completely */
+}
