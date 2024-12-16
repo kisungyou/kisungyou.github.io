@@ -24,7 +24,7 @@ website:
         file: software.qmd
       - text: "Blog"
         file: blog.qmd
-  page-footer: "© Kisung You 2023-2024"
+  page-footer: "© Kisung You 2021-2024"
   page-navigation: true
 
 format:
