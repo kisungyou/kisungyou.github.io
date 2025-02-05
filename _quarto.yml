@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  
+freeze: auto
 
 website:
   title: "Kisung You"
@@ -20,11 +22,13 @@ website:
         file: index.qmd
       - text: "Publications"
         file: publication.qmd
+      - text: "Teaching"
+        file: teaching.qmd
       - text: "Software"
         file: software.qmd
       - text: "Blog"
         file: blog.qmd
-  page-footer: "© Kisung You 2021-2024"
+  page-footer: "© Kisung You 2021-2025"
   page-navigation: true
 
 format:
@@ -45,3 +49,6 @@ format:
     highlight-style: github
 
 editor: source
+
+execute:
+  cache: true # uses caching for faster builds

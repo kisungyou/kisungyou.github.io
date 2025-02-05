@@ -22,3 +22,14 @@ a {
 a:hover {
     text-decoration: underline; /* Underline on hover if desired */
 }
+
+/* Enlarge title text in title block banner */
+.quarto-title-banner h1 {
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+/* Optional: Enlarge subtitle text */
+.quarto-title-banner h2 {
+  font-size: 1.8rem; /* Adjust size as needed */
+}

@@ -1,0 +1,35 @@
+---
+pagetitle: "KY-Teaching"
+title: " "
+echo: false
+section-divs: true
+toc: true
+toc-location: right
+toc-expand: true
+toc-title: " "
+---
+
+# Teaching
+
+## Courses 
+
+At Baruch, I have taught the following classes.
+
+| Course                | Semester |
+|-------------------------------------------------------------------------------------------------------------------|:-------:|
+| MTH 4430 [Mathematics of Inferential Statistics](https://baruch-undergraduate.catalog.cuny.edu/courses/1454231)   | 23F, 24F|
+| MTH 4130 [Mathematics of Data Analysis](https://baruch-undergraduate.catalog.cuny.edu/courses/0931901)            | 24F     |
+| MTH 4125 [Introduction to Stochastic Processes](https://baruch-undergraduate.catalog.cuny.edu/courses/0931891)    | 24S     |
+| MTH 2003 [Precalculus and Elements of Calculus 1A](https://baruch-undergraduate.catalog.cuny.edu/courses/0931351) | 23F     |
+
+<!-- For future reference, put <br> tag in a cell when it comes to make a multiline cell in the table. -->
+
+
+
+## Miscellaneous Notes
+
+I maintain a collection of concise technical notes to supplement my classes.
+
+* (2022/08/12) [Angular Central Gaussian Distribution and its Matrix Variant](notes-teaching/note03-angular-gaussian.html)
+* (2022/08/10) [Rodrigues' formula for the Legendre polynomials](notes-teaching/note02-rodriguez.html).
+* (2022/08/09) [Monte Carlo computation of $L_p$ distance between two densities on the unit hypersphere](notes-teaching/note01-spherical-distance.html).

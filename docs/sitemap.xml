@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kisungyou.com/blog.html</loc>
-    <lastmod>2024-12-16T23:12:31.279Z</lastmod>
+    <lastmod>2025-02-05T06:41:15.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/notes-teaching/note03-angular-gaussian.html</loc>
+    <lastmod>2025-02-05T06:41:14.383Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.com/software.html</loc>
-    <lastmod>2024-12-16T23:12:30.538Z</lastmod>
+    <lastmod>2025-02-05T06:41:12.714Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/notes-blog/blog_001_FisherRao.html</loc>
+    <lastmod>2025-02-05T06:41:11.845Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/teaching.html</loc>
+    <lastmod>2025-02-05T06:41:10.221Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.com/publication.html</loc>
-    <lastmod>2024-12-16T23:12:09.685Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note003-angular-gaussian/index.html</loc>
-    <lastmod>2024-10-12T17:14:24.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note002-rodrigues-formula/index.html</loc>
-    <lastmod>2024-10-12T17:14:23.577Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/posts/note001-spherical-distance/index.html</loc>
-    <lastmod>2024-10-12T17:14:24.938Z</lastmod>
+    <lastmod>2025-02-05T06:41:10.751Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.com/index.html</loc>
-    <lastmod>2024-12-16T23:12:04.666Z</lastmod>
+    <lastmod>2025-02-05T06:41:12.194Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/dgkim_publication.html</loc>
-    <lastmod>2024-10-12T17:14:30.855Z</lastmod>
+    <loc>https://kisungyou.com/notes-teaching/note01-spherical-distance.html</loc>
+    <lastmod>2025-02-05T06:41:13.502Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/notes-teaching/note02-rodriguez.html</loc>
+    <lastmod>2025-02-05T06:41:15.095Z</lastmod>
   </url>
 </urlset>

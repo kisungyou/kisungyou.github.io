@@ -10,7 +10,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nanum Gothic', sans-serif;
+    /*font-family: 'Nanum Gothic', sans-serif;*/
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* Remove underlines for all links */
