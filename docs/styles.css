@@ -22,8 +22,9 @@ a {
 /* Navbar   Color */
 /* Yale   #00356b */
 /* Yonsei #00205B */
+/* Baruch #05336B */
 .navbar {
-    background-color: #00205B; /* Your existing background color */
+    background-color: #05336B; /* Your existing background color */
     color: white; /* Text color */
     padding-top: 0.5rem; /* Adjust this value to reduce the top padding */
     padding-bottom: 0.5rem; /* Adjust this value to reduce the bottom padding */
@@ -32,13 +33,17 @@ a {
 
 .navbar-brand, .navbar-nav .nav-link {
     font-size: 1rem; /* Optionally, adjust the font size for smaller text */
-    padding-top: 0.25rem; /* Fine-tune the padding within items */
-    padding-bottom: 0.25rem; /* Fine-tune the padding within items */
+    /*padding-top: 0.25rem; /* Fine-tune the padding within items */
+    /*padding-bottom: 0.25rem; /* Fine-tune the padding within items */
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0.25rem 0.5rem;
 }
 
 /* Regular link color */
 a {
     color: #407EC9; /* Set your preferred color for regular links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Hovered link color */
@@ -53,6 +58,19 @@ a:active {
 }
 
 /* Hide the main title beneath the main photo */
-.page-title, h1 {  /* Adjust this selector based on the HTML structure */
-    display: none;  /* This will hide the title completely */
+/*.page-title, h1 {  /* Adjust this selector based on the HTML structure */
+    /*display: none;  /* This will hide the title completely */
+/*}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .navbar-brand, 
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
 }

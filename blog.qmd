@@ -11,7 +11,7 @@ title: ""
 #   filter-ui: false
 
 listing:
-  contents: notes-blog
+  contents: Blog
   categories: true
   type: default
   sort: "date desc"
@@ -21,7 +21,6 @@ listing:
   date-format: medium
   fields: [date, title, reading-time, image]
 page-layout: full
-title-block-banner: false
 ---
 
 

@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kisungyou.com/blog.html</loc>
-    <lastmod>2025-02-05T06:41:15.463Z</lastmod>
+    <lastmod>2025-02-05T16:29:43.154Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/notes-teaching/note03-angular-gaussian.html</loc>
-    <lastmod>2025-02-05T06:41:14.383Z</lastmod>
+    <loc>https://kisungyou.com/Teaching/note01-spherical-distance.html</loc>
+    <lastmod>2025-02-05T16:26:53.536Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/software.html</loc>
-    <lastmod>2025-02-05T06:41:12.714Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/notes-blog/blog_001_FisherRao.html</loc>
-    <lastmod>2025-02-05T06:41:11.845Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/teaching.html</loc>
-    <lastmod>2025-02-05T06:41:10.221Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kisungyou.com/publication.html</loc>
-    <lastmod>2025-02-05T06:41:10.751Z</lastmod>
+    <loc>https://kisungyou.com/Blog/blog_001_FisherRao.html</loc>
+    <lastmod>2025-02-05T16:28:20.029Z</lastmod>
   </url>
   <url>
     <loc>https://kisungyou.com/index.html</loc>
-    <lastmod>2025-02-05T06:41:12.194Z</lastmod>
+    <lastmod>2025-02-05T16:30:21.634Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/notes-teaching/note01-spherical-distance.html</loc>
-    <lastmod>2025-02-05T06:41:13.502Z</lastmod>
+    <loc>https://kisungyou.com/teaching.html</loc>
+    <lastmod>2025-02-05T16:30:25.158Z</lastmod>
   </url>
   <url>
-    <loc>https://kisungyou.com/notes-teaching/note02-rodriguez.html</loc>
-    <lastmod>2025-02-05T06:41:15.095Z</lastmod>
+    <loc>https://kisungyou.com/publication.html</loc>
+    <lastmod>2025-02-05T16:30:23.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/Blog/blog_002_ACG.html</loc>
+    <lastmod>2025-02-05T16:30:00.530Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/software.html</loc>
+    <lastmod>2025-02-05T16:30:26.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kisungyou.com/Teaching/note02-rodriguez.html</loc>
+    <lastmod>2025-02-05T16:26:54.236Z</lastmod>
   </url>
 </urlset>

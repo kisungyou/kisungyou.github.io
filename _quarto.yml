@@ -17,6 +17,7 @@ website:
     background: primary
     search: true
     type: textbox
+    pinned: true # Makes the navbar stay fixed at the top
     right:
       - text: "Home"
         file: index.qmd

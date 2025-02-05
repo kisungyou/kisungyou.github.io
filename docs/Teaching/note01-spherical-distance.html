@@ -6,6 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kisung You">
+<meta name="dcterms.date" content="2022-08-09">
+<meta name="description" content="Monte Carlo computation of L_p distance between two densities on the unit hypersphere">
 
 <title>KY-Teaching</title>
 <style>
@@ -20,24 +23,43 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,16 +81,36 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="aes_publication.css">
 <meta property="og:title" content="KY-Teaching">
+<meta property="og:description" content="Monte Carlo computation of \(L_p\) distance between two densities on the unit hypersphere">
 <meta property="og:site-name" content="Kisung You">
 <meta name="twitter:title" content="KY-Teaching">
+<meta name="twitter:description" content="Monte Carlo computation of \(L_p\) distance between two densities on the unit hypersphere">
 <meta name="twitter:creator" content="@kisung_you">
 <meta name="twitter:site" content="@kisung_you">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="citation_title" content="Monte Carlo computation of $L_p$ distance between two densities on the unit hypersphere">
+<meta name="citation_author" content="Kisung You">
+<meta name="citation_publication_date" content="2022-08-09">
+<meta name="citation_cover_date" content="2022-08-09">
+<meta name="citation_year" content="2022">
+<meta name="citation_online_date" content="2022-08-09">
+<meta name="citation_fulltext_html_url" content="https://kisungyou.com/Teaching/note01-spherical-distance.html">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Object Oriented Data Analysis;,citation_author=James Stephen Marron;,citation_author=I. L. Dryden;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_isbn=978-0-8153-9282-8 978-1-03-211480-4;">
+<meta name="citation_reference" content="citation_title=Recherches sur l´attraction des spheroides homogenes;,citation_author=Adrien Marie Legendre;,citation_publication_date=2007;,citation_cover_date=2007;,citation_year=2007;,citation_volume=1785;,citation_journal_title=Memoires de mathematique et de physique : pres. à l´Academie Royale des Sciences, par divers savans, et lûs dans ses assemblees;">
+<meta name="citation_reference" content="citation_title=Directional Statistics;,citation_editor=Kanti V. Mardia;,citation_editor=Peter E. Jupp;,citation_publication_date=1999-01;,citation_cover_date=1999-01;,citation_year=1999;,citation_doi=10.1002/9780470316979;,citation_isbn=978-0-470-31697-9 978-0-471-95333-3;,citation_series_title=Wiley Series in Probability and Statistics;">
+<meta name="citation_reference" content="citation_title=Statistical analysis for the angular central Gaussian distribution on the sphere;,citation_author=David E. Tyler;,citation_publication_date=1987;,citation_cover_date=1987;,citation_year=1987;,citation_issue=3;,citation_doi=10.1093/biomet/74.3.579;,citation_issn=0006-3444, 1464-3510;,citation_volume=74;,citation_journal_title=Biometrika;">
+<meta name="citation_reference" content="citation_title=The matrix angular central Gaussian distribution;,citation_author=Yasuko Chikuse;,citation_publication_date=1990-05;,citation_cover_date=1990-05;,citation_year=1990;,citation_issue=2;,citation_doi=10.1016/0047-259X(90)90050-R;,citation_issn=0047259X;,citation_volume=33;,citation_journal_title=Journal of Multivariate Analysis;">
+<meta name="citation_reference" content="citation_title=The matrix cookbook;,citation_abstract=Matrix identities, relations and approximations. A desktop reference for quick overview of mathematics of matrices.;,citation_author=K. B. Petersen;,citation_author=M. S. Pedersen;,citation_publication_date=2012-11;,citation_cover_date=2012-11;,citation_year=2012;,citation_publisher=Technical University of Denmark;">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kisung You</span>
     </a>
   </div>
@@ -89,23 +131,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publication.html" rel="" target="">
+    <a class="nav-link" href="../publication.html" rel="" target="">
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html" rel="" target="">
+    <a class="nav-link" href="../software.html" rel="" target="">
  <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link" href="../blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -116,73 +158,101 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Monte Carlo computation of <span class="math inline">\(L_p\)</span> distance between two densities on the unit hypersphere</h1>
+                  <div>
+        <div class="description">
+          Monte Carlo computation of <span class="math inline">\(L_p\)</span> distance between two densities on the unit hypersphere
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Kisung You </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 9, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link active" data-scroll-target="#teaching">Teaching</a>
-  <ul class="collapse">
-  <li><a href="#courses-at-baruch-college" id="toc-courses-at-baruch-college" class="nav-link" data-scroll-target="#courses-at-baruch-college">Courses at Baruch College</a></li>
-  <li><a href="#miscellaneous-notes" id="toc-miscellaneous-notes" class="nav-link" data-scroll-target="#miscellaneous-notes">Miscellaneous Notes</a></li>
-  </ul></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link active" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#computation" id="toc-computation" class="nav-link" data-scroll-target="#computation">Computation</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<section id="teaching" class="level1">
-<h1>Teaching</h1>
-<section id="courses-at-baruch-college" class="level2">
-<h2 class="anchored" data-anchor-id="courses-at-baruch-college">Courses at Baruch College</h2>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Course</th>
-<th style="text-align: center;">Semester</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MTH 4430 <a href="https://baruch-undergraduate.catalog.cuny.edu/courses/1454231">Mathematics of Inferential Statistics</a></td>
-<td style="text-align: center;">23F, 24F</td>
-</tr>
-<tr class="even">
-<td>MTH 4130 <a href="https://baruch-undergraduate.catalog.cuny.edu/courses/0931901">Mathematics of Data Analysis</a></td>
-<td style="text-align: center;">24F</td>
-</tr>
-<tr class="odd">
-<td>MTH 4125 <a href="https://baruch-undergraduate.catalog.cuny.edu/courses/0931891">Introduction to Stochastic Processes</a></td>
-<td style="text-align: center;">24S</td>
-</tr>
-<tr class="even">
-<td>MTH 2003 <a href="https://baruch-undergraduate.catalog.cuny.edu/courses/0931351">Precalculus and Elements of Calculus 1A</a></td>
-<td style="text-align: center;">23F</td>
-</tr>
-</tbody>
-</table>
 
-<!-- For future reference, put <br> tag in a cell when it comes to make a multiline cell in the table. -->
+<section id="problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
+<p>A <span class="math inline">\(d\)</span>-dimensional unit hypersphere <span class="math inline">\(\mathbb{S}^d = \lbrace x \in \mathbb{R}^{d+1}~|~ \|x\|_2^2 = \sum_{i=1}^{d+1} x_i^2 = 1\rbrace\)</span> is one of the standard mathematical spaces in the field of <a href="https://doi.org/10.1201/9781351189675">objected-oriented data analysis</a> <span class="citation" data-cites="marron_2021_ObjectOrientedData">(<a href="#ref-marron_2021_ObjectOrientedData" role="doc-biblioref">Marron and Dryden 2021</a>)</span>. Let <span class="math inline">\(\mathcal{P}(\mathbb{S}^d)\)</span> denote a space of probability densities on <span class="math inline">\(\mathbb{S}^d\)</span>. For two densities <span class="math inline">\(f,g\in\mathcal{P}(\mathbb{S}^d)\)</span>, it is frequently needed to measure dissimilarity between the two. Unfortunately, even for the most well-known distributions on the hypersphere, analytic formula for any discrepancy measure is rarely available, leading to require numerical schemes for approximation. Here we focus on <span class="math inline">\(L_p\)</span> distance between the two densities, <span id="eq-objective"><span class="math display">\[
+L_p (f,g) = \left( \int_{\mathbb{S}^d} |f(x) - g(x)|^p \right)^{1/p}
+\tag{1}\]</span></span> and we show how to combine Monte Carlo way of integration by means of <a href="https://en.wikipedia.org/wiki/Importance_sampling">importance sampling</a> to approximate <a href="#eq-objective">Equation&nbsp;1</a>.</p>
 </section>
-<section id="miscellaneous-notes" class="level2">
-<h2 class="anchored" data-anchor-id="miscellaneous-notes">Miscellaneous Notes</h2>
-<p>I maintain a collection of concise technical notes to supplement my classes.</p>
-<ul>
-<li>(2022/08/12) <a href="Teaching/note03-angular-gaussian.html">Angular Central Gaussian Distribution and its Matrix Variant</a></li>
-<li>(2022/08/10) <a href="Teaching/note02-rodriguez.html">Rodrigues’ formula for the Legendre polynomials</a>.</li>
-<li>(2022/08/09) <a href="Teaching/note01-spherical-distance.html">Monte Carlo computation of <span class="math inline">\(L_p\)</span> distance between two densities on the unit hypersphere</a>.</li>
-</ul>
+<section id="computation" class="level2">
+<h2 class="anchored" data-anchor-id="computation">Computation</h2>
+<p>Importance sampling requires a proposal density. The easiest choice is to use uniform density <span class="math inline">\(u(x)\)</span> as an importance proposal since sampling from <span class="math inline">\(u(x)\)</span> is trivial. First, take a random sample from standard normal distribution <span class="math inline">\(x \sim \mathcal{N}(0,I)\)</span> in <span class="math inline">\(\mathbb{R}^{d+1}\)</span>. Then, the rest is to take <span class="math inline">\(L_2\)</span> normalization, i.e., <span class="math inline">\(x \leftarrow x / \|x\|_2\)</span>, which makes a sampled vector to have a unit norm. Given the sample generation process, we have the following <span class="math display">\[\begin{aligned}
+L_p (f,g)^p &amp;= \int_{\mathbb{S}^d} |f(x)-g(x)|^p dx \\
+&amp;= \int_{\mathbb{S}^d} \frac{|f(x)-g(x)|^p}{u(x)} u(x)  dx \\
+&amp;= \mathbb{E}_{u(x)} \left\lbrack \frac{|f(x)-g(x)|^p}{u(x)} \right\rbrack\\
+&amp;\approx \frac{1}{N} \sum_{n=1}^N \frac{|f(x_n)-g(x_n)|^p}{u(x_n)} \,\,\textrm{for}\,\, x_n \overset{iid}{\sim} u(x),
+\end{aligned}
+\]</span> where the last term gets better approximation as <span class="math inline">\(N\rightarrow \infty\)</span>.</p>
+<p>Here the uniform density <span class="math inline">\(u(x)\)</span> is an inverse of the surface area of the <span class="math inline">\(d\)</span>-dimensional sphere <span class="math inline">\(S_n\)</span>, which is defined as <span class="math display">\[
+S_n = \frac{2\pi^{(n+1)/2}}{\Gamma((n+1)/2)},
+\]</span> where <span class="math inline">\(\Gamma(x)\)</span> is the gamma function.</p>
+</section>
+<section id="references" class="level2 unnumbered unlisted">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-marron_2021_ObjectOrientedData" class="csl-entry" role="listitem">
+Marron, James Stephen, and I. L. Dryden. 2021. <em>Object <span>Oriented Data Analysis</span></em>. <span>Boca Raton</span>: <span>Taylor &amp; Francis Group, LLC</span>.
+</div>
+</div>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{you2022,
+  author = {You, Kisung},
+  title = {Monte {Carlo} Computation of {\$L\_p\$} Distance Between Two
+    Densities on the Unit Hypersphere},
+  date = {2022-08-09},
+  url = {https://kisungyou.com/Teaching/note01-spherical-distance.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-you2022" class="csl-entry quarto-appendix-citeas" role="listitem">
+You, Kisung. 2022. <span>“Monte Carlo Computation of $L_p$ Distance
+Between Two Densities on the Unit Hypersphere.”</span> August 9, 2022.
+<a href="https://kisungyou.com/Teaching/note01-spherical-distance.html">https://kisungyou.com/Teaching/note01-spherical-distance.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
