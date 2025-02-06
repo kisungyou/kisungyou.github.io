@@ -1,6 +1,6 @@
 ---
 pagetitle: "KY-Blog"
-title: "What is Angular Central Gaussian distribution?"
+title: "What is the Angular Central Gaussian distribution?"
 date: 2022-08-12
 categories:
   - What is?

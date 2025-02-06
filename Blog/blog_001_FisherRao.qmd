@@ -1,6 +1,6 @@
 ---
 pagetitle: "KY-Blog"
-title: "What is Fisher-Rao distance?"
+title: "What is the Fisher-Rao distance?"
 image: images/figure_001_FisherRao.png
 date: 2025-02-05
 categories:
