@@ -23,7 +23,7 @@ about:
       url: "https://scholar.google.com/citations?user=JVyf5I8AAAAJ"
     - text: Email
       icon: envelope
-      url: "mailto:kisungyou@outlook.com"
+      url: "mailto:kisung.you@outlook.com"
 comments: false
 format:
   html:
@@ -36,10 +36,7 @@ format:
 
 I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine. My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners.
 
-
-### Contact
-
-For students, please use my email available from the [department directory](https://mfeapp.baruch.cuny.edu/math/faculty/). 
+My [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) is 4.
 
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9773290899484!2d-73.98584178878957!3d40.740524371269956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a7550271dd%3A0xec88233d3a5d270f!2sBaruch%20College!5e0!3m2!1sen!2sus!4v1692141431588!5m2!1sen!2sus" width="99%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
