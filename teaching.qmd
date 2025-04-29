@@ -28,6 +28,5 @@ toc-title: " "
 
 I maintain a collection of concise technical notes to supplement my classes.
 
-* (2022/08/12) [Angular Central Gaussian Distribution and its Matrix Variant](Teaching/note03-angular-gaussian.html)
 * (2022/08/10) [Rodrigues' formula for the Legendre polynomials](Teaching/note02-rodriguez.html).
 * (2022/08/09) [Monte Carlo computation of $L_p$ distance between two densities on the unit hypersphere](Teaching/note01-spherical-distance.html).

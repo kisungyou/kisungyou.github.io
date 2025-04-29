@@ -116,14 +116,14 @@
     "href": "index.html",
     "title": "Kisung You",
     "section": "",
-    "text": "Welcome!\nI am an assistant professor in the Department of Mathematics at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine. My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners.\nMy Erdős number is 4."
+    "text": "Welcome!\nI am an assistant professor in the Department of Mathematics at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine. My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners."
   },
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Course\nSemester\n\n\n\n\nMTH 4430 Mathematics of Inferential Statistics\n23F, 24F\n\n\nMTH 4130 Mathematics of Data Analysis\n24F\n\n\nMTH 4125 Introduction to Stochastic Processes\n24S\n\n\nMTH 2003 Precalculus and Elements of Calculus 1A\n23F\n\n\n\n\n\n\n\n\nI maintain a collection of concise technical notes to supplement my classes.\n\n(2022/08/12) Angular Central Gaussian Distribution and its Matrix Variant\n(2022/08/10) Rodrigues’ formula for the Legendre polynomials.\n(2022/08/09) Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere."
+    "text": "Course\nSemester\n\n\n\n\nMTH 4430 Mathematics of Inferential Statistics\n23F, 24F\n\n\nMTH 4130 Mathematics of Data Analysis\n24F\n\n\nMTH 4125 Introduction to Stochastic Processes\n24S\n\n\nMTH 2003 Precalculus and Elements of Calculus 1A\n23F\n\n\n\n\n\n\n\n\nI maintain a collection of concise technical notes to supplement my classes.\n\n(2022/08/10) Rodrigues’ formula for the Legendre polynomials.\n(2022/08/09) Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere."
   },
   {
     "objectID": "teaching.html#courses-at-baruch-college",
@@ -137,7 +137,7 @@
     "href": "teaching.html#miscellaneous-notes",
     "title": "Teaching",
     "section": "",
-    "text": "I maintain a collection of concise technical notes to supplement my classes.\n\n(2022/08/12) Angular Central Gaussian Distribution and its Matrix Variant\n(2022/08/10) Rodrigues’ formula for the Legendre polynomials.\n(2022/08/09) Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere."
+    "text": "I maintain a collection of concise technical notes to supplement my classes.\n\n(2022/08/10) Rodrigues’ formula for the Legendre polynomials.\n(2022/08/09) Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere."
   },
   {
     "objectID": "publication.html",
