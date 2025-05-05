@@ -46,6 +46,36 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
   thumbnail_url: /images/templates/no-image-yet.png
 
+arxiv_scalable_functional_network:
+  title: "Scalable Geometric Learning with Correlation-Based Functional Brain Networks"
+  authors:
+    - me
+    - Yelim Lee
+    - Hae-Jeong Park
+  year: 2025
+  preprint: https://arxiv.org/abs/2503.23653
+  flag: preprint
+  github:
+  thumbnail_url: /images/templates/no-image-yet.png
+  
+arxiv_wl_geometry:
+  title: "Learning over von Mises-Fisher Distributions via a Wasserstein-like Geometry"
+  authors:
+    - me
+    - Dennis Shung
+    - Mauro Giuffrè
+  year: 2025
+  preprint: https://arxiv.org/abs/2504.14164
+  flag: preprint
+
+arxiv_semantics_at_an_angle:
+  title: "Semantics at an Angle: When Cosine Similarity Works Until It Doesn't"
+  authors:
+    - me
+  year: 2025
+  preprint: https://arxiv.org/abs/2504.16318
+  flag: preprint
+    
 
 # ---------------------------------------------------------------
 # published
@@ -98,19 +128,18 @@ c2024_human_algorithmic_interaction:
   venue: CHI Conference on Human Factors in Computing Systems
   published_url: https://doi.org/10.1145/3613904.3642024
   
-j2024_wasserstein_median:
+j2025_wasserstein_median:
   title: "On the Wasserstein median of probability measures"
   authors: 
     - me
     - Dennis Shung
     - Mauro Giuffrè
-  year: 2024
+  year: 2025
   preprint: https://doi.org/10.48550/arXiv.2209.03318
   flag: published
   venue: Journal of Computational and Graphical Statistics
   published_url: https://doi.org/10.1080/10618600.2024.2374580
-  github: https://github.com/kisungyou/papers/tree/master/05-WassersteinMedian
-  
+
 j2016_vision_based_detection:
   title: "Vision-based detection of loosened bolts using the Hough transform and support vector machines"
   authors:
@@ -397,3 +426,30 @@ c2023_assessing_the_usability_of_gutgpt:
   preprint: https://arxiv.org/abs/2312.10072
   flag: published
   venue: Machine Learning for Health (ML4H) Symposium
+  
+j2025_EVAL_framework:
+  title: "Expert of Experts Verification and Alignment (EVAL) Framework for Large Language Models Safety in Gastroenterology"
+  authors:
+    - Mauro Giuffrè
+    - me
+    - Ziteng Pang
+    - Simone Kresevic
+    - Sunny Chung
+    - Ryan Chen
+    - Youngmin Ko
+    - Colleen Chan
+    - Theo Saarinen
+    - Milos Ajcevic
+    - Lory Crocè
+    - Guadalupe Garsia-Tsao
+    - Ian Gralnek
+    - Joseph Sung
+    - Alan Barkun
+    - Loren Laine
+    - Jasjeet Sekhon
+    - Bradly Stadie
+    - Dennis Shung
+  flag: published
+  year: 2025
+  venue: npj Digital Medicine
+  published_url: https://doi.org/10.1038/s41746-025-01589-z

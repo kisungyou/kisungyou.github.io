@@ -8,10 +8,12 @@ toc-location: right
 toc-expand: true
 toc-title: " "
 section-divs: false
-keep-md: true
+keep-md: false
 format:
   html:
     page-layout: article
+execute:
+  cache: false
 ---
 
 <!-- # flags -->
