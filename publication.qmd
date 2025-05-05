@@ -1,20 +1,34 @@
 ---
-pagetitle: "KY-Publications"
+pagetitle: "KY-Teaching"
 title: " "
 echo: false
 jupyter: python3
+section-divs: true
 toc: true
 toc-location: right
 toc-expand: true
 toc-title: " "
-section-divs: false
-keep-md: false
-format:
-  html:
-    page-layout: article
 execute:
   cache: false
 ---
+
+<!-- --- -->
+<!-- pagetitle: "KY-Publications" -->
+<!-- title: " " -->
+<!-- echo: false -->
+<!-- jupyter: python3 -->
+<!-- toc: true -->
+<!-- toc-location: right -->
+<!-- toc-expand: true -->
+<!-- toc-title: " " -->
+<!-- section-divs: false -->
+<!-- keep-md: false -->
+<!-- format: -->
+<!--   html: -->
+<!--     page-layout: article -->
+<!-- execute: -->
+<!--   cache: false -->
+<!-- --- -->
 
 <!-- # flags -->
 <!-- - 'published' : Publication -->
