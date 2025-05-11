@@ -1,5 +1,5 @@
 ---
-pagetitle: "KY-Teaching"
+pagetitle: "KY-Publications"
 title: " "
 echo: false
 jupyter: python3

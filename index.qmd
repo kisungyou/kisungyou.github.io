@@ -7,20 +7,20 @@ about:
   template: trestles
   image: images/me_twain.jpg
   image-shape: rounded
-  image-width: 75%
+  image-width: 65%
   links:
+    - text: Google Scholar
+      icon: google
+      url: "https://scholar.google.com/citations?user=JVyf5I8AAAAJ"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/kisungyou"
     - text: LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/kisung-you-b5b23b131/"
     - text: Twitter
       icon: twitter
       url: "https://twitter.com/kisung_you"
-    - text: GitHub
-      icon: github
-      url: "https://github.com/kisungyou"
-    - text: Google Scholar
-      icon: google
-      url: "https://scholar.google.com/citations?user=JVyf5I8AAAAJ"
     - text: Email
       icon: envelope
       url: "mailto:kisung.you@outlook.com"
@@ -37,12 +37,61 @@ execute:
 
 ### Welcome!
 
-I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine. My research revolves around harnessing mathematical tools from statistics, geometry, and topology to design innovative methods aimed at unraveling intricate scientific inquiries. My primary focus resides within the domain of biomedical data analysis. Additionally, I have deep enthusiasm for high-performance computing and the development of statistical software, driven by the aspiration to make methodological breakthroughs accessible to a broader audience of practitioners.
 
+I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine.  My research integrates tools from statistics, differential geometry, and computational mathematics to develop new methods for complex scientific problems, with a strong focus on biomedical data analysis. I am also passionate about high-performance computing and statistical software development, aiming to make advanced methods practically accessible across disciplines.
 
-This website is last updated on `r format(Sys.Date(), "%B %d, %Y")`.
+#### 📰 News
 
+<div style="margin-top: 1.0em;">
+```{r, results='asis', cache=FALSE}
+news <- yaml::read_yaml("news.yml")
+
+# Sort descending
+news_sorted <- news[order(sapply(news, function(x) as.Date(x$date)), decreasing = TRUE)]
+news_top <- head(news_sorted, 4)
+
+# Define row colors
+row_colors <- c("#A7D3F250", "#AE914250", "#C1C6C850", "#6E4C7E50")  # as many as you need
+
+# Use row colors
+use_row_colors = FALSE
+
+# Render table
+cat("<table style='width:100%; border-collapse: collapse;'>\n")
+cat("<tbody>\n")
+
+for (i in seq_along(news_top)) {
+  item <- news_top[[i]]
+  row_color <- row_colors[(i - 1) %% length(row_colors) + 1]
+  date_str <- format(as.Date(item$date), "%Y/%m/%d")
+  
+  if (use_row_colors){
+    cat(sprintf(
+    "<tr style='background-color: %s; line-height: 2;'>\n  <td style='padding: 2px 6px; vertical-align: top; width: 100px;'><strong>%s</strong></td>\n  <td style='padding: 2px 6px;'>%s</td>\n</tr>\n",
+    row_color, date_str, item$title
+  ))  
+  } else {
+    cat(sprintf(
+    "<tr style='line-height: 2;'>\n  <td style='padding: 2px 6px; vertical-align: top; width: 100px;'><strong>%s</strong></td>\n  <td style='padding: 2px 6px;'>%s</td>\n</tr>\n",
+    date_str, item$title
+  ))
+  }
+  
+}
+
+cat("</tbody>\n</table>\n")
+```
+</div>
+
+#### 📍 You can find me around in NYC:
+
+<div style="margin-top: 1.0em;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9773290899484!2d-73.98584178878957!3d40.740524371269956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a7550271dd%3A0xec88233d3a5d270f!2sBaruch%20College!5e0!3m2!1sen!2sus!4v1692141431588!5m2!1sen!2sus" width="99%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
+
+<span style="font-size: 0.9em; color: gray;">
+Last updated on `r format(Sys.Date(), "%B %d, %Y")`
+</span>
 
 :::

@@ -23,8 +23,9 @@ a {
 /* Yale   #00356b */
 /* Yonsei #00205B */
 /* Baruch #05336B */
+/* Average #042E61 */
 .navbar {
-    background-color: #05336B; /* Your existing background color */
+    background-color: #042E61; /* Your existing background color */
     color: white; /* Text color */
     padding-top: 0.5rem; /* Adjust this value to reduce the top padding */
     padding-bottom: 0.5rem; /* Adjust this value to reduce the bottom padding */
