@@ -29,8 +29,6 @@ website:
         file: software.qmd
       - text: "Blog"
         file: blog.qmd
-      - text: "글"
-        file: blog_kr.qmd
   page-footer: "© Kisung You 2021-2025"
   page-navigation: true
 
