@@ -5,5 +5,11 @@
       "/Blog/blog_001_FisherRao.html",
       "/Blog/blog_002_ACG.html"
     ]
+  },
+  {
+    "listing": "/blog_kr.html",
+    "items": [
+      "/Blog_kr/kr_001_StatAgency.html"
+    ]
   }
 ]

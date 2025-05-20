@@ -7,6 +7,20 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nWhat is the Fisher-Rao distance?\n\n\n\n\n\n\n\n\n\nFeb 5, 2025\n\n\n7 min\n\n\n\n\n\n\n  \n\n\n\n\nWhat is the Angular Central Gaussian distribution?\n\n\n\n\n\n\n\n\n\nAug 12, 2022\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "Blog_kr/kr_001_StatAgency.html",
+    "href": "Blog_kr/kr_001_StatAgency.html",
+    "title": "통계학자도, 데이터 과학자도 아닌 사람이 통계청장을 맡는 나라",
+    "section": "",
+    "text": "통계는 결과가 아니라 선택의 산물이다.\n지난 10여 년 동안 “데이터 기반 사회”라는 구호는 대중매체와 정책문서에서 반복되며 마치 상식처럼 자리 잡았다. 그러나 정작 통계를 전문적으로 다루지 않는 다수에게 통계는 여전히 객관적 진실의 숫자로 받아들여진다. 측정 방법과 표본 설계, 모형 설정이라는 전제조건이 빠진채로 말이다. 이 글은 바로 그 지점을 질문한다.\n데이터는 누가 해석하고, 그 해석은 어떤 선택 위에 서 있는가?\n통계를 둘러싼 대중적 오해를 간단히 정리해 보자.\n이 세 가지는 통계를 “객관적 무오류의 지표”로 소비하게 만드는 위험한 환상을 드러낸다. 그리고 이 환상을 깨뜨릴 책임이 대한민국 통계청에 있다."
+  },
+  {
+    "objectID": "Blog_kr/kr_001_StatAgency.html#footnotes",
+    "href": "Blog_kr/kr_001_StatAgency.html#footnotes",
+    "title": "통계학자도, 데이터 과학자도 아닌 사람이 통계청장을 맡는 나라",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n통계청 홈페이지 참고↩︎\n이명박 정부 이래로 총 10명의 통계청장이 임명되었다. 행정고시 이후 유학을 통해 경영학 석사를 받은 사람은 2명, 경제학 박사를 받은 사람은 3명이다. 나머지 5명은 모두 학계에서 경제학 박사를 받으신 분들로서 그들의 전공 분야는 계량 경제학(1), 마르크스 경제학(1), 노동 경제학(2), 그리고 재정학(1)이다.↩︎\n통계학을 공부하며 이 말을 들어보지 못한 사람은 아마도 없을 것이다. 수업에서나 논문의 리비전에서도 정말 끝도 없이 나오는 걸 보면 아마도 맞는 말이 아닐까 싶다.↩︎\n이 글을 쓰는 시점에서는 그보다 더 나아가 정부효율부(Department of Government Efficiency; DOGE)를 통한 대대적인 개혁에 나서고 있는 형편이다.↩︎\n계량경제학의 영원한 친구 시계열 분석을 제대로 가르치는 통계학 학위 과정은 미국에서 많이 사라진 것으로 알고 있다. 물론, 나처럼 야매로 공부해서 가르치는 경우는 많지만.↩︎\n2015년 서울시 자료를 살펴보자.↩︎"
+  },
+  {
     "objectID": "Teaching/note01-spherical-distance.html",
     "href": "Teaching/note01-spherical-distance.html",
     "title": "Monte Carlo computation of \\(L_p\\) distance between two densities on the unit hypersphere",
@@ -229,5 +243,12 @@
     "title": "Rodrigues’ formula for the Legendre polynomials",
     "section": "Approach",
     "text": "Approach\nI will proceed in two steps. Let \\(f_n (x) = (x^2 - 1)^n\\) then we first show that the \\(n\\)-th derivative of \\(f_n (x)\\) is a solution of Legendre equation. Then, we find a proper scaling factor of \\(1/ 2^n n!\\) to recover \\(P_n (x)\\) in line with a common constraint that \\(P_n (x) = 1\\) for all \\(n\\) when \\(x=1\\). For notational simplicity, we denote \\(g^{(n)}\\) for the \\(n\\)-th derivative of a function \\(g(x)\\), i.e, \\[\ng^{(n)} = \\frac{d^n}{dx^n} g(x).\n\\]\nBefore proceeding, we need (generalized) Leibniz’s rule. Suppose we have \\(n\\)-times differentiable functions \\(f(x)\\) and \\(g(x)\\), then \\[\n\\frac{d^n}{dx^n} f(x) g(x) = \\sum_{k=0}^n\n\\begin{pmatrix}\nn \\\\ k\n\\end{pmatrix}\nf^{(n-k)} (x) g^{(k)} (x) = \\sum_{k=0}^n \\frac{n!}{k! (n-k)!} f^{(n-k)} (x) g^{(k)} (x)\n\\tag{3}\\] where the choice of \\(f\\) and \\(g\\) can help in reducing the number of terms when there exists a polynomial term. For example, when \\(g(x) = x^2\\), \\(g^{(k)} = 0\\) for all \\(k \\geq 3\\).\n\nStep 1. \\(f_n^{(n)} (x)\\) is one solution.\nOur goal here is to show that \\(f_n^{(n)}(x)\\) is a solution for Equation 1. As a first step, let’s take derivative on \\(f_n (x)\\), \\[\n\\begin{align*}\n\\frac{d}{dx} f_n (x) &= 2 n (x^2  - 1)^{n-1} x \\\\\n&= 2nx (x^2 - 1)^{n-1}.\n\\end{align*}\n\\] By multiplying \\((x^2 - 1)\\) both side of the above, we have \\[\n(x^2 - 1) \\frac{d}{dx} f_n (x)  = 2nx (x^2 - 1)^n.\n\\]\nNow, differentiate both sides \\((n+1)\\) times, which leads to \\[\n\\begin{align*}\n\\frac{d^{n+1}}{dx^{n+1}} \\left[ \\frac{d}{dx} f_n (x) \\right]  (x^2 -1)\n&= \\sum_{k=0}^{n+1}\n\\begin{pmatrix}\nn+1 \\\\ k\n\\end{pmatrix}\n\\left( \\frac{d}{dx} f_n (x) \\right)^{(n+1-k)} (x^2-1)^{(k)} \\\\\n&=\n\\begin{pmatrix}\nn+1 \\\\ 0\n\\end{pmatrix}\nf_n^{(n+2)} (x) (x^2-1) +\n\\begin{pmatrix}\nn+1 \\\\ 1\n\\end{pmatrix}\n2x f_n^{(n+1)}  (x) +\n\\begin{pmatrix}\nn+1 \\\\ 2\n\\end{pmatrix}\nf_n ^{(n)} (x) \\cdot 2 \\\\\n&= (x^2-1) f_n^{(n+2)} (x) + 2(n+1)x f_n^{(n+1)} (x) +\nn(n+1) f_n^{(n)} (x)\n\\end{align*}\n\\] for the left-hand side. We also have that \\[\n\\begin{align*}\n\\frac{d^{n+1}}{dx^{n+1}} f_n(x) 2nx &=\n\\begin{pmatrix}\nn+1 \\\\ 0\n\\end{pmatrix}\nf_n^{(n+1)} (x) 2nx +\n\\begin{pmatrix}\nn+1 \\\\ 1\n\\end{pmatrix}\nf_n^{(n)} (x) 2n \\\\\n&= 2nx f_n^{(n+1)} (x) + 2n(n+1)f_n^{(n)}(x).\n\\end{align*}\n\\] Therefore, we have the following arrangement, \\[\n\\begin{equation*}\n    \\begin{gathered}\n    (x^2 - 1) f_n^{(n+2)} (x) + 2x(n+1)f_n^{(n+1)} (x) + n(n+1)f_n^{(n)} (x) =\n    2nx f_n^{(n+1)} (x) + 2n(n+1) f_n^{(n)} (x) \\\\\n    (x^2-1) f_n^{(n+2)} (x) + 2x f_n^{(n+1)}(x) - n(n+1)f_n^{(n)} (x) = 0 \\\\\n    (1- x^2) f_n^{(n+2)} (x) - 2x f_n^{(n+1)}(x) + n(n+1)f_n^{(n)} (x) = 0\n    \\end{gathered}\n\\end{equation*}\n\\] where the last line is in the form of Equation 1 so that we have \\(f_n^{(n)} (x)\\) as a solution.\n\n\nStep 2. Find a scaling factor.\nEven though \\(f_n^{(n)} (x)\\) as a solution, we have a requirement for the standard Legendre polynomial that \\(P_n (x)=1\\) for \\(x=1\\). Let us take a closer look at \\(f_n^{(n)}(x)\\) when evaluated at \\(x=1\\). \\[\n\\begin{align*}\nf_n^{(n)} (x) &= \\frac{d^n}{dx^n} (x^2-1)^n \\\\\n&= \\frac{d^n}{dx^n} (x+1)^n (x-1)^n \\\\\n&= \\sum_{k=0}^n \\begin{pmatrix}\nn \\\\ k\n\\end{pmatrix}\n\\left( (x+1)^n \\right)^{(k)} \\left( (x-1)^n \\right) ^{(n-k)} \\quad \\textrm{by the Leibniz's rule} \\\\\n&= \\sum_{k=0}^n \\begin{pmatrix}\nn \\\\ k\n\\end{pmatrix}\n\\frac{n!}{(n-k)!} (x+1)^{n-k} \\frac{n!}{k!} (x-1)^k \\qquad (*) \\\\\n&= n! \\sum_{k=0}^n \\begin{pmatrix}\nn \\\\ k\n\\end{pmatrix} \\frac{n!}{(n-k)! k!} (x+1)^{n-k} (x-1)^k \\\\\n&= n! \\sum_{k=0}^n \\begin{pmatrix}\nn \\\\ k\n\\end{pmatrix}^2 (x+1)^{n-k} (x-1)^k,\n\\end{align*}\n\\] Since we want to evaluate \\(f_n^{(n)} (x)\\) at \\(x=1\\), the last line of equations above tells us that all the terms but \\(k=0\\) become zero, \\[\n\\begin{equation*}\nf_n^{(n)} (x=1) = n! \\begin{pmatrix}\nn \\\\ 0\n\\end{pmatrix}^2 2^{n-0} = n! 2^n\n\\end{equation*}\n\\] which finally leads to define \\(P_n (x)\\) as \\[\nP_n (x) = \\frac{1}{n! 2^n}f_n^{(n)}(x)  = \\frac{1}{n! 2^n} \\frac{d^n}{dx^n} (x^2-1)^n\n\\] to fulfill the condition of \\(P_n (x) =1\\) for \\(x=1\\)."
+  },
+  {
+    "objectID": "blog_kr.html",
+    "href": "blog_kr.html",
+    "title": "Kisung You",
+    "section": "",
+    "text": "통계학자도, 데이터 과학자도 아닌 사람이 통계청장을 맡는 나라\n\n\n\n\n\n\n\n\n\nMay 17, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]

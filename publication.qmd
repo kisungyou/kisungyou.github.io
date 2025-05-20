@@ -35,6 +35,23 @@ execute:
 <!-- - 'preprint'  : Preprint -->
 
 <!-- :::{.column-page-left} -->
+
+```{python}
+#| label: install-packages
+import importlib, subprocess, sys
+
+def ensure(pkg):
+    try:
+        return importlib.import_module(pkg)
+    except ModuleNotFoundError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
+        return importlib.import_module(pkg)
+
+pd = ensure("pandas")
+tb = ensure("tabulate")
+```
+
+
 # Publications 
 
 ```{python}
@@ -156,7 +173,40 @@ for year in sorted(pub_strs["wps"].keys(), reverse=True):
 ```
 
 
+<!-- ## List of Coauthors -->
 
+```{python}
+#| label: "coauthor-markdown-fixed"
+#| output: asis
+import pandas as pd
+from IPython.display import Markdown
+
+# 1. count collaborations
+from collections import Counter
+collab = Counter()
+for item in yaml_data.values():
+    for aut in item.get("authors", []):
+        if aut != "me":
+            collab[aut] += 1
+
+# 2. build DataFrame (cast to list so from_records can index)
+records = list(collab.items())
+df = (
+    pd.DataFrame.from_records(records, columns=["Author", "Count"])
+      .sort_values("Count", ascending=False)
+      .reset_index(drop=True)
+)
+
+# 3. make each name a link if you have a URL for them
+def mk_link(name):
+    url = centralized_author_urls.get(name)
+    return f"[{name}]({url})" if url else name
+
+df["Author"] = df["Author"].map(mk_link)
+
+# 4. render as a Markdown table
+#display(Markdown(df.to_markdown(index=False)))
+```
 
 
 <!-- ::: -->

@@ -1,0 +1,30 @@
+---
+pagetitle: "KY-글"
+title: ""
+# control is available at
+# > https://quarto.org/docs/websites/website-listings.html
+# listing:
+#   fields: [image, date, title, description, categories]
+#   type: default
+#   #feed: true
+#   sort-ui: [title, date]
+#   filter-ui: false
+
+listing:
+  contents: Blog_kr
+  categories: true
+  type: default
+  sort: "date desc"
+  # sort-ui: [title, date]
+  # filter-ui: [title, date]
+  filter-ui: false
+  date-format: medium
+  fields: [date, title]
+page-layout: full
+---
+
+
+
+
+<!-- ::: column-page -->
+<!-- ::: -->
