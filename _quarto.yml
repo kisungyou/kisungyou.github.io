@@ -8,6 +8,7 @@ website:
   title: "Kisung You"
   description: "Personal Website."
   site-url: https://kisungyou.com
+  google-analytics: "G-YRWM5FEPWV"
   open-graph: true
   twitter-card: 
     creator: "@kisung_you"
@@ -48,7 +49,6 @@ format:
     toc-title: "Contents"
     html-math-method: mathjax # katex
     highlight-style: github
-    google-analytics: "G-YRWM5FEPWV"
 
 editor: source
 
