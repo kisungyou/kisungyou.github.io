@@ -48,6 +48,7 @@ format:
     toc-title: "Contents"
     html-math-method: mathjax # katex
     highlight-style: github
+    google-analytics: "G-YRWM5FEPWV"
 
 editor: source
 
