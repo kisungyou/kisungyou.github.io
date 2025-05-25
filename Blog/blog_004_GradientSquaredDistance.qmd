@@ -35,7 +35,7 @@ the squared Riemannian distance function $d^2(p,q)$ defined on a [Riemannian man
 $$
 \nabla_x d^2(x,y) = -2\log_x y,
 $$
-where $\log_x y$ is the logarithmic map, which pulls a point $y$ to the tangent space at $x$[^1]. This is the manifold generalization of the Euclidean identity $\nabla_x \|x-y\|^2 = -2(x-y)$, where $\|\cdot\|$ is the Euclidean norm.
+where $\log_x y$ is the logarithmic map, which pulls a point $y$ to the tangent space at $x$[^1]. This is the manifold generalization of the Euclidean identity $\nabla_x \|x-y\|^2 = -2(y-x)$, where $\|\cdot\|$ is the Euclidean norm.
 
 
 I first encountered this identity when I was writing my own code during my doctoral studies. I encountered the proof on [Stack Exchange](https://math.stackexchange.com/questions/2977849/gradient-of-distance-squared-on-riemannian-manifold), but at that time it was of no use for me. Later I learned that one can show this identity in several ways, and here is mine.
