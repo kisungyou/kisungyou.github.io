@@ -24,7 +24,5 @@ page-layout: full
 ---
 
 
-
-
 <!-- ::: column-page -->
 <!-- ::: -->

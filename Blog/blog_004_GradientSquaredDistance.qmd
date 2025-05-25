@@ -1,9 +1,9 @@
 ---
 pagetitle: "KY-Blog"
-title: "What is the gradient of squared distance on a Riemannian manifold?"
+title: "Gradient of squared distance on a Riemannian manifold"
 date: 2025-05-24
 categories:
-  - What is?
+  - Geometric
 format: 
   html:
     df-print: paged

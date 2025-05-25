@@ -1,9 +1,9 @@
 ---
 pagetitle: "KY-Blog"
-title: "How is the space of Dirac measures dense in Wasserstein space?"
+title: "The space of Dirac measures is dense in Wasserstein space"
 date: 2025-05-17
 categories:
-  - How is?
+  - Optimal Transport
 format: 
   html:
     df-print: paged
