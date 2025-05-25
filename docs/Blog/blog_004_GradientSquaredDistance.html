@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kisung You">
+<meta name="dcterms.date" content="2025-05-24">
 
 <title>KY-Blog</title>
 <style>
@@ -23,23 +25,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,35 +60,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YRWM5FEPWV"></script>
 
 <script type="text/javascript">
@@ -99,22 +70,21 @@ gtag('js', new Date());
 gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
 </script>
 
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="KY-Blog">
-<meta property="og:image" content="https://kisungyou.com/Blog/images/figure_001_FisherRao.png">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="Kisung You">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:width" content="1800">
 <meta name="twitter:title" content="KY-Blog">
-<meta name="twitter:image" content="https://kisungyou.com/Blog/images/figure_001_FisherRao.png">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@kisung_you">
 <meta name="twitter:site" content="@kisung_you">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1200">
-<meta name="twitter:image-width" content="1800">
 </head>
 
 <body class="nav-fixed">
@@ -124,7 +94,7 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kisung You</span>
     </a>
   </div>
@@ -135,23 +105,23 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publication.html" rel="" target="">
+    <a class="nav-link" href="../publication.html" rel="" target="">
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html" rel="" target="">
+    <a class="nav-link" href="../teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html" rel="" target="">
+    <a class="nav-link" href="../software.html" rel="" target="">
  <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -162,147 +132,110 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="How is?">How is? <span class="quarto-category-count">(1)</span></div><div class="category" data-category="What is?">What is? <span class="quarto-category-count">(3)</span></div></div></div>
+        
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-<!-- ::: column-page -->
-<!-- ::: -->
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">What is the gradient of squared distance on a Riemannian manifold?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">What is?</div>
   </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="What is?" data-listing-date-sort="1748059200000" data-listing-file-modified-sort="1748139821669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./Blog/blog_004_GradientSquaredDistance.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./Blog/blog_004_GradientSquaredDistance.html">
-<h3 class="no-anchor listing-title">
-What is the gradient of squared distance on a Riemannian manifold?
-</h3>
-<div class="listing-subtitle">
+  </div>
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./Blog/blog_004_GradientSquaredDistance.html">
-<div class="listing-date">
-May 24, 2025
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="How is?" data-listing-date-sort="1747454400000" data-listing-file-modified-sort="1748138068157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
-<div class="thumbnail">
-<p><a href="./Blog/blog_003_DiracDense.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./Blog/blog_003_DiracDense.html">
-<h3 class="no-anchor listing-title">
-How is the space of Dirac measures dense in Wasserstein space?
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./Blog/blog_003_DiracDense.html">
-<div class="listing-date">
-May 17, 2025
-</div>
-<div class="listing-reading-time">
-9 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="What is?" data-listing-date-sort="1738731600000" data-listing-file-modified-sort="1748137944938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
-<div class="thumbnail">
-<p><a href="./Blog/blog_001_FisherRao.html"> <img src="./Blog/images/figure_001_FisherRao.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./Blog/blog_001_FisherRao.html">
-<h3 class="no-anchor listing-title">
-What is the Fisher-Rao distance?
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./Blog/blog_001_FisherRao.html">
-<div class="listing-date">
-Feb 5, 2025
-</div>
-<div class="listing-reading-time">
-7 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="What is?" data-listing-date-sort="1660276800000" data-listing-file-modified-sort="1748137938180" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="./Blog/blog_002_ACG.html"> <img src="./Blog/images/figure_002_ACG.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./Blog/blog_002_ACG.html">
-<h3 class="no-anchor listing-title">
-What is the Angular Central Gaussian distribution?
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kisung You </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 24, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="hidden">
+<p><span class="math display">\[
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calP}{\mathcal{P}}
+\DeclareMathOperator{\argmin}{argmin}
+\]</span></p>
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./Blog/blog_002_ACG.html">
-<div class="listing-date">
-Aug 12, 2022
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<p>One of the most fundamental objects in geometric statistics and computation thereof is the squared Riemannian distance function <span class="math inline">\(d^2(p,q)\)</span> defined on a <a href="https://en.wikipedia.org/wiki/Riemannian_manifold">Riemannian manifold</a> <span class="math inline">\((\calM, g)\)</span>. This function is central to optimization, variational formulations, and the definition of Fréchet means on manifolds. A key identity often invoked but not always derived is: <span class="math display">\[
+\nabla_x d^2(x,y) = -2\log_x y,
+\]</span> where <span class="math inline">\(\log_x y\)</span> is the logarithmic map, which pulls a point <span class="math inline">\(y\)</span> to the tangent space at <span class="math inline">\(x\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This is the manifold generalization of the Euclidean identity <span class="math inline">\(\nabla_x \|x-y\|^2 = -2(x-y)\)</span>, where <span class="math inline">\(\|\cdot\|\)</span> is the Euclidean norm.</p>
+<p>I first encountered this identity when I was writing my own code during my doctoral studies. I encountered the proof on <a href="https://math.stackexchange.com/questions/2977849/gradient-of-distance-squared-on-riemannian-manifold">Stack Exchange</a>, but at that time it was of no use for me. Later I learned that one can show this identity in several ways, and here is mine.</p>
+<hr>
+<p>Let <span class="math inline">\(f(x) = d^2(x,y)\)</span> be the square distance function. As you can see, this is a function of <span class="math inline">\(x\)</span> only with a fixed <span class="math inline">\(y\in\calM\)</span>. Our goal is to compute the Riemannian gradient <span class="math inline">\(\nabla_x f(x)\)</span>.</p>
+<p>We start with a smooth curve <span class="math inline">\(\gamma(t)\)</span> on the manifold <span class="math inline">\(\calM\)</span> such that <span class="math inline">\(\gamma(0) = x\)</span> (initial location) and <span class="math inline">\(\dot{\gamma}(0) = \xi \in T_x \calM\)</span> (initial velocity). Then the directional derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(x\)</span> along <span class="math inline">\(\xi\)</span> is defined as <span class="math display">\[
+Df(x)[\xi] = \frac{d}{dt}f(\gamma(t))\bigg|_{t=0} = \frac{d}{dt}d^2(\gamma(t),y)\bigg|_{t=0}.
+\]</span> We can apply the chain rule to the squared distance: <span class="math display">\[
+\frac{d}{dt}d^2(\gamma(t),y)\bigg|_{t=0} = 2d(\gamma(t),y)\cdot  \frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0} = 2d(x,y)\cdot \frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0}.
+\]</span> To compute the derivative, we invoke the first variation formula for the Riemannian distance. Let <span class="math inline">\(\gamma_s (t)\)</span> denote the minimizing geodesic from <span class="math inline">\(\alpha(s)\)</span> to <span class="math inline">\(y\)</span>, and define the variation of geodesics <span class="math display">\[
+\tilde{\gamma}(s,t):= \gamma_s (t),
+\]</span> with <span class="math inline">\(\tilde{\gamma}(0,t) = \gamma(t)\)</span> being the geodesic from <span class="math inline">\(x\)</span> to <span class="math inline">\(y\)</span>. Let <span class="math inline">\(E(s) := d(\alpha(s), y)\)</span>. Then <span class="math inline">\(E(s)^2\)</span> is the energy of the minimizing geodesic <span class="math inline">\(\gamma_s\)</span>, i.e., <span class="math display">\[
+E(s)^2 = \int_{0}^{1} \bigg\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \bigg\|^2 dt.
+\]</span> Hence, <span class="math display">\[
+E'(0) = \frac{1}{2d(x,y)} \cdot \left. \frac{d}{ds} \int_{0}^{1} \left\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \right\|^2 dt \right|_{s=0}.
+\]</span> We now use the first variation formula for energy functional: if <span class="math inline">\(\tilde{\gamma}(s,t)\)</span> is a variation of geodesics such that <span class="math inline">\(\tilde{\gamma}(s,1) = y\)</span> is fixed and <span class="math inline">\(\tilde{\gamma}(s,0) = \alpha(s)\)</span>, then <span class="math display">\[
+\left. \frac{d}{ds} \int_{0}^{1} \left\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \right\|^2 dt \right|_{s=0} = -2 \left\langle \dot{\gamma}(0), \dot{\alpha}(0) \right\rangle.
+\]</span> Here, <span class="math inline">\(\gamma(t) = \tilde{\gamma}(0,t)\)</span> is the minimizing geodesic from <span class="math inline">\(x\)</span> to <span class="math inline">\(y\)</span>, and <span class="math inline">\(\dot{\gamma}(0)\)</span> is its initial velocity vector. By definition of the Riemannian logarithmic map, <span class="math display">\[
+\dot{\gamma}(0) = \frac{\log_x y}{\|\log_x y \|}\cdot d(x,y).
+\]</span> Therefore, <span class="math display">\[
+E'(0) = \frac{1}{2d(x,y)}\cdot \left(-2 \langle \dot{\gamma}(0), \xi \rangle \right) = -\left\langle
+\frac{\log_x y}{\|\log_x y \|}, \xi
+\right\rangle,
+\]</span> which completes the proof of the first variation formula. This classical result states that for a smooth variation of points <span class="math inline">\(\gamma(t)\)</span> and corresponding minimizing geodesics <span class="math inline">\(c_t(s)\)</span> from <span class="math inline">\(\gamma(t)\)</span> to <span class="math inline">\(y\)</span>, we have: <span class="math display">\[
+\frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0} = - \left\langle \frac{\log_x y}{\|\log_x y\|}, \dot{\gamma}(0)  \right\rangle.
+\]</span> Plugging this into the chain rule, we obtain <span class="math display">\[
+\frac{d}{dt}d^2(\gamma(t), y)\bigg|_{t=0} = -2 \langle \log_x y, \xi \rangle.
+\]</span> By the definition of the Riemannian gradient, we have: <span class="math display">\[
+D f(x)[\xi] = \langle \nabla_x f(x), \xi \rangle.
+\]</span> Since this identity must hold for every tangent vector <span class="math inline">\(\xi \in T_x \calM\)</span>, it follows that <span class="math display">\[
+\nabla_x f(x) = -2\log_x y.
+\]</span></p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>We assume that the logarithmic map is well-defined. For instance, you can’t define a unique logarithmic map on a point on the unit hypersphere to its antipodal point.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{you2025,
+  author = {You, Kisung},
+  title = {What Is the Gradient of Squared Distance on a {Riemannian}
+    Manifold?},
+  date = {2025-05-24},
+  url = {https://kisungyou.com/Blog/blog_004_GradientSquaredDistance.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-you2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+You, Kisung. 2025. <span>“What Is the Gradient of Squared Distance on a
+Riemannian Manifold?”</span> May 24, 2025. <a href="https://kisungyou.com/Blog/blog_004_GradientSquaredDistance.html">https://kisungyou.com/Blog/blog_004_GradientSquaredDistance.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

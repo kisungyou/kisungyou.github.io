@@ -1,0 +1,104 @@
+---
+pagetitle: "KY-Blog"
+title: "What is the gradient of squared distance on a Riemannian manifold?"
+date: 2025-05-24
+categories:
+  - What is?
+format: 
+  html:
+    df-print: paged
+    toc: true
+engine: knitr
+citation: true
+comments: false
+bibliography: biball.bib
+biblio-style: plain
+google-scholar: false
+number-sections: true
+#image: images/figure_002_ACG.png
+author:
+  - name: Kisung You
+---
+
+::: {.hidden}
+$$
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calP}{\mathcal{P}}
+\DeclareMathOperator{\argmin}{argmin}
+$$
+:::
+
+One of the most fundamental objects in geometric statistics and computation thereof is 
+the squared Riemannian distance function $d^2(p,q)$ defined on a [Riemannian manifold](https://en.wikipedia.org/wiki/Riemannian_manifold) $(\calM, g)$. This function is central to optimization, variational formulations, and the definition of Fréchet means on manifolds. A key identity often invoked but not always derived is:
+$$
+\nabla_x d^2(x,y) = -2\log_x y,
+$$
+where $\log_x y$ is the logarithmic map, which pulls a point $y$ to the tangent space at $x$[^1]. This is the manifold generalization of the Euclidean identity $\nabla_x \|x-y\|^2 = -2(x-y)$, where $\|\cdot\|$ is the Euclidean norm.
+
+
+I first encountered this identity when I was writing my own code during my doctoral studies. I encountered the proof on [Stack Exchange](https://math.stackexchange.com/questions/2977849/gradient-of-distance-squared-on-riemannian-manifold), but at that time it was of no use for me. Later I learned that one can show this identity in several ways, and here is mine.
+
+---
+
+Let $f(x) = d^2(x,y)$ be the square distance function. As you can see, this is 
+a function of $x$ only with a fixed $y\in\calM$. Our goal is to compute the Riemannian 
+gradient $\nabla_x f(x)$. 
+
+We start with a smooth curve $\gamma(t)$ on the manifold $\calM$ such that $\gamma(0) = x$ (initial location) and $\dot{\gamma}(0) = \xi \in T_x \calM$ (initial velocity). Then the directional derivative of $f$ at $x$ along $\xi$ is defined as 
+$$
+Df(x)[\xi] = \frac{d}{dt}f(\gamma(t))\bigg|_{t=0} = \frac{d}{dt}d^2(\gamma(t),y)\bigg|_{t=0},
+$$
+and we can apply the chain rule to the squared distance:
+$$
+\frac{d}{dt}d^2(\gamma(t),y)\bigg|_{t=0} = 2d(\gamma(t),y)\cdot  \frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0} = 2d(x,y)\cdot \frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0}.
+$$
+To compute the derivative, we invoke the first variation formula for the Riemannian distance. Let $\gamma_s (t)$ denote the minimizing geodesic from $\alpha(s)$ to $y$, and define the variation of geodesics 
+$$
+\tilde{\gamma}(s,t):= \gamma_s (t),
+$$
+with $\tilde{\gamma}(0,t) = \gamma(t)$ being the geodesic from $x$ to $y$. Let $E(s) := d(\alpha(s), y)$. Then $E(s)^2$ is the energy of the minimizing geodesic $\gamma_s$, i.e., 
+$$
+E(s)^2 = \int_{0}^{1} \bigg\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \bigg\|^2 dt.
+$$
+Hence, 
+$$
+E'(0) = \frac{1}{2d(x,y)} \cdot \left. \frac{d}{ds} \int_{0}^{1} \left\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \right\|^2 dt \right|_{s=0}.
+$$
+We now use the first variation formula for energy functional: if $\tilde{\gamma}(s,t)$ is a variation of geodesics such that $\tilde{\gamma}(s,1) = y$ is fixed and $\tilde{\gamma}(s,0) = \alpha(s)$, then 
+$$
+\left. \frac{d}{ds} \int_{0}^{1} \left\| \frac{\partial \tilde{\gamma}}{\partial t}(s,t) \right\|^2 dt \right|_{s=0} = -2 \left\langle \dot{\gamma}(0), \dot{\alpha}(0) \right\rangle.
+$$
+Here, $\gamma(t) = \tilde{\gamma}(0,t)$ is the minimizing geodesic from $x$ to $y$, and $\dot{\gamma}(0)$ is its initial velocity vector. By definition of the Riemannian logarithmic map, 
+$$
+\dot{\gamma}(0) = \frac{\log_x y}{\|\log_x y \|}\cdot d(x,y).
+$$
+Therefore, 
+$$
+E'(0) = \frac{1}{2d(x,y)}\cdot \left(-2 \langle \dot{\gamma}(0), \xi \rangle \right) = -\left\langle
+\frac{\log_x y}{\|\log_x y \|}, \xi
+\right\rangle,
+$$
+which completes the proof of the first variation formula. This classical result states that for a smooth variation of points $\gamma(t)$ and corresponding minimizing geodesics $c_t(s)$ from $\gamma(t)$ to $y$, we have:
+$$
+\frac{d}{dt}d(\gamma(t),y)\bigg|_{t=0} = - \left\langle \frac{\log_x y}{\|\log_x y\|}, \dot{\gamma}(0)  \right\rangle.
+$$
+Plugging this into the chain rule, we obtain
+$$
+\frac{d}{dt}d^2(\gamma(t), y)\bigg|_{t=0} = -2 \langle \log_x y, \xi \rangle.
+$$
+By the definition of the Riemannian gradient, we have:
+$$
+D f(x)[\xi] = \langle \nabla_x f(x), \xi \rangle.
+$$
+Since this identity must hold for every tangent vector $\xi \in T_x \calM$, it follows that 
+$$
+\nabla_x f(x) = -2\log_x y.
+$$
+
+
+
+
+
+[^1]: We assume that the logarithmic map is well-defined. For instance, you can't define a unique logarithmic map on a point on the unit hypersphere to its antipodal point.

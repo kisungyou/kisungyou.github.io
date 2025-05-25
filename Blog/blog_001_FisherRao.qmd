@@ -18,8 +18,8 @@ google-scholar: false
 number-sections: false
 author:
   - name: Kisung You
-    url: https://kisungyou.com
-    affiliation: Baruch College
+    #url: https://kisungyou.com
+    #affiliation: Baruch College
 ---
 
 ## Introduction

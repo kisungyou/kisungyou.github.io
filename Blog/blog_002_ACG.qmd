@@ -18,8 +18,8 @@ number-sections: false
 image: images/figure_002_ACG.png
 author:
   - name: Kisung You
-    url: https://kisungyou.com
-    affiliation: Yale School of Medicine
+    #url: https://kisungyou.com
+    #affiliation: Yale School of Medicine
 ---
 
 
