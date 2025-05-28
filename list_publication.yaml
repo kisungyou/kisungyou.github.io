@@ -75,8 +75,15 @@ arxiv_semantics_at_an_angle:
   year: 2025
   preprint: https://arxiv.org/abs/2504.16318
   flag: preprint
-    
-
+  
+product_manifolds_median:
+  title: "Geometric medians on product manifolds"
+  authors:
+    - me
+  year: 2025
+  preprint: https://arxiv.org/abs/2505.18844
+  flag: preprint
+  
 # ---------------------------------------------------------------
 # published
 # ---------------------------------------------------------------

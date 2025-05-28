@@ -53,4 +53,4 @@ format:
 editor: source
 
 execute:
-  cache: true # uses caching for faster builds
+  cache: false # uses caching for faster builds

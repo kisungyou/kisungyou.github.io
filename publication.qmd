@@ -38,6 +38,10 @@ execute:
 
 ```{python}
 #| label: install-packages
+#| echo: false
+#| results: "hide"
+#| warning: false
+#| message: false
 import importlib, subprocess, sys
 
 def ensure(pkg):
