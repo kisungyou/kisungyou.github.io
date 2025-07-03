@@ -46,17 +46,7 @@ topological_latent_embedding:
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
   thumbnail_url: /images/templates/no-image-yet.png
 
-arxiv_scalable_functional_network:
-  title: "Scalable Geometric Learning with Correlation-Based Functional Brain Networks"
-  authors:
-    - me
-    - Yelim Lee
-    - Hae-Jeong Park
-  year: 2025
-  preprint: https://arxiv.org/abs/2503.23653
-  flag: preprint
-  github:
-  thumbnail_url: /images/templates/no-image-yet.png
+
   
 arxiv_wl_geometry:
   title: "Learning over von Mises-Fisher Distributions via a Wasserstein-like Geometry"
@@ -135,7 +125,7 @@ c2024_human_algorithmic_interaction:
   venue: CHI Conference on Human Factors in Computing Systems
   published_url: https://doi.org/10.1145/3613904.3642024
   
-j2025_wasserstein_median:
+j2025_1_wasserstein_median:
   title: "On the Wasserstein median of probability measures"
   authors: 
     - me
@@ -434,7 +424,7 @@ c2023_assessing_the_usability_of_gutgpt:
   flag: published
   venue: Machine Learning for Health (ML4H) Symposium
   
-j2025_EVAL_framework:
+j2025_2_EVAL_framework:
   title: "Expert of Experts Verification and Alignment (EVAL) Framework for Large Language Models Safety in Gastroenterology"
   authors:
     - Mauro Giuffrè
@@ -460,3 +450,17 @@ j2025_EVAL_framework:
   year: 2025
   venue: npj Digital Medicine
   published_url: https://doi.org/10.1038/s41746-025-01589-z
+
+j2025_3_scalable_correlation:
+  title: "Scalable geometric learning with correlation-based functional brain networks"
+  authors:
+    - me
+    - Yelim Lee
+    - Hae-Jeong Park
+  flag: published
+  year: 2025
+  venue: Scientific Reports
+  preprint: https://arxiv.org/abs/2503.23653
+  github: https://github.com/kisungyou/corrbox
+  flag: published
+  published_url: https://doi.org/10.1038/s41598-025-07703-1
