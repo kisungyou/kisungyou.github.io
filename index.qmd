@@ -49,7 +49,7 @@ news <- yaml::read_yaml("news.yml")
 
 # Sort descending
 news_sorted <- news[order(sapply(news, function(x) as.Date(x$date)), decreasing = TRUE)]
-news_top <- head(news_sorted, 4)
+news_top <- head(news_sorted, 3)
 
 # Define row colors
 row_colors <- c("#A7D3F250", "#AE914250", "#C1C6C850", "#6E4C7E50")  # as many as you need
