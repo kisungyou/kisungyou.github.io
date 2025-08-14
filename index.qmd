@@ -39,7 +39,7 @@ execute:
 ### Welcome!
 
 
-I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York and a research affiliate at the Yale School of Medicine.  My research integrates tools from statistics, differential geometry, and computational mathematics to develop new methods for complex scientific problems, with a strong focus on biomedical data analysis. I am also passionate about high-performance computing and statistical software development, aiming to make advanced methods practically accessible across disciplines.
+I am an assistant professor in the [Department of Mathematics](https://mfeapp.baruch.cuny.edu/math/) at Baruch College, City University of New York.  My research integrates tools from statistics, differential geometry, and computational mathematics to develop new methods for complex scientific problems, with a strong focus on biomedical data analysis. I am also passionate about high-performance computing and statistical software development, aiming to make advanced methods practically accessible across disciplines.
 
 #### 📰 News
 
