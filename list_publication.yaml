@@ -70,6 +70,7 @@ product_manifolds_median:
   title: "Geometric medians on product manifolds"
   authors:
     - me
+    - Jiewon Park
   year: 2025
   preprint: https://arxiv.org/abs/2505.18844
   flag: preprint
@@ -118,7 +119,7 @@ c2024_human_algorithmic_interaction:
     - Leigh Evans
     - Rene Kizilcec
     - Loren Laine
-    - Terika Mccall
+    - Terika McCall
     - Dennis Shung
   year: 2024
   flag: published
@@ -462,5 +463,30 @@ j2025_3_scalable_correlation:
   venue: Scientific Reports
   preprint: https://arxiv.org/abs/2503.23653
   github: https://github.com/kisungyou/corrbox
-  flag: published
   published_url: https://doi.org/10.1038/s41598-025-07703-1
+  
+j2025_4_gutgpt:
+  title: "Usability and adoption in a randomized trial of GutGPT a GenAI tool for gastrointestinal bleeding"
+  authors:
+    - Sunny Chung
+    - Mauro Giuffrè
+    - Niroop Rajashekar
+    - Yuan Pu
+    - Yeo Eun Shin
+    - Simone Kresevic
+    - Colleen Chan
+    - Shinpei Nakamura-Sakai
+    - me
+    - Theo Saarinen
+    - Allen Hsiao
+    - Ambrose Wong
+    - Leigh Evans
+    - Terika McCall
+    - Rene Kizilcec
+    - Jasjeet Sekhon
+    - Loren Laine
+    - Dennis Shung
+  flag: published
+  year: 2025
+  venue: npj Digital Medicine
+  published_url: https://doi.org/10.1038/s41746-025-01896-5
