@@ -1,12 +1,38 @@
 # topic
-#   {geometry, topology, network, statistical-inference, opt-applied}
+#   sml: statistical and machine learning
+#   opt: foundational mathematical and computation routines
+#   network: network analysis
+#   geom: geometry and topology
+
+- title: "CORRbox"
+  description: |
+    Scalable Learning with Correlation-based Functional Networks
+  github: https://github.com/kisungyou/CORRbox
+  matlab: https://github.com/kisungyou/CORRbox
+  topic: geom
+  
+- title: "SPDtoolbox"
+  description: |
+    Geometric Learning of Brain Functional Networks
+  github: https://github.com/kisungyou/papers/tree/master/01-SPDtoolbox
+  matlab: https://github.com/kisungyou/papers/tree/master/01-SPDtoolbox
+  topic: geom
+
+- title: "repsim"
+  description: |
+    Measures of Representational Similarity
+  github: https://github.com/kisungyou/repsim
+  CRAN: https://cran.r-project.org/package=repsim
+  website: https://www.kisungyou.com/repsim
+  pypi: https://pypi.org/project/repsim/
+  topic: sml
 
 - title: "tvR"
   description: |
      Total Variation Regularization for Signals and Images
   github: https://github.com/kisungyou/tvR
   CRAN: https://CRAN.R-project.org/package=tvR
-  topic: opt-applied
+  topic: opt
 
 - title: "maotai"
   description: |
@@ -14,7 +40,7 @@
   github: https://github.com/kisungyou/maotai
   CRAN: https://CRAN.R-project.org/package=maotai
   website: https://kisungyou.com/maotai
-  topic: opt-applied
+  topic: opt
 
 - title: "T4transport"
   description: |
@@ -22,14 +48,14 @@
   github: https://github.com/kisungyou/T4transport
   CRAN: https://CRAN.R-project.org/package=T4transport
   website: https://kisungyou.com/T4transport
-  topic: opt-applied
+  topic: opt
   
 - title: "Rlinsolve"
   description: |
       Iterative Solvers for (Sparse) Linear System of Equations
   github: https://github.com/kisungyou/Rlinsolve
   CRAN: https://CRAN.R-project.org/package=Rlinsolve
-  topic: opt-applied
+  topic: opt
 
 
 - title: "CovTools"
@@ -37,7 +63,7 @@
     Statistical Tools for Covariance Analysis
   github: https://github.com/kisungyou/CovTools
   CRAN: https://CRAN.R-project.org/package=CovTools
-  topic: statistical-inference
+  topic: sml
 
 - title: "SHT"
   description: |
@@ -45,7 +71,7 @@
   website: https://kisungyou.com/SHT
   github: https://github.com/kisungyou/SHT
   CRAN: https://CRAN.R-project.org/package=SHT
-  topic: statistical-inference
+  topic: sml
   
 - title: "Rdimtools"
   description: |
@@ -53,7 +79,7 @@
   website: https://kisungyou.com/Rdimtools
   github: https://github.com/kisungyou/Rdimtools
   CRAN: https://CRAN.R-project.org/package=Rdimtools
-  topic: statistical-inference
+  topic: sml
   
 - title: "T4cluster"
   description: |
@@ -61,21 +87,21 @@
   website: https://kisungyou.com/T4cluster
   github: https://github.com/kisungyou/T4cluster
   CRAN: https://CRAN.R-project.org/package=T4cluster
-  topic: statistical-inference
+  topic: sml
 
 - title: "filling"
   description: |
     Matrix Completion, Imputation, and Inpainting Methods
   github: https://github.com/kisungyou/filling
   CRAN: https://CRAN.R-project.org/package=filling
-  topic: statistical-inference
+  topic: sml
   
 - title: "SBmedian"
   description: |
      Scalable Bayes with Median of Subset Posteriors
   github: https://github.com/kisungyou/SBmedian
   CRAN: https://CRAN.R-project.org/package=SBmedian
-  topic: statistical-inference
+  topic: sml
 
 - title: "graphon"
   description: |
@@ -96,7 +122,7 @@
     Functions and C++ Headers for Computation on Manifolds
   github: https://github.com/kisungyou/RiemBase
   CRAN: https://CRAN.R-project.org/package=RiemBase
-  topic: geometry
+  topic: geom
 
 - title: "Riemann"
   description: |
@@ -104,11 +130,11 @@
   website: https://kisungyou.com/Riemann
   github: https://github.com/kisungyou/Riemann
   CRAN: https://CRAN.R-project.org/package=Riemann
-  topic: geometry
+  topic: geom
   
 - title: "TDAkit"
   description: |
     Toolkit for Topological Data Analysis
   github: https://github.com/kisungyou/TDAkit
   CRAN: https://CRAN.R-project.org/package=TDAkit
-  topic: topology
+  topic: geom

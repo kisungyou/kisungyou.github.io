@@ -4,128 +4,138 @@ title: " "
 echo: false
 jupyter: python3
 section-divs: false
-toc: true
+toc: false
 toc-location: right
 toc-expand: true
 toc-title: " "
 ---
-:::{.column-body-inset-left}
-# Software 
+
+# Software
+
+I enjoy building open-source tools for science, mostly at the intersection of statistics, machine learning, and computational mathematics. Most projects are developed in **R** and/or **Python**, with their 
+computational cores written in **C++** to ensure speed and efficiency. I focus on clear APIs, reproducible results, and practical performance. Click a package name to visit its documentation site, when available.
 
 ```{python}
-#| label: "software"
-#| id: "software"
-#| output: asis
-import yaml
-from IPython.display import display, Markdown, HTML, Image
-def button(url, str, icon):
-    icon_base = icon[:2]
-    return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
-        <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
-        {str}
-    </a>"""
-yaml_data = yaml.safe_load(open("list_software.yaml"))
-```
-
-### Geometry and Topology
-
-```{python}
-#| label: "geometry-topology"
-#| id: "geometry-topology"
-#| output: asis
-data_part = []
-for data in yaml_data[::-1]:
-  if data["topic"] == "topology" or data["topic"] == "geometry":
-    data_part.append(data)
-data_part.sort(key=lambda k : k['title'].lower())
-
-for data in data_part:
-  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
-  display(Markdown(data["description"]))
-  buttons = []
-  if "website" in data:
-      buttons.append(button(data['website'], "Website", "bi-info"))
-  if "github" in data:
-      buttons.append(button(data['github'], "View on Github", "bi-github"))
-  if "CRAN" in data:
-      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
-  display(HTML("  ".join(buttons)))
-```
-
-### Network
-
-```{python}
-#| label: "network"
-#| id: "network"
-#| output: asis
-data_part = []
-for data in yaml_data[::-1]:
-  if data["topic"] == "network":
-    data_part.append(data)
-data_part.sort(key=lambda k : k['title'].lower())
-
-for data in data_part:
-  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
-  display(Markdown(data["description"]))
-  buttons = []
-  if "website" in data:
-      buttons.append(button(data['website'], "Website", "bi-info"))
-  if "github" in data:
-      buttons.append(button(data['github'], "View on Github", "bi-github"))
-  if "CRAN" in data:
-      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
-  display(HTML("  ".join(buttons)))
-```
-
-### Statistical Inference
-
-```{python}
-#| label: "statistical-inference"
-#| id: "statistical-inference"
+#| label: build-software-tables
 #| output: asis
 
-data_part = []
-for data in yaml_data[::-1]:
-  if data["topic"] == "statistical-inference":
-    data_part.append(data)
-data_part.sort(key=lambda k : k['title'].lower())
+import yaml, html
+from pathlib import Path
+from IPython.display import HTML, display
 
-for data in data_part:
-  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
-  display(Markdown(data["description"]))
-  buttons = []
-  if "website" in data:
-      buttons.append(button(data['website'], "Website", "bi-info"))
-  if "github" in data:
-      buttons.append(button(data['github'], "View on Github", "bi-github"))
-  if "CRAN" in data:
-      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
-  display(HTML("  ".join(buttons)))
+# --- Config: paths & icons ---
+YAML_PATH = Path("list_software.yaml")
+
+ICONS = {
+    "github": {
+        "alt": "GitHub",
+        "src": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        "height": 20,
+    },
+    "cran": {
+        "alt": "CRAN (R)",
+        "src": "https://www.r-project.org/logo/Rlogo.png",
+        "height": 20,
+    },
+    "pypi": {
+        "alt": "Python (PyPI)",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+        "height": 20,
+    },
+    "matlab": {
+        "alt": "MATLAB",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+        "height": 20,
+    },
+}
+
+CAT_LABELS = {
+    "sml": "Statistical & Machine Learning",
+    "opt": "Foundational Mathematical & Computational Routines",
+    "network": "Network Analysis",
+    "geom": "Geometry & Topology",
+}
+
+CAT_ORDER = ["sml", "opt", "network", "geom"]  # display order
+
+def repo_icon(url: str, which: str) -> str:
+    """Return an <a> with an <img> icon for a repo link."""
+    icon = ICONS[which]
+    return (
+        f'<a href="{html.escape(url)}" target="_blank" rel="noopener" '
+        f'aria-label="{icon["alt"]}">'
+        f'<img src="{icon["src"]}" alt="{icon["alt"]}" '
+        f'style="height:{icon["height"]}px; vertical-align:middle;"></a>'
+    )
+
+# --- Load YAML ---
+yaml_data = yaml.safe_load(open(YAML_PATH, "r", encoding="utf-8"))
+if not isinstance(yaml_data, list):
+    yaml_data = []
+
+# Group by category key
+by_cat = {k: [] for k in CAT_ORDER}
+for d in yaml_data:
+    key = (d.get("topic") or "").strip()
+    if key in by_cat:
+        by_cat[key].append(d)
+    else:
+        by_cat.setdefault("sml", []).append(d)  # fallback
+
+# Build HTML per category
+sections = []
+for key in CAT_ORDER:
+    items = by_cat.get(key, [])
+    if not items:
+        continue
+    items.sort(key=lambda d: (d.get("title","").lower()))
+    
+    rows = []
+    for d in items:
+        title = (d.get("title") or "").strip()
+        desc  = (d.get("description") or "").strip()
+        website = d.get("website")
+        
+        # Package cell: link to website if exists
+        if website:
+            pkg_cell = f'<a href="{html.escape(website)}" target="_blank" rel="noopener"><code>{html.escape(title)}</code></a>'
+        else:
+            pkg_cell = f'<code>{html.escape(title)}</code>'
+        
+        # Repo cell: icons for PyPI, CRAN, MATLAB, GitHub (language-first order)
+        repo_bits = []
+        pypi_url = d.get("pypi") or d.get("PyPI")
+        if pypi_url:
+            repo_bits.append(repo_icon(pypi_url, "pypi"))
+        if "CRAN" in d:
+            repo_bits.append(repo_icon(d["CRAN"], "cran"))
+        if "matlab" in d:
+            repo_bits.append(repo_icon(d["matlab"], "matlab"))
+        if "github" in d:
+            repo_bits.append(repo_icon(d["github"], "github"))
+        repo_cell = "&nbsp;&nbsp;".join(repo_bits) if repo_bits else "—"
+        
+        desc_cell = html.escape(desc)
+        rows.append(f"<tr><td>{pkg_cell}</td><td>{repo_cell}</td><td>{desc_cell}</td></tr>")
+    
+    table_body = "\n".join(rows)
+    section_html = f"""
+<h3>{html.escape(CAT_LABELS.get(key, key))}</h3>
+<table class="table table-sm table-hover align-middle">
+  <thead>
+    <tr>
+      <th style="width:22%;">Package</th>
+      <th style="width:15%;">Repo</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {table_body}
+  </tbody>
+</table>
+"""
+    sections.append(section_html)
+
+final_html = "\n".join(sections)
+display(HTML(final_html))
 ```
-
-
-### Optimization and Applied Mathematics
-
-```{python}
-#| label: "opt-applied"
-#| id: "opt-applied"
-#| output: asis
-data_part = []
-for data in yaml_data[::-1]:
-  if data["topic"] == "opt-applied":
-    data_part.append(data)
-data_part.sort(key=lambda k : k['title'].lower())
-
-for data in data_part:
-  display(Markdown("#### `" + data["title"] + "` {#" + data["title"] + "}"))
-  display(Markdown(data["description"]))
-  buttons = []
-  if "website" in data:
-      buttons.append(button(data['website'], "Website", "bi-info"))
-  if "github" in data:
-      buttons.append(button(data['github'], "View on Github", "bi-github"))
-  if "CRAN" in data:
-      buttons.append(button(data['CRAN'], "View on CRAN", "bi-box-seam"))
-  display(HTML("  ".join(buttons)))
-```
-:::

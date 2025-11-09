@@ -10,6 +10,16 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+
+particle_flow_barycenter:
+  title: "A Particle-Flow Algorithm for Free-Support Wasserstein Barycenters"
+  authors:
+    - me
+  year: 2025
+  preprint: https://doi.org/10.48550/arXiv.2509.11435
+  flag: preprint
+
+
 pca_and_svd:
   title: "PCA, SVD, and Centering of Data"
   authors:

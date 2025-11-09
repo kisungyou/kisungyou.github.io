@@ -20,7 +20,6 @@ listing:
   filter-ui: false
   date-format: medium
   fields: [date, title, reading-time, image]
-page-layout: full
 ---
 
 

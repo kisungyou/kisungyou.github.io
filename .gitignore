@@ -1,3 +1,5 @@
 /.quarto/
 .Rproj.user
 CV/
+
+**/*.quarto_ipynb
