@@ -58,8 +58,7 @@ tb = ensure("tabulate")
 
 # Publications 
 
-The list below includes my [*published*](#published) articles in reverse chronological order  
-and all [*preprints*](#preprints). 
+The list below includes my [*published*](#published) articles and [*preprints*](#preprints) in reverse chronological order.
 
 
 ```{python}
