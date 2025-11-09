@@ -4,7 +4,7 @@ title: " "
 echo: false
 jupyter: python3
 section-divs: true
-toc: true
+toc: false
 toc-location: right
 toc-expand: true
 toc-title: " "
@@ -57,6 +57,10 @@ tb = ensure("tabulate")
 
 
 # Publications 
+
+The list below includes my [*published*](#published) articles in reverse chronological order and all 
+and all [*preprints*](#preprints).
+
 
 ```{python}
 import yaml
@@ -144,18 +148,15 @@ for _, data in yaml_data.items():
       )
 ```
 
-<!--
-## Published 
--->
 
-## Published
+## Published {#published}
 
 ```{python}
 #| label: "journal-year"
 #| id: "journal-year"
 #| output: asis
 for year in sorted(pub_strs["pubs"].keys(), reverse=True):
-  display(Markdown(f"### {year}"))
+  display(Markdown(f"### {year} {{#pub-{year}}}"))
   display(HTML(
     "<ul class='list-group list-group-flush'>"
     + "\n".join(reversed(pub_strs["pubs"][year]))
@@ -163,7 +164,7 @@ for year in sorted(pub_strs["pubs"].keys(), reverse=True):
   ))
 ```
 
-## Preprint
+## Preprints {#preprints}
 
 ```{python}
 #| label: "preprint-year"
