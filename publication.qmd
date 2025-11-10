@@ -55,11 +55,52 @@ pd = ensure("pandas")
 tb = ensure("tabulate")
 ```
 
+```{python}
+#| label: pub-summary-line
+#| output: asis
+#| echo: false
+import yaml
+from IPython.display import Markdown
+from datetime import date
+
+# --- Load YAML data directly ---
+
+with open("list_publication.yaml") as f:
+  yaml_data = yaml.safe_load(f)
+
+# --- Count how many published and preprint entries ---
+
+n_pubs = 0
+n_wps = 0
+for _, data in yaml_data.items():
+  flag = data.get("flag", "")
+  if flag == "published":
+    n_pubs += 1
+  elif flag == "preprint":
+    n_wps += 1
+
+# --- Small pluralization helper ---
+
+def plural(n, singular, plural=None):
+  return singular if n == 1 else (plural or singular + "s")
+
+# --- Build the summary message ---
+today_str = date.today().strftime("%B %d, %Y")
+msg = (
+"The list below includes my "
+f"[published](#published) {plural(n_pubs, 'article')} (count: {n_pubs}) "
+"and "
+f"[preprints](#preprints) {plural(n_wps, 'manuscript', 'manuscripts')} (count: {n_wps}) "
+f"in reverse chronological order as of {today_str}."
+)
+
+display(Markdown(msg))
+
+```
+
+
 
 # Publications 
-
-The list below includes my [*published*](#published) articles and [*preprints*](#preprints) in reverse chronological order.
-
 
 ```{python}
 import yaml
