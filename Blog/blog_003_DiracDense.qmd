@@ -1,5 +1,5 @@
 ---
-pagetitle: "KY-Blog"
+pagetitle: "Blog"
 title: "The space of Dirac measures is dense in Wasserstein space"
 date: 2025-05-17
 categories:

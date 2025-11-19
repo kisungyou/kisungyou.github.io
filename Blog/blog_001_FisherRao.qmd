@@ -1,10 +1,10 @@
 ---
-pagetitle: "KY-Blog"
+pagetitle: "Blog"
 title: "What is the Fisher-Rao distance?"
 image: images/figure_001_FisherRao.png
 date: 2025-02-05
 categories:
-  - What is?
+  - Geometric
 format: 
   html:
     df-print: paged

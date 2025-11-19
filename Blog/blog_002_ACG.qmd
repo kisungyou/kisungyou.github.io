@@ -1,9 +1,9 @@
 ---
-pagetitle: "KY-Blog"
+pagetitle: "Blog"
 title: "What is the Angular Central Gaussian distribution?"
 date: 2022-08-12
 categories:
-  - What is?
+  - Geometric
 format: 
   html:
     df-print: paged

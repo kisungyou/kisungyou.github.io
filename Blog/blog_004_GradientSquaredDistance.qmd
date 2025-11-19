@@ -1,5 +1,5 @@
 ---
-pagetitle: "KY-Blog"
+pagetitle: "Blog"
 title: "Gradient of squared distance on a Riemannian manifold"
 date: 2025-05-24
 categories:
