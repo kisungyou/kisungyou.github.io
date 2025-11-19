@@ -91,11 +91,12 @@ Our objective is not to maximize $\textrm{tr}(A^T B R)$ over $R \in \mathcal{O}(
 \begin{equation*}
 M := U\Sigma V^\top,
 \end{equation*}
-where $U, V \in \mathcal{O}(n)$ are the orthogonal matrices of left and right singular vectors, and $\Sigma$ is the diagonal matrix of singular values. Substituting the SVD of $M$ into the trace expression gives, 
-\begin{align*}
-\textrm{tr}(MR) &= \textrm{tr}(U\Sigma V^T R)\\
-&= \textrm{tr(\Sigma V^T R U) \)}.
-\end{align*}
+where $U, V \in \mathcal{O}(n)$ are the orthogonal matrices of left and right singular vectors, and $\Sigma$ is the diagonal matrix of singular values. Substituting the SVD of $M$ into the trace expression gives
+\begin{equation*}
+\textrm{tr}(MR) = \textrm{tr}(U \Sigma V^T R) = \textrm{tr}(\Sigma V^T R U).
+\end{equation*}
+
+
 Let $Z = V^T R U$. Since $V$, $R$, and $U$ are all orthogonal, their product $Z$ must also be an orthogonal matrix. The problem is now to maximize $\textrm{tr}(\Sigma Z)$ over all orthogonal $Z$:
 \begin{equation*}
 \textrm{tr}(\Sigma Z) = \sum_{i=1}^n \sigma_i Z_{ii}.
