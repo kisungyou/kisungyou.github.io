@@ -11,6 +11,14 @@
 # preprint
 # ---------------------------------------------------------------
 
+constant_metric_scaling:
+  title: "Constant Metric Scaling in Riemannian Computation"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2601.10992
+  flag: preprint
+
 particle_flow_barycenter:
   title: "A Particle-Flow Algorithm for Free-Support Wasserstein Barycenters"
   authors:
@@ -58,15 +66,7 @@ topological_latent_embedding:
 
 
   
-arxiv_wl_geometry:
-  title: "Learning over von Mises-Fisher Distributions via a Wasserstein-like Geometry"
-  authors:
-    - me
-    - Dennis Shung
-    - Mauro Giuffrè
-  year: 2025
-  preprint: https://arxiv.org/abs/2504.14164
-  flag: preprint
+
 
 arxiv_semantics_at_an_angle:
   title: "Semantics at an Angle: When Cosine Similarity Works Until It Doesn't"
@@ -500,3 +500,16 @@ j2025_4_gutgpt:
   year: 2025
   venue: npj Digital Medicine
   published_url: https://doi.org/10.1038/s41746-025-01896-5
+  
+j2026_1_vMF:
+  title: "Learning over von Mises-Fisher Distributions via a Wasserstein-like Geometry"
+  authors:
+    - me
+    - Dennis Shung
+    - Mauro Giuffrè
+  flag: published
+  year: 2026
+  preprint: https://arxiv.org/abs/2504.14164
+  venue: Statistics and Computing
+  github: https://github.com/kisungyou/papers/tree/master/05-OTvMF
+  published_url: https://doi.org/10.1007/s11222-026-10844-6
