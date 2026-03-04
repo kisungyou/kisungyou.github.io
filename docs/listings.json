@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/Blog/blog_006_critique_cpm.html",
       "/Blog/blog_005_OrthogonalProcrustes.html",
       "/Blog/blog_004_GradientSquaredDistance.html",
       "/Blog/blog_003_DiracDense.html",

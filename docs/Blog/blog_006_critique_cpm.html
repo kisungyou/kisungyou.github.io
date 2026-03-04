@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kisung You">
+<meta name="dcterms.date" content="2026-03-04">
+
+<title>Blog – Kisung You</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-da1d75b92af0803478e748d783c1b429.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YRWM5FEPWV"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
+</script>
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Blog">
+<meta property="og:description" content="Personal Website.">
+<meta property="og:image" content="https://kisungyou.com/Blog/blog_006_critique_cpm_files/figure-html/unnamed-chunk-5-1.png">
+<meta property="og:site_name" content="Kisung You">
+<meta property="og:image:height" content="960">
+<meta property="og:image:width" content="1344">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="Personal Website.">
+<meta name="twitter:image" content="https://kisungyou.com/Blog/blog_006_critique_cpm_files/figure-html/unnamed-chunk-5-1.png">
+<meta name="twitter:creator" content="@kisung_you">
+<meta name="twitter:site" content="@kisung_you">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="960">
+<meta name="twitter:image-width" content="1344">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Kisung You</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publication.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#what-cpm-actually-estimates" id="toc-what-cpm-actually-estimates" class="nav-link active" data-scroll-target="#what-cpm-actually-estimates">What CPM actually estimates</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#point-1-screening-p-values-look-impressive-even-when-nothing-is-there" id="toc-point-1-screening-p-values-look-impressive-even-when-nothing-is-there" class="nav-link" data-scroll-target="#point-1-screening-p-values-look-impressive-even-when-nothing-is-there">Point 1: screening <span class="math inline">\(p\)</span>-values look impressive even when nothing is there</a></li>
+  <li><a href="#point-2-prediction-can-be-decent-while-the-selected-network-is-unstable" id="toc-point-2-prediction-can-be-decent-while-the-selected-network-is-unstable" class="nav-link" data-scroll-target="#point-2-prediction-can-be-decent-while-the-selected-network-is-unstable">Point 2: prediction can be decent while the selected network is unstable</a></li>
+  <li><a href="#point-3-leakage-can-manufacture-performance" id="toc-point-3-leakage-can-manufacture-performance" class="nav-link" data-scroll-target="#point-3-leakage-can-manufacture-performance">Point 3: leakage can manufacture performance</a></li>
+  <li><a href="#point-4-cpm-can-end-up-predicting-a-confound" id="toc-point-4-cpm-can-end-up-predicting-a-confound" class="nav-link" data-scroll-target="#point-4-cpm-can-end-up-predicting-a-confound">Point 4: CPM can end up predicting a confound</a></li>
+  <li><a href="#point-5-cpm-is-a-constrained-linear-model-and-the-constraint-can-hurt" id="toc-point-5-cpm-is-a-constrained-linear-model-and-the-constraint-can-hurt" class="nav-link" data-scroll-target="#point-5-cpm-is-a-constrained-linear-model-and-the-constraint-can-hurt">Point 5: CPM is a constrained linear model, and the constraint can hurt</a></li>
+  <li><a href="#what-cpm-can-honestly-claim" id="toc-what-cpm-can-honestly-claim" class="nav-link" data-scroll-target="#what-cpm-can-honestly-claim">What CPM can honestly claim</a></li>
+  <li><a href="#a-minimal-cpm-audit-checklist" id="toc-a-minimal-cpm-audit-checklist" class="nav-link" data-scroll-target="#a-minimal-cpm-audit-checklist">A minimal CPM audit checklist</a></li>
+  <li><a href="#the-bottom-line" id="toc-the-bottom-line" class="nav-link" data-scroll-target="#the-bottom-line">The bottom line</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Connectome-Based Predictive Modeling is a heuristic, not a discovery engine</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Neuroimaging</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kisung You </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 4, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Connectome-based Predictive Modeling (CPM) is often presented as a pleasantly simple way to predict behavior from functional connectivity. The simplicity is real. The problem is that the <em>statistical meaning</em> of CPM seems to be often sold far beyond what the method actually delivers.</p>
+<p>The central claim of this post is simple:</p>
+<blockquote class="blockquote">
+<p>CPM can be a useful predictive heuristic, but it is not an inferential framework for discovering “significant edges,” identifying a stable “predictive network,” or licensing mechanistic language about brain-behavior relationships.</p>
+</blockquote>
+<p>How come? Three points bring discomfort—mostly because CPM is the kind of method that <em>looks</em> like inference if you squint, but behaves like a heuristic if you stop squinting.</p>
+<ol type="1">
+<li><strong>CPM is a post-selection procedure.</strong> It uses the same training data both to screen edges and to fit the final predictor. The screening <span class="math inline">\(p\)</span>-values are not valid inferential <span class="math inline">\(p\)</span>-values for the selected edges <span class="citation" data-cites="taylor_2015_StatisticalLearningSelective kuchibhotla_2022_PostSelectionInference">(<a href="#ref-taylor_2015_StatisticalLearningSelective" role="doc-biblioref">Taylor and Tibshirani 2015</a>; <a href="#ref-kuchibhotla_2022_PostSelectionInference" role="doc-biblioref">Kuchibhotla, Kolassa, and Kuffner 2022</a>)</span>.</li>
+<li><strong>CPM is a feature-selection algorithm in a highly correlated feature space.</strong> In that setting, selection stability is an empirical question, not an entitlement <span class="citation" data-cites="nogueira_2018_StabilityFeatureSelection">(<a href="#ref-nogueira_2018_StabilityFeatureSelection" role="doc-biblioref">Nogueira, Sechidis, and Brown 2018</a>)</span>.</li>
+<li><strong>CPM is a very constrained linear model.</strong> It does not estimate a rich brain-wide weight map. It hard-thresholds edges, gives the surviving edges equal weight within sign, and then fits a two-predictor linear regression <span class="citation" data-cites="shen_2017_UsingConnectomebasedPredictive">(<a href="#ref-shen_2017_UsingConnectomebasedPredictive" role="doc-biblioref">Shen et al. 2017</a>)</span>.</li>
+</ol>
+<p><strong>Disclaimer</strong>: This post does NOT try to recreate realistic fMRI physics or hemodynamics. The simulations are deliberately simple—their job is isolation rather than realism. Think of them as a wind tunnel for statistical failure modes: fake airplane, real aerodynamics.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>The standard I am using here
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A method should only be credited with claims that follow from its estimator and its validation design. For CPM, a held-out prediction result may justify a narrow predictive statement. It does <strong>not</strong> by itself justify edge-level significance, stable network identification, causal interpretation, or biomarker language.</p>
+</div>
+</div>
+<section id="what-cpm-actually-estimates" class="level2">
+<h2 class="anchored" data-anchor-id="what-cpm-actually-estimates">What CPM actually estimates</h2>
+<p>In its classical form, CPM does the following on the training set <span class="citation" data-cites="shen_2017_UsingConnectomebasedPredictive">(<a href="#ref-shen_2017_UsingConnectomebasedPredictive" role="doc-biblioref">Shen et al. 2017</a>)</span>:</p>
+<ol type="1">
+<li><p>For each edge <span class="math inline">\(j\)</span>, compute a marginal association with the target:</p>
+<p><span class="math display">\[ r_j = \mathrm{cor}(x_j, y). \]</span></p></li>
+<li><p>Select edges whose <span class="math inline">\(p\)</span>-value falls below a threshold <span class="math inline">\(\alpha\)</span>.<br>
+Partition them into positive and negative sets:</p>
+<p><span class="math display">\[S^+ = \{j : r_j &gt; 0,\; p_j &lt; \alpha\}, \qquad
+S^- = \{j : r_j &lt; 0,\; p_j &lt; \alpha\}.\]</span></p></li>
+<li><p>Construct summary scores for each subject by summing the surviving edges:</p>
+<p><span class="math display">\[
+s_i^+ = \sum_{j \in S^+} x_{ij}, \qquad
+s_i^- = \sum_{j \in S^-} x_{ij}.
+\]</span></p></li>
+<li><p>Fit a linear regression on the training set:</p>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_+ s_i^+ + \beta_- s_i^- + \varepsilon_i .
+\]</span></p></li>
+<li><p>Apply the fitted model to the held-out subjects.</p></li>
+</ol>
+<p>At this point, CPM has done exactly what it promised: it built a prediction rule. The trouble begins when we ask it to testify in court as if it were an inference procedure.</p>
+<p>If you expand that last line, CPM is really a hard-screened, equal-weighted linear model. Every selected positive edge receives the same weight up to the scalar (<span class="math inline">\(\beta_{+}\)</span>) and every selected negative edge receives the same weight up to the scalar (<span class="math inline">\(\beta_{-}\)</span>). All the other edges get zero weight. This model class is legitimate, but it is narrow by construction, and narrow estimators do not automatically come with broad interpretational licenses. (Think “tiny model, big claims” - a risky pairing.)</p>
+<p>The simulations below are built around four consequences of that setup:</p>
+<ul>
+<li>screening <span class="math inline">\(p\)</span>-values are easily abused,</li>
+<li>selected edge sets can be unstable,</li>
+<li>leakage and confounds can manufacture apparently persuasive prediction,</li>
+<li>and equal-weight thresholding can be a poor approximation to the underlying signal.</li>
+</ul>
+</section>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>The code below uses only common R packages. <code>glmnet</code> is needed only for the ridge comparison in the last section.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("ggplot2", "dplyr", "tidyr", "purrr", "tibble", "glmnet"))</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glmnet)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">20260304</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The simulations below rely on several helper functions, which take care of (1) data splitting and preprocessing, (2) fitting and predicting with CPM, and (3) utilities for stability calculations and synthetic data generation. To keep the post readable, the implementation is folded. Click to expand if you’re curious about the details.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Helper functions</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>safe_cor <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(<span class="fu">sd</span>(x)) <span class="sc">||</span> <span class="fu">is.na</span>(<span class="fu">sd</span>(y)) <span class="sc">||</span> <span class="fu">sd</span>(x) <span class="sc">==</span> <span class="dv">0</span> <span class="sc">||</span> <span class="fu">sd</span>(y) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">NA_real_</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cor</span>(x, y)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>make_splits <span class="ot">&lt;-</span> <span class="cf">function</span>(n, <span class="at">repeats =</span> <span class="dv">100</span>, <span class="at">prop_train =</span> <span class="fl">0.8</span>, <span class="at">seed =</span> <span class="dv">1</span>) {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(seed)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replicate</span>(repeats, <span class="fu">sample</span>(<span class="fu">seq_len</span>(n), <span class="at">size =</span> <span class="fu">floor</span>(n <span class="sc">*</span> prop_train)), <span class="at">simplify =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>jaccard <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">unique</span>(a)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">unique</span>(b)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  u <span class="ot">&lt;-</span> <span class="fu">union</span>(a, b)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(u) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">NA_real_</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">length</span>(<span class="fu">intersect</span>(a, b)) <span class="sc">/</span> <span class="fu">length</span>(u)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>sample_jaccards <span class="ot">&lt;-</span> <span class="cf">function</span>(sets, <span class="at">n_pairs =</span> <span class="dv">2000</span>, <span class="at">seed =</span> <span class="dv">1</span>) {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(seed)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  all_pairs <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">combn</span>(<span class="fu">seq_along</span>(sets), <span class="dv">2</span>))</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(all_pairs) <span class="sc">&gt;</span> n_pairs) {</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    all_pairs <span class="ot">&lt;-</span> all_pairs[<span class="fu">sample</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(all_pairs)), n_pairs), , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">pair =</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(all_pairs)),</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">jaccard =</span> <span class="fu">map_dbl</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(all_pairs)), <span class="cf">function</span>(i) {</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">jaccard</span>(sets[[all_pairs[i, <span class="dv">1</span>]]], sets[[all_pairs[i, <span class="dv">2</span>]]])</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>scale_train_test <span class="ot">&lt;-</span> <span class="cf">function</span>(x_train, x_test) {</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  mu <span class="ot">&lt;-</span> <span class="fu">colMeans</span>(x_train)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  sdv <span class="ot">&lt;-</span> <span class="fu">apply</span>(x_train, <span class="dv">2</span>, sd)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  sdv[sdv <span class="sc">==</span> <span class="dv">0</span> <span class="sc">|</span> <span class="fu">is.na</span>(sdv)] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  train <span class="ot">&lt;-</span> <span class="fu">sweep</span>(<span class="fu">sweep</span>(x_train, <span class="dv">2</span>, mu, <span class="st">"-"</span>), <span class="dv">2</span>, sdv, <span class="st">"/"</span>)</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  test  <span class="ot">&lt;-</span> <span class="fu">sweep</span>(<span class="fu">sweep</span>(x_test, <span class="dv">2</span>, mu, <span class="st">"-"</span>), <span class="dv">2</span>, sdv, <span class="st">"/"</span>)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">train =</span> train, <span class="at">test =</span> test)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>residualize_matrix <span class="ot">&lt;-</span> <span class="cf">function</span>(train_mat, test_mat, c_train, c_test) {</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  train_mat <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(train_mat)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  test_mat <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(test_mat)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  z_train <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="dv">1</span>, c_train)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  z_test <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="dv">1</span>, c_test)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  coef <span class="ot">&lt;-</span> <span class="fu">qr.solve</span>(z_train, train_mat)</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  train_resid <span class="ot">&lt;-</span> train_mat <span class="sc">-</span> z_train <span class="sc">%*%</span> coef</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  test_resid <span class="ot">&lt;-</span> test_mat <span class="sc">-</span> z_test <span class="sc">%*%</span> coef</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">train =</span> train_resid, <span class="at">test =</span> test_resid)</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>residualize_vector <span class="ot">&lt;-</span> <span class="cf">function</span>(train_vec, test_vec, c_train, c_test) {</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">residualize_matrix</span>(</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">matrix</span>(train_vec, <span class="at">ncol =</span> <span class="dv">1</span>),</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">matrix</span>(test_vec, <span class="at">ncol =</span> <span class="dv">1</span>),</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    c_train,</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    c_test</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">train =</span> <span class="fu">as.numeric</span>(out<span class="sc">$</span>train), <span class="at">test =</span> <span class="fu">as.numeric</span>(out<span class="sc">$</span>test))</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>screen_edges <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y, <span class="at">p_thresh =</span> <span class="fl">0.01</span>) {</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>  cors <span class="ot">&lt;-</span> <span class="fu">apply</span>(x, <span class="dv">2</span>, <span class="cf">function</span>(col) <span class="fu">safe_cor</span>(col, y))</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  cors[<span class="fu">is.na</span>(cors)] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(x)</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  tvals <span class="ot">&lt;-</span> <span class="fu">abs</span>(cors) <span class="sc">*</span> <span class="fu">sqrt</span>((n <span class="sc">-</span> <span class="dv">2</span>) <span class="sc">/</span> <span class="fu">pmax</span>(<span class="fl">1e-8</span>, <span class="dv">1</span> <span class="sc">-</span> cors<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  pvals <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">pt</span>(<span class="sc">-</span>tvals, <span class="at">df =</span> n <span class="sc">-</span> <span class="dv">2</span>)</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  pos <span class="ot">&lt;-</span> <span class="fu">which</span>(cors <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> pvals <span class="sc">&lt;</span> p_thresh)</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>  neg <span class="ot">&lt;-</span> <span class="fu">which</span>(cors <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> pvals <span class="sc">&lt;</span> p_thresh)</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">pos =</span> pos, <span class="at">neg =</span> neg, <span class="at">cors =</span> cors, <span class="at">pvals =</span> pvals)</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>fit_cpm <span class="ot">&lt;-</span> <span class="cf">function</span>(x_train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>, <span class="at">screen =</span> <span class="cn">NULL</span>) {</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(screen)) {</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    screen <span class="ot">&lt;-</span> <span class="fu">screen_edges</span>(x_train, y_train, <span class="at">p_thresh =</span> p_thresh)</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>  pos_sum <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">length</span>(screen<span class="sc">$</span>pos)) {</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowSums</span>(x_train[, screen<span class="sc">$</span>pos, <span class="at">drop =</span> <span class="cn">FALSE</span>])</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">nrow</span>(x_train))</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>  neg_sum <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">length</span>(screen<span class="sc">$</span>neg)) {</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowSums</span>(x_train[, screen<span class="sc">$</span>neg, <span class="at">drop =</span> <span class="cn">FALSE</span>])</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">nrow</span>(x_train))</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>  dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">y =</span> y_train, <span class="at">pos_sum =</span> pos_sum, <span class="at">neg_sum =</span> neg_sum)</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>  fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> pos_sum <span class="sc">+</span> neg_sum, <span class="at">data =</span> dat)</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">fit =</span> fit, <span class="at">screen =</span> screen)</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>predict_cpm <span class="ot">&lt;-</span> <span class="cf">function</span>(model, x_test) {</span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>  pos_sum <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">length</span>(model<span class="sc">$</span>screen<span class="sc">$</span>pos)) {</span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowSums</span>(x_test[, model<span class="sc">$</span>screen<span class="sc">$</span>pos, <span class="at">drop =</span> <span class="cn">FALSE</span>])</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">nrow</span>(x_test))</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>  neg_sum <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">length</span>(model<span class="sc">$</span>screen<span class="sc">$</span>neg)) {</span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowSums</span>(x_test[, model<span class="sc">$</span>screen<span class="sc">$</span>neg, <span class="at">drop =</span> <span class="cn">FALSE</span>])</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">nrow</span>(x_test))</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>(</span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>    <span class="fu">predict</span>(model<span class="sc">$</span>fit, <span class="at">newdata =</span> <span class="fu">data.frame</span>(<span class="at">pos_sum =</span> pos_sum, <span class="at">neg_sum =</span> neg_sum))</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>ridge_predict <span class="ot">&lt;-</span> <span class="cf">function</span>(x_train, y_train, x_test) {</span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>  fit <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(x_train, y_train, <span class="at">alpha =</span> <span class="dv">0</span>, <span class="at">standardize =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.numeric</span>(<span class="fu">predict</span>(fit, <span class="at">newx =</span> x_test, <span class="at">s =</span> <span class="st">"lambda.min"</span>))</span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>simulate_block_connectome <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">200</span>,</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">800</span>,</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">20</span>,</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>  <span class="at">signal_blocks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>  <span class="at">signal_weights =</span> <span class="cn">NULL</span>,</span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.8</span>,</span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a>  <span class="at">confound_x =</span> <span class="dv">0</span>,</span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a>  <span class="at">confound_y =</span> <span class="dv">0</span>,</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="cn">NULL</span></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>) {</span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(seed)) <span class="fu">set.seed</span>(seed)</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>  block_id <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">seq_len</span>(n_blocks), <span class="at">each =</span> <span class="fu">ceiling</span>(p <span class="sc">/</span> n_blocks))[<span class="fu">seq_len</span>(p)]</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>  z <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(n <span class="sc">*</span> n_blocks), <span class="at">nrow =</span> n, <span class="at">ncol =</span> n_blocks)</span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>  confound <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(<span class="fu">rnorm</span>(n)))</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(n <span class="sc">*</span> p, <span class="at">sd =</span> edge_noise), <span class="at">nrow =</span> n, <span class="at">ncol =</span> p)</span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (b <span class="cf">in</span> <span class="fu">seq_len</span>(n_blocks)) {</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>    idx <span class="ot">&lt;-</span> <span class="fu">which</span>(block_id <span class="sc">==</span> b)</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>    x[, idx] <span class="ot">&lt;-</span> loading <span class="sc">*</span> z[, b] <span class="sc">+</span> x[, idx]</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (confound_x <span class="sc">!=</span> <span class="dv">0</span>) {</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>    impacted_blocks <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(<span class="fu">min</span>(<span class="dv">3</span>, n_blocks))</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (b <span class="cf">in</span> impacted_blocks) {</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a>      idx <span class="ot">&lt;-</span> <span class="fu">which</span>(block_id <span class="sc">==</span> b)</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a>      x[, idx] <span class="ot">&lt;-</span> x[, idx] <span class="sc">+</span> confound_x <span class="sc">*</span> confound</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(signal_blocks) <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>    signal <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, n)</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">is.null</span>(signal_weights)) signal_weights <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">1</span>, <span class="fu">length</span>(signal_blocks))</span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>    signal <span class="ot">&lt;-</span> z[, signal_blocks, drop <span class="ot">=</span> <span class="cn">FALSE</span>] <span class="sc">%*%</span> <span class="fu">matrix</span>(signal_weights, <span class="at">ncol =</span> <span class="dv">1</span>)</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(signal <span class="sc">+</span> confound_y <span class="sc">*</span> confound <span class="sc">+</span> <span class="fu">rnorm</span>(n, <span class="at">sd =</span> outcome_noise)))</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">scale</span>(x)</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> x,</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> y,</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>    <span class="at">confound =</span> confound,</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>    <span class="at">block_id =</span> block_id,</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>    <span class="at">signal_blocks =</span> signal_blocks</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>simulate_weighted_edges <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">250</span>,</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">800</span>,</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">20</span>,</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a>  <span class="at">active_blocks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_signal_edges =</span> <span class="dv">40</span>,</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.8</span>,</span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a>  <span class="at">beta_scale =</span> <span class="fl">0.7</span>,</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="dv">2</span>,</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="cn">NULL</span></span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a>) {</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(seed)) <span class="fu">set.seed</span>(seed)</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a>  block_id <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">seq_len</span>(n_blocks), <span class="at">each =</span> <span class="fu">ceiling</span>(p <span class="sc">/</span> n_blocks))[<span class="fu">seq_len</span>(p)]</span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a>  z <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(n <span class="sc">*</span> n_blocks), <span class="at">nrow =</span> n, <span class="at">ncol =</span> n_blocks)</span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(n <span class="sc">*</span> p, <span class="at">sd =</span> edge_noise), <span class="at">nrow =</span> n, <span class="at">ncol =</span> p)</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (b <span class="cf">in</span> <span class="fu">seq_len</span>(n_blocks)) {</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a>    idx <span class="ot">&lt;-</span> <span class="fu">which</span>(block_id <span class="sc">==</span> b)</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a>    x[, idx] <span class="ot">&lt;-</span> loading <span class="sc">*</span> z[, b] <span class="sc">+</span> x[, idx]</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>  signal_candidates <span class="ot">&lt;-</span> <span class="fu">which</span>(block_id <span class="sc">%in%</span> active_blocks)</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a>  signal_edges <span class="ot">&lt;-</span> <span class="fu">sample</span>(signal_candidates, <span class="at">size =</span> n_signal_edges)</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a>  beta <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, p)</span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>  beta[signal_edges] <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_signal_edges, <span class="at">sd =</span> beta_scale)</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(x <span class="sc">%*%</span> beta <span class="sc">+</span> <span class="fu">rnorm</span>(n, <span class="at">sd =</span> outcome_noise)))</span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">scale</span>(x)</span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> x,</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> y,</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>    <span class="at">beta =</span> beta,</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>    <span class="at">signal_edges =</span> signal_edges,</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a>    <span class="at">block_id =</span> block_id</span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="point-1-screening-p-values-look-impressive-even-when-nothing-is-there" class="level2">
+<h2 class="anchored" data-anchor-id="point-1-screening-p-values-look-impressive-even-when-nothing-is-there">Point 1: screening <span class="math inline">\(p\)</span>-values look impressive even when nothing is there</h2>
+<p>The first issue is the easiest to forget because the <span class="math inline">\(p\)</span>-values feel familiar. In CPM, edgewise <span class="math inline">\(p\)</span>-values are used as a <em>screening device</em>. But when thousands of edges are screened, some will look tiny purely by chance. And once we keep only those winners, ordinary inferential language becomes invalid unless we explicitly account for the selection event <span class="citation" data-cites="taylor_2015_StatisticalLearningSelective kuchibhotla_2022_PostSelectionInference">(<a href="#ref-taylor_2015_StatisticalLearningSelective" role="doc-biblioref">Taylor and Tibshirani 2015</a>; <a href="#ref-kuchibhotla_2022_PostSelectionInference" role="doc-biblioref">Kuchibhotla, Kolassa, and Kuffner 2022</a>)</span>.</p>
+<p>Let’s consider a null simulation. If you screen enough edges, the null will eventually confess to something it did not do. There is <em>no relationship</em> between features and target. We just compute the smallest screening <span class="math inline">\(p\)</span>-value across thousands of edges.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>null_screen <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">200</span>, <span class="cf">function</span>(rep_id) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(<span class="dv">120</span> <span class="sc">*</span> <span class="dv">3000</span>), <span class="at">nrow =</span> <span class="dv">120</span>, <span class="at">ncol =</span> <span class="dv">3000</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">120</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  scr <span class="ot">&lt;-</span> <span class="fu">screen_edges</span>(x, y, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">rep =</span> rep_id,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">min_p =</span> <span class="fu">min</span>(scr<span class="sc">$</span>pvals),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_edges_below_001 =</span> <span class="fu">sum</span>(scr<span class="sc">$</span>pvals <span class="sc">&lt;</span> <span class="fl">0.01</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>null_screen <span class="sc">%&gt;%</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_min_p =</span> <span class="fu">median</span>(min_p),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_edges_below_001 =</span> <span class="fu">mean</span>(n_edges_below_001),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_edges_below_001 =</span> <span class="fu">max</span>(n_edges_below_001)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["median_min_p"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["mean_edges_below_001"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["max_edges_below_001"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"0.0002538619","2":"29.65","3":"46"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(null_screen, <span class="fu">aes</span>(<span class="at">x =</span> min_p)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="st">"grey70"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Smallest screening $p$-value in one null dataset (log scale)"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Under the null, thousands of screened edges almost guarantee tiny $p$-values"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="blog_006_critique_cpm_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What this shows is not controversial. It is the basic geometry of screening many variables. But it matters because CPM papers often move too quickly from <em>“these edges passed the threshold”</em> to <em>“these edges are implicated”</em>. They are not the same claim.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In classical CPM, the edgewise <span class="math inline">\(p\)</span>-values are <strong>screening statistics</strong>, not valid post-selection inferential <span class="math inline">\(p\)</span>-values for the final selected edge set. Treating them as evidence that particular edges are “significant” is a category error.</p>
+</div>
+</div>
+</section>
+<section id="point-2-prediction-can-be-decent-while-the-selected-network-is-unstable" class="level2">
+<h2 class="anchored" data-anchor-id="point-2-prediction-can-be-decent-while-the-selected-network-is-unstable">Point 2: prediction can be decent while the selected network is unstable</h2>
+<p>Now we simulate a connectome-like feature matrix with <em>correlated blocks of edges</em>. The target depends on a small number of latent block-level factors. Many edges are therefore similarly predictive proxies. That is exactly the kind of setting where a thresholded feature-selection method can predict reasonably well while selecting different edge sets across different training samples. In other words, CPM can behave like a witness with many equally plausible stories: the prediction stays, but the cast of “important edges” keeps changing.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>instab_dat <span class="ot">&lt;-</span> <span class="fu">simulate_block_connectome</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">200</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">800</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">20</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">signal_blocks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.8</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="fl">1.25</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="dv">10</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>instab_splits <span class="ot">&lt;-</span> <span class="fu">make_splits</span>(<span class="fu">nrow</span>(instab_dat<span class="sc">$</span>x), <span class="at">repeats =</span> <span class="dv">100</span>, <span class="at">prop_train =</span> <span class="fl">0.8</span>, <span class="at">seed =</span> <span class="dv">11</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>instab_results <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">seq_along</span>(instab_splits), <span class="cf">function</span>(i) {</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  train_idx <span class="ot">&lt;-</span> instab_splits[[i]]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  test_idx <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(instab_dat<span class="sc">$</span>x)), train_idx)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  x_train <span class="ot">&lt;-</span> instab_dat<span class="sc">$</span>x[train_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  x_test <span class="ot">&lt;-</span> instab_dat<span class="sc">$</span>x[test_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  y_train <span class="ot">&lt;-</span> instab_dat<span class="sc">$</span>y[train_idx]</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  y_test <span class="ot">&lt;-</span> instab_dat<span class="sc">$</span>y[test_idx]</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  sc <span class="ot">&lt;-</span> <span class="fu">scale_train_test</span>(x_train, x_test)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(sc<span class="sc">$</span>train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(model, sc<span class="sc">$</span>test)</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  selected <span class="ot">&lt;-</span> <span class="fu">union</span>(model<span class="sc">$</span>screen<span class="sc">$</span>pos, model<span class="sc">$</span>screen<span class="sc">$</span>neg)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">split =</span> i,</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">test_cor =</span> <span class="fu">safe_cor</span>(y_test, pred),</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_selected =</span> <span class="fu">length</span>(selected),</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">selected =</span> <span class="fu">list</span>(selected)</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>instab_jacc <span class="ot">&lt;-</span> <span class="fu">sample_jaccards</span>(instab_results<span class="sc">$</span>selected, <span class="at">n_pairs =</span> <span class="dv">1500</span>, <span class="at">seed =</span> <span class="dv">12</span>)</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>instab_results <span class="sc">%&gt;%</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_test_cor =</span> <span class="fu">median</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_n_selected =</span> <span class="fu">median</span>(n_selected),</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">min_test_cor =</span> <span class="fu">min</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_test_cor =</span> <span class="fu">max</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["median_test_cor"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["median_n_selected"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["min_test_cor"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["max_test_cor"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.6652819","2":"80","3":"0.4393339","4":"0.8171203"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>instab_jacc <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">median_jaccard =</span> <span class="fu">median</span>(jaccard, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["median_jaccard"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.8795181"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>instab_plot_data <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">metric =</span> <span class="st">"Held-out correlation"</span>, <span class="at">value =</span> instab_results<span class="sc">$</span>test_cor),</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">metric =</span> <span class="st">"Pairwise Jaccard of selected edge sets"</span>, <span class="at">value =</span> instab_jacc<span class="sc">$</span>jaccard)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(instab_plot_data, <span class="fu">aes</span>(<span class="at">x =</span> value)) <span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="st">"grey70"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> metric, <span class="at">scales =</span> <span class="st">"free_x"</span>) <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Prediction can remain positive even when the selected edges are unstable"</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="blog_006_critique_cpm_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If you see modest positive held-out correlations but low pairwise Jaccard overlap across resamples, it tells clearly that the selected network is not a uniquely identified scientific object. It is a sample-contingent solution to a correlated proxy problem.</p>
+<p>That does not mean the prediction is fake. It means the <em>story</em> attached to the selected mask is too strong.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A CPM result can be predictively nonzero while the edge set itself is unstable. In that case, it is defensible to talk about a predictive association. It is <strong>not</strong> defensible to talk about a uniquely identified predictive network.</p>
+</div>
+</div>
+</section>
+<section id="point-3-leakage-can-manufacture-performance" class="level2">
+<h2 class="anchored" data-anchor-id="point-3-leakage-can-manufacture-performance">Point 3: leakage can manufacture performance</h2>
+<p>A correct prediction workflow must keep <em>every supervised step</em> inside the training data. In CPM that includes the edge-screening step. If you screen edges on the full dataset and then cross-validate, you have already allowed the test labels to shape the feature set. This is the statistical equivalent of reading the answer key “just to calibrate your intuition.”</p>
+<p>Rosenblatt and colleagues showed that feature-selection leakage can drastically inflate connectome-based prediction performance <span class="citation" data-cites="rosenblatt_2024_DataLeakageInflates">(<a href="#ref-rosenblatt_2024_DataLeakageInflates" role="doc-biblioref">Rosenblatt et al. 2024</a>)</span>. Here is a toy version of the same problem.</p>
+<p>In this simulation there is <em>no true signal at all</em>. The target is pure noise.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>leak_dat <span class="ot">&lt;-</span> <span class="fu">simulate_block_connectome</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">120</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">1500</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">30</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">signal_blocks =</span> <span class="fu">integer</span>(<span class="dv">0</span>),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.7</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="dv">20</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>leak_splits <span class="ot">&lt;-</span> <span class="fu">make_splits</span>(<span class="fu">nrow</span>(leak_dat<span class="sc">$</span>x), <span class="at">repeats =</span> <span class="dv">100</span>, <span class="at">prop_train =</span> <span class="fl">0.8</span>, <span class="at">seed =</span> <span class="dv">21</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>full_screen <span class="ot">&lt;-</span> <span class="fu">screen_edges</span>(leak_dat<span class="sc">$</span>x, leak_dat<span class="sc">$</span>y, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>leak_results <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">seq_along</span>(leak_splits), <span class="cf">function</span>(i) {</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  train_idx <span class="ot">&lt;-</span> leak_splits[[i]]</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  test_idx <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(leak_dat<span class="sc">$</span>x)), train_idx)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  x_train <span class="ot">&lt;-</span> leak_dat<span class="sc">$</span>x[train_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  x_test <span class="ot">&lt;-</span> leak_dat<span class="sc">$</span>x[test_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  y_train <span class="ot">&lt;-</span> leak_dat<span class="sc">$</span>y[train_idx]</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  y_test <span class="ot">&lt;-</span> leak_dat<span class="sc">$</span>y[test_idx]</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  sc <span class="ot">&lt;-</span> <span class="fu">scale_train_test</span>(x_train, x_test)</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  proper_model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(sc<span class="sc">$</span>train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  proper_pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(proper_model, sc<span class="sc">$</span>test)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  leaky_model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(sc<span class="sc">$</span>train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>, <span class="at">screen =</span> full_screen)</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>  leaky_pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(leaky_model, sc<span class="sc">$</span>test)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">split =</span> i,</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">method =</span> <span class="fu">c</span>(<span class="st">"Proper CPM"</span>, <span class="st">"Leaky CPM"</span>),</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">test_cor =</span> <span class="fu">c</span>(<span class="fu">safe_cor</span>(y_test, proper_pred), <span class="fu">safe_cor</span>(y_test, leaky_pred))</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>leak_results <span class="sc">%&gt;%</span></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(method) <span class="sc">%&gt;%</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_test_cor =</span> <span class="fu">mean</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_test_cor =</span> <span class="fu">median</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd_test_cor =</span> <span class="fu">sd</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["method"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mean_test_cor"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["median_test_cor"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["sd_test_cor"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Leaky CPM","2":"0.61001295","3":"0.634839587","4":"0.1347370"},{"1":"Proper CPM","2":"0.01357534","3":"0.008346275","4":"0.1757411"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(leak_results, <span class="fu">aes</span>(<span class="at">x =</span> method, <span class="at">y =</span> test_cor)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"grey80"</span>, <span class="at">outlier.alpha =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Held-out correlation"</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Feature-selection leakage can create apparent prediction on null data"</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="blog_006_critique_cpm_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In a null setting, any systematic positive performance is manufactured. That is why leakage is not a small coding detail. It directly changes the scientific meaning of the result.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the edge screen saw the test subjects, the reported CPM score is <strong>not</strong> a valid out-of-sample estimate. It is an optimistically biased estimate produced by leakage <span class="citation" data-cites="rosenblatt_2024_DataLeakageInflates">(<a href="#ref-rosenblatt_2024_DataLeakageInflates" role="doc-biblioref">Rosenblatt et al. 2024</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="point-4-cpm-can-end-up-predicting-a-confound" class="level2">
+<h2 class="anchored" data-anchor-id="point-4-cpm-can-end-up-predicting-a-confound">Point 4: CPM can end up predicting a confound</h2>
+<p>The next failure mode is subtler. Even when the train-test separation is correct, the model may still learn a variable that is not of scientific interest. In neuroimaging that often means motion, site, age, family structure, or some other nuisance variable.</p>
+<p>Snoek and colleagues showed that confound handling in decoding and prediction has to be done carefully, and in a cross-validated way, to avoid distorted conclusions <span class="citation" data-cites="snoek_2019_HowControlConfounds">(<a href="#ref-snoek_2019_HowControlConfounds" role="doc-biblioref">Snoek, Miletić, and Scholte 2019</a>)</span>.</p>
+<p>Here the phenotype is driven <em>only by a confound</em>. The connectome contains features influenced by that same confound. There is no direct signal from the connectome to the phenotype once the confound is removed.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>conf_dat <span class="ot">&lt;-</span> <span class="fu">simulate_block_connectome</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">180</span>,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">800</span>,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">20</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">signal_blocks =</span> <span class="fu">integer</span>(<span class="dv">0</span>),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.8</span>,</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">confound_x =</span> <span class="fl">1.1</span>,</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">confound_y =</span> <span class="fl">1.3</span>,</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="dv">30</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>conf_splits <span class="ot">&lt;-</span> <span class="fu">make_splits</span>(<span class="fu">nrow</span>(conf_dat<span class="sc">$</span>x), <span class="at">repeats =</span> <span class="dv">100</span>, <span class="at">prop_train =</span> <span class="fl">0.8</span>, <span class="at">seed =</span> <span class="dv">31</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>conf_results <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">seq_along</span>(conf_splits), <span class="cf">function</span>(i) {</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  train_idx <span class="ot">&lt;-</span> conf_splits[[i]]</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  test_idx <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(conf_dat<span class="sc">$</span>x)), train_idx)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  x_train <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>x[train_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  x_test <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>x[test_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>  y_train <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>y[train_idx]</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>  y_test <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>y[test_idx]</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  c_train <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>confound[train_idx]</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>  c_test <span class="ot">&lt;-</span> conf_dat<span class="sc">$</span>confound[test_idx]</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>  sc <span class="ot">&lt;-</span> <span class="fu">scale_train_test</span>(x_train, x_test)</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>  raw_model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(sc<span class="sc">$</span>train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>  raw_pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(raw_model, sc<span class="sc">$</span>test)</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>  conf_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> c, <span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">y =</span> y_train, <span class="at">c =</span> c_train))</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>  conf_pred <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">predict</span>(conf_model, <span class="at">newdata =</span> <span class="fu">data.frame</span>(<span class="at">c =</span> c_test)))</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>  rx <span class="ot">&lt;-</span> <span class="fu">residualize_matrix</span>(sc<span class="sc">$</span>train, sc<span class="sc">$</span>test, c_train, c_test)</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>  ry <span class="ot">&lt;-</span> <span class="fu">residualize_vector</span>(y_train, y_test, c_train, c_test)</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>  adj_model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(rx<span class="sc">$</span>train, ry<span class="sc">$</span>train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>  adj_pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(adj_model, rx<span class="sc">$</span>test)</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">split =</span> i,</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">target =</span> <span class="st">"Observed phenotype"</span>,</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">method =</span> <span class="st">"Raw CPM"</span>,</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">test_cor =</span> <span class="fu">safe_cor</span>(y_test, raw_pred)</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>      <span class="at">split =</span> i,</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>      <span class="at">target =</span> <span class="st">"Observed phenotype"</span>,</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>      <span class="at">method =</span> <span class="st">"Confound-only model"</span>,</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>      <span class="at">test_cor =</span> <span class="fu">safe_cor</span>(y_test, conf_pred)</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(</span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>      <span class="at">split =</span> i,</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>      <span class="at">target =</span> <span class="st">"Deconfounded phenotype"</span>,</span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>      <span class="at">method =</span> <span class="st">"CPM after fold-wise adjustment"</span>,</span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>      <span class="at">test_cor =</span> <span class="fu">safe_cor</span>(ry<span class="sc">$</span>test, adj_pred)</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>conf_results<span class="sc">$</span>method <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  conf_results<span class="sc">$</span>method,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Raw CPM"</span>, <span class="st">"Confound-only model"</span>, <span class="st">"CPM after fold-wise adjustment"</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(conf_results, <span class="fu">aes</span>(<span class="at">x =</span> method, <span class="at">y =</span> test_cor)) <span class="sc">+</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"grey80"</span>, <span class="at">outlier.alpha =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> target, <span class="at">scales =</span> <span class="st">"free_x"</span>) <span class="sc">+</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Held-out correlation"</span>,</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"A CPM result can be driven entirely by a nuisance variable"</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">15</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="blog_006_critique_cpm_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If the raw CPM performs about as well as the confound-only model, and the deconfounded CPM collapses toward zero, then the message is not “CPM discovered brain signal.” The message is “CPM learned the confound.” To be fair, CPM did predict something real. It just predicted the wrong thing very efficiently.</p>
+<p>That is why a confounds-only baseline is not optional window dressing. It is a scientific control.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A predictive result is <strong>not</strong> yet a brain-behavior result. If the same performance can be achieved by predicting the nuisance variable, then the CPM has not isolated the phenomenon of interest <span class="citation" data-cites="snoek_2019_HowControlConfounds">(<a href="#ref-snoek_2019_HowControlConfounds" role="doc-biblioref">Snoek, Miletić, and Scholte 2019</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="point-5-cpm-is-a-constrained-linear-model-and-the-constraint-can-hurt" class="level2">
+<h2 class="anchored" data-anchor-id="point-5-cpm-is-a-constrained-linear-model-and-the-constraint-can-hurt">Point 5: CPM is a constrained linear model, and the constraint can hurt</h2>
+<p>The last point is not about invalidity. It is about model class.</p>
+<p>Suppose the true signal is a weighted combination of many edges with heterogeneous effect sizes. In that world, a regularized linear model can estimate a distributed weight map. Classical CPM cannot. It discards most edges, keeps the survivors, and then forces equal weights within sign.</p>
+<p>That does not make CPM wrong. It makes it a <em>strongly constrained approximation</em> - useful, but not a magical “network finder.”</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>weighted_dat <span class="ot">&lt;-</span> <span class="fu">simulate_weighted_edges</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">250</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="dv">800</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_blocks =</span> <span class="dv">20</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">active_blocks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_signal_edges =</span> <span class="dv">40</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">loading =</span> <span class="fl">0.8</span>,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">edge_noise =</span> <span class="dv">1</span>,</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">beta_scale =</span> <span class="fl">0.7</span>,</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">outcome_noise =</span> <span class="dv">2</span>,</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> <span class="dv">40</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>weighted_splits <span class="ot">&lt;-</span> <span class="fu">make_splits</span>(<span class="fu">nrow</span>(weighted_dat<span class="sc">$</span>x), <span class="at">repeats =</span> <span class="dv">100</span>, <span class="at">prop_train =</span> <span class="fl">0.8</span>, <span class="at">seed =</span> <span class="dv">41</span>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>weighted_results <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">seq_along</span>(weighted_splits), <span class="cf">function</span>(i) {</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  train_idx <span class="ot">&lt;-</span> weighted_splits[[i]]</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  test_idx <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(weighted_dat<span class="sc">$</span>x)), train_idx)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  x_train <span class="ot">&lt;-</span> weighted_dat<span class="sc">$</span>x[train_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  x_test <span class="ot">&lt;-</span> weighted_dat<span class="sc">$</span>x[test_idx, , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  y_train <span class="ot">&lt;-</span> weighted_dat<span class="sc">$</span>y[train_idx]</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>  y_test <span class="ot">&lt;-</span> weighted_dat<span class="sc">$</span>y[test_idx]</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>  sc <span class="ot">&lt;-</span> <span class="fu">scale_train_test</span>(x_train, x_test)</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>  cpm_model <span class="ot">&lt;-</span> <span class="fu">fit_cpm</span>(sc<span class="sc">$</span>train, y_train, <span class="at">p_thresh =</span> <span class="fl">0.01</span>)</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>  cpm_pred <span class="ot">&lt;-</span> <span class="fu">predict_cpm</span>(cpm_model, sc<span class="sc">$</span>test)</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>  ridge_pred <span class="ot">&lt;-</span> <span class="fu">ridge_predict</span>(sc<span class="sc">$</span>train, y_train, sc<span class="sc">$</span>test)</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">split =</span> i,</span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">method =</span> <span class="fu">c</span>(<span class="st">"CPM"</span>, <span class="st">"Ridge"</span>),</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">test_cor =</span> <span class="fu">c</span>(<span class="fu">safe_cor</span>(y_test, cpm_pred), <span class="fu">safe_cor</span>(y_test, ridge_pred))</span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>weighted_results <span class="sc">%&gt;%</span></span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(method) <span class="sc">%&gt;%</span></span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_test_cor =</span> <span class="fu">mean</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_test_cor =</span> <span class="fu">median</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd_test_cor =</span> <span class="fu">sd</span>(test_cor, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["method"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mean_test_cor"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["median_test_cor"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["sd_test_cor"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"CPM","2":"0.5367965","3":"0.5482147","4":"0.09628526"},{"1":"Ridge","2":"0.5696103","3":"0.5736479","4":"0.08324226"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weighted_results, <span class="fu">aes</span>(<span class="at">x =</span> method, <span class="at">y =</span> test_cor)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"grey80"</span>, <span class="at">outlier.alpha =</span> <span class="fl">0.25</span>) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Held-out correlation"</span>,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"When true effects are heterogeneous, equal-weight CPM can be misspecified"</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="blog_006_critique_cpm_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If ridge consistently beats CPM here, the lesson is not that ridge is magically superior in every dataset. The lesson is narrower and more important: CPM’s interpretability is not free. It comes from imposing a crude model class.</p>
+<p>When a paper talks as if CPM has discovered a meaningful weighted subnetwork, remember what the estimator actually did: threshold, sum, and fit two slopes.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>CPM is <strong>not</strong> a general model of distributed connectivity effects. It is a specific constrained estimator. If it predicts well, that can be useful. But the constraint itself is part of the scientific story and has to be acknowledged.</p>
+</div>
+</div>
+</section>
+<section id="what-cpm-can-honestly-claim" class="level2">
+<h2 class="anchored" data-anchor-id="what-cpm-can-honestly-claim">What CPM can honestly claim</h2>
+<p>Used carefully, CPM can justify a modest statement such as:</p>
+<blockquote class="blockquote">
+<p>In this dataset, under this preprocessing and validation design, a simple thresholded linear summary of connectivity carries out-of-sample information about the target.</p>
+</blockquote>
+<p>That is already a meaningful result. But it is much narrower than the claims that are often made in the literature.</p>
+<p>What CPM <strong>cannot</strong> claim on its own (and you should refrain from writing as such):</p>
+<ul>
+<li><strong>“These edges are significant.”</strong> The screening <span class="math inline">\(p\)</span>-values are not post-selection valid inferential <span class="math inline">\(p\)</span>-values <span class="citation" data-cites="taylor_2015_StatisticalLearningSelective kuchibhotla_2022_PostSelectionInference">(<a href="#ref-taylor_2015_StatisticalLearningSelective" role="doc-biblioref">Taylor and Tibshirani 2015</a>; <a href="#ref-kuchibhotla_2022_PostSelectionInference" role="doc-biblioref">Kuchibhotla, Kolassa, and Kuffner 2022</a>)</span>.</li>
+<li><strong>“This is the predictive network.”</strong> Well, not unless selection stability has been demonstrated <span class="citation" data-cites="nogueira_2018_StabilityFeatureSelection">(<a href="#ref-nogueira_2018_StabilityFeatureSelection" role="doc-biblioref">Nogueira, Sechidis, and Brown 2018</a>)</span>.</li>
+<li><strong>“This reflects the mechanism of the phenotype.”</strong> Prediction is not mechanism.</li>
+<li><strong>“This is a biomarker.”</strong> Not without stronger uncertainty quantification, external validation, and confound auditing. Small neuroimaging samples can produce large cross-validation error bars <span class="citation" data-cites="varoquaux_2018_CrossvalidationFailureSmall">(<a href="#ref-varoquaux_2018_CrossvalidationFailureSmall" role="doc-biblioref">Varoquaux 2018</a>)</span>.</li>
+</ul>
+</section>
+<section id="a-minimal-cpm-audit-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="a-minimal-cpm-audit-checklist">A minimal CPM audit checklist</h2>
+<p>If I saw a new CPM paper, these are the first things I would ask.</p>
+<ol type="1">
+<li><strong>Was edge screening performed strictly within each training split?</strong> If not, stop there <span class="citation" data-cites="rosenblatt_2024_DataLeakageInflates">(<a href="#ref-rosenblatt_2024_DataLeakageInflates" role="doc-biblioref">Rosenblatt et al. 2024</a>)</span>.</li>
+<li><strong>Were nuisance adjustments performed fold-wise?</strong> If not, confound control may itself be invalid <span class="citation" data-cites="snoek_2019_HowControlConfounds">(<a href="#ref-snoek_2019_HowControlConfounds" role="doc-biblioref">Snoek, Miletić, and Scholte 2019</a>)</span>.</li>
+<li><strong>Was a confounds-only baseline reported?</strong> If not, the result may be nuisance prediction in disguise.</li>
+<li><strong>Was edge-selection stability reported?</strong> If not, the network interpretation is unsupported <span class="citation" data-cites="nogueira_2018_StabilityFeatureSelection">(<a href="#ref-nogueira_2018_StabilityFeatureSelection" role="doc-biblioref">Nogueira, Sechidis, and Brown 2018</a>)</span>.</li>
+<li><strong>Was CPM compared to a regularized linear baseline?</strong> If not, it is impossible to tell whether the threshold-and-sum constraint is helping or merely simplifying the story.</li>
+<li><strong>Were claims limited to prediction, or did the paper drift into inference and mechanism?</strong> The latter requires more than CPM itself.</li>
+</ol>
+</section>
+<section id="the-bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
+<p>The strongest critique of CPM is not that it is simple. The strongest critique is that simplicity has often been used as a rhetorical bridge from <strong>prediction</strong> to <strong>explanation</strong>.</p>
+<p>With all due respect, that bridge is not licensed by the method. If CPM were a person, it would be very good at predicting your height from your shoes and very confused about why you are asking it to explain genetics.</p>
+<p>CPM is, without any doubt, indeed valuable as a baseline, a didactic tool, or a quick heuristic predictor. But if we want to make claims about significant edges, stable subnetworks, mechanistic interpretation, or biomarker-level evidence, then the burden of proof is much higher than a thresholded cross-validated sum-score model can bear.</p>
+</section>
+<section id="references" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-kuchibhotla_2022_PostSelectionInference" class="csl-entry" role="listitem">
+Kuchibhotla, Arun K., John E. Kolassa, and Todd A. Kuffner. 2022. <span>“Post-<span>Selection Inference</span>.”</span> <em>Annual Review of Statistics and Its Application</em> 9 (1): 505–27. <a href="https://doi.org/10.1146/annurev-statistics-100421-044639">https://doi.org/10.1146/annurev-statistics-100421-044639</a>.
+</div>
+<div id="ref-nogueira_2018_StabilityFeatureSelection" class="csl-entry" role="listitem">
+Nogueira, Sarah, Konstantinos Sechidis, and Gavin Brown. 2018. <span>“On the <span>Stability</span> of <span>Feature Selection Algorithms</span>.”</span> <em>Journal of Machine Learning Research</em> 18 (174): 1–54.
+</div>
+<div id="ref-rosenblatt_2024_DataLeakageInflates" class="csl-entry" role="listitem">
+Rosenblatt, Matthew, Link Tejavibulya, Rongtao Jiang, Stephanie Noble, and Dustin Scheinost. 2024. <span>“Data Leakage Inflates Prediction Performance in Connectome-Based Machine Learning Models.”</span> <em>Nature Communications</em> 15 (1): 1829. <a href="https://doi.org/10.1038/s41467-024-46150-w">https://doi.org/10.1038/s41467-024-46150-w</a>.
+</div>
+<div id="ref-shen_2017_UsingConnectomebasedPredictive" class="csl-entry" role="listitem">
+Shen, Xilin, Emily S Finn, Dustin Scheinost, Monica D Rosenberg, Marvin M Chun, Xenophon Papademetris, and R Todd Constable. 2017. <span>“Using Connectome-Based Predictive Modeling to Predict Individual Behavior from Brain Connectivity.”</span> <em>Nature Protocols</em> 12 (3): 506–18. <a href="https://doi.org/10.1038/nprot.2016.178">https://doi.org/10.1038/nprot.2016.178</a>.
+</div>
+<div id="ref-snoek_2019_HowControlConfounds" class="csl-entry" role="listitem">
+Snoek, Lukas, Steven Miletić, and H. Steven Scholte. 2019. <span>“How to Control for Confounds in Decoding Analyses of Neuroimaging Data.”</span> <em>NeuroImage</em> 184 (January): 741–60. <a href="https://doi.org/10.1016/j.neuroimage.2018.09.074">https://doi.org/10.1016/j.neuroimage.2018.09.074</a>.
+</div>
+<div id="ref-taylor_2015_StatisticalLearningSelective" class="csl-entry" role="listitem">
+Taylor, Jonathan, and Robert J. Tibshirani. 2015. <span>“Statistical Learning and Selective Inference.”</span> <em>Proceedings of the National Academy of Sciences</em> 112 (25): 7629–34. <a href="https://doi.org/10.1073/pnas.1507583112">https://doi.org/10.1073/pnas.1507583112</a>.
+</div>
+<div id="ref-varoquaux_2018_CrossvalidationFailureSmall" class="csl-entry" role="listitem">
+Varoquaux, Gaël. 2018. <span>“Cross-Validation Failure: <span>Small</span> Sample Sizes Lead to Large Error Bars.”</span> <em>NeuroImage</em> 180 (October): 68–77. <a href="https://doi.org/10.1016/j.neuroimage.2017.06.061">https://doi.org/10.1016/j.neuroimage.2017.06.061</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{you2026,
+  author = {You, Kisung},
+  title = {Connectome-Based {Predictive} {Modeling} Is a Heuristic, Not
+    a Discovery Engine},
+  date = {2026-03-04},
+  url = {https://kisungyou.com/Blog/blog_006_critique_cpm.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-you2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+You, Kisung. 2026. <span>“Connectome-Based Predictive Modeling Is a
+Heuristic, Not a Discovery Engine.”</span> March 4, 2026. <a href="https://kisungyou.com/Blog/blog_006_critique_cpm.html">https://kisungyou.com/Blog/blog_006_critique_cpm.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/kisungyou\.com");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© Kisung You 2021-2026</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
