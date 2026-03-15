@@ -1,4 +1,5 @@
 ---
+freeze: false
 pagetitle: "KY-Home"
 title: "Kisung You"
 about:
@@ -18,9 +19,6 @@ about:
     - text: LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/kisung-you-b5b23b131/"
-    - text: Twitter
-      icon: twitter
-      url: "https://twitter.com/kisung_you"
     - text: Email
       icon: envelope
       url: "mailto:kisung.you@outlook.com"

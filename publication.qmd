@@ -12,29 +12,31 @@ execute:
   cache: false
 ---
 
-<!-- --- -->
-<!-- pagetitle: "KY-Publications" -->
-<!-- title: " " -->
-<!-- echo: false -->
-<!-- jupyter: python3 -->
-<!-- toc: true -->
-<!-- toc-location: right -->
-<!-- toc-expand: true -->
-<!-- toc-title: " " -->
-<!-- section-divs: false -->
-<!-- keep-md: false -->
-<!-- format: -->
-<!--   html: -->
-<!--     page-layout: article -->
-<!-- execute: -->
-<!--   cache: false -->
-<!-- --- -->
+# Publication
 
-<!-- # flags -->
-<!-- - 'published' : Publication -->
-<!-- - 'preprint'  : Preprint -->
+<style>
 
-<!-- :::{.column-page-left} -->
+.publication-search {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+#pub-search {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #d0d7de;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+#pub-search:focus {
+  border-color: #0969da;
+}
+
+</style>
 
 ```{python}
 #| label: install-packages
@@ -42,216 +44,295 @@ execute:
 #| results: "hide"
 #| warning: false
 #| message: false
-import importlib, subprocess, sys
 
-def ensure(pkg):
+import importlib
+import subprocess
+import sys
+
+def ensure(import_name, pip_name=None):
+    pip_name = pip_name or import_name
     try:
-        return importlib.import_module(pkg)
+        return importlib.import_module(import_name)
     except ModuleNotFoundError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
-        return importlib.import_module(pkg)
+        subprocess.check_call([sys.executable, "-m", "pip", "install", pip_name])
+        return importlib.import_module(import_name)
 
 pd = ensure("pandas")
-tb = ensure("tabulate")
+yaml = ensure("yaml", "pyyaml")
+itables = ensure("itables")
 ```
 
 ```{python}
-#| label: pub-summary-line
-#| output: asis
+#| label: load-data-and-build-table
 #| echo: false
-import yaml
-from IPython.display import Markdown
+#| warning: false
+#| message: false
+
 from datetime import date
+from html import escape
+from IPython.display import Markdown, display
+from itables import show
+from itables import options as opt
 
-# --- Load YAML data directly ---
+# ------------------------------------------------------------
+# Load centralized author URLs
+# ------------------------------------------------------------
+with open("list_authors.yaml", "r") as f:
+    author_yaml = yaml.safe_load(f) or {}
 
-with open("list_publication.yaml") as f:
-  yaml_data = yaml.safe_load(f)
+centralized_author_urls = author_yaml.get("author_urls", {})
 
-# --- Count how many published and preprint entries ---
+# ------------------------------------------------------------
+# Load publication records
+# Expected publication types:
+#   - journal
+#   - conference
+#   - preprint
+# ------------------------------------------------------------
+with open("list_publication.yaml", "r") as f:
+    yaml_data = yaml.safe_load(f) or {}
 
-n_pubs = 0
-n_wps = 0
-for _, data in yaml_data.items():
-  flag = data.get("flag", "")
-  if flag == "published":
-    n_pubs += 1
-  elif flag == "preprint":
-    n_wps += 1
+# ------------------------------------------------------------
+# Small helpers
+# ------------------------------------------------------------
+def normalize_url(value):
+    if value is None:
+        return None
+    value = str(value).strip()
+    return value if value else None
 
-# --- Small pluralization helper ---
+def display_author(name):
+    if name == "me":
+        return "<strong>KY</strong>"
+    safe_name = escape(str(name))
+    url = centralized_author_urls.get(name)
+    if url:
+        return (
+            f"<a href='{escape(url, quote=True)}' target='_blank' "
+            f"rel='noopener noreferrer'>{safe_name}</a>"
+        )
+    return safe_name
 
-def plural(n, singular, plural=None):
-  return singular if n == 1 else (plural or singular + "s")
+def readable_authors(authors):
+    vals = [display_author(a) for a in authors]
+    if len(vals) == 0:
+        return ""
+    if len(vals) == 1:
+        return vals[0]
+    if len(vals) == 2:
+        return f"{vals[0]} and {vals[1]}"
+    return f"{', '.join(vals[:-1])}, and {vals[-1]}"
 
-# --- Build the summary message ---
+def type_badge(flag):
+    mapping = {
+        "journal": ("Journal", "#0d6efd"),
+        "conference": ("Conference", "#198754"),
+        "preprint": ("Preprint", "#6c757d"),
+    }
+    label, color = mapping.get(flag, (str(flag).title(), "#6c757d"))
+    return (
+        f"<span style='display:inline-block; padding:0.20rem 0.55rem; "
+        f"border-radius:999px; font-size:0.80rem; font-weight:600; "
+        f"color:white; background:{color};'>{label}</span>"
+    )
+
+def icon_link(url, label, icon_class):
+    url = normalize_url(url)
+    if not url:
+        return ""
+    return (
+        f"<a href='{escape(url, quote=True)}' target='_blank' "
+        f"rel='noopener noreferrer' title='{escape(label, quote=True)}' "
+        f"style='margin-right:0.55rem; text-decoration:none; font-size:1.05rem;'>"
+        f"<i class='{icon_class}' aria-label='{escape(label, quote=True)}'></i>"
+        f"</a>"
+    )
+
+def build_work_cell(item):
+    title = escape(item.get("title", ""))
+    authors = readable_authors(item.get("authors", []))
+    venue = item.get("venue")
+    flag = str(item.get("flag", "")).strip().lower()
+
+    title_html = f"<span style='font-weight:700;'>{title}</span>"
+
+    blocks = []
+    blocks.append(
+        f"<div style='line-height:1.35; margin-bottom:0.18rem;'>{title_html}</div>"
+    )
+
+    if authors:
+        blocks.append(
+            f"<div style='line-height:1.40; margin-bottom:0.18rem;'>{authors}</div>"
+        )
+
+    if flag in ("journal", "conference") and venue:
+        blocks.append(
+            f"<div style='line-height:1.35; color:#666;'><em>{escape(str(venue))}</em></div>"
+        )
+
+    return "".join(blocks)
+
+
+def build_links_cell(item):
+    links = [
+        icon_link(item.get("published_url"), "Publisher", "bi bi-box-arrow-up-right"),
+        icon_link(item.get("preprint"), "Preprint", "bi bi-journal-text"),
+        icon_link(item.get("github"), "Code", "bi bi-github"),
+    ]
+    links = [x for x in links if x]
+
+    if not links:
+        return "<span style='color:#aaa;'>—</span>"
+    return "".join(links)
+
+def type_sort_value(flag):
+    order = {"journal": 1, "conference": 2, "preprint": 3}
+    return order.get(flag, 99)
+
+# ------------------------------------------------------------
+# Build rows
+# ------------------------------------------------------------
+rows = []
+n_journal = 0
+n_conference = 0
+n_preprint = 0
+
+for _, item in yaml_data.items():
+    flag = str(item.get("flag", "")).strip().lower()
+    year = item.get("year", "")
+
+    if flag == "journal":
+        n_journal += 1
+    elif flag == "conference":
+        n_conference += 1
+    elif flag == "preprint":
+        n_preprint += 1
+
+    rows.append(
+        {
+            "Year": year,
+            "Type": type_badge(flag),
+            "Work": build_work_cell(item),
+            "Links": build_links_cell(item),
+            "_type_sort": type_sort_value(flag),
+        }
+    )
+
+df = pd.DataFrame(rows)
+
+if not df.empty:
+    df = df.sort_values(
+        by=["Year", "_type_sort", "Work"],
+        ascending=[False, True, True]
+    ).reset_index(drop=True)
+
+display_df = df[["Year", "Type", "Work", "Links"]] if not df.empty else pd.DataFrame(
+    columns=["Year", "Type", "Work", "Links"]
+)
+```
+
+```{python}
+#| label: publication-summary-line
+#| echo: false
+#| output: asis
+
 today_str = date.today().strftime("%B %d, %Y")
+total_count = n_journal + n_conference + n_preprint
+
 msg = (
-"The list below includes my "
-f"[published](#published) {plural(n_pubs, 'article')} (count: {n_pubs}) "
-"and "
-f"[preprints](#preprints) {plural(n_wps, 'manuscript', 'manuscripts')} (count: {n_wps}) "
-f"in reverse chronological order as of {today_str}."
+    f"As of {today_str}, there are "
+    f"{n_journal} journal "
+    f"{'article' if n_journal == 1 else 'articles'}, "
+    f"{n_conference} conference "
+    f"{'paper' if n_conference == 1 else 'papers'}, and "
+    f"{n_preprint} "
+    f"{'preprint' if n_preprint == 1 else 'preprints'}. "
+    "In the Links column, "
+    "<i class='bi bi-box-arrow-up-right'></i> denotes the publisher’s webpage, "
+    "<i class='bi bi-journal-text'></i> denotes the preprint version, and "
+    "<i class='bi bi-github'></i> denotes the code repository."
 )
 
 display(Markdown(msg))
-
 ```
 
-
-
-# Publications 
-
-```{python}
-import yaml
-from IPython.display import display, Markdown, HTML
-
-# load centralized author URLs
-with open('list_authors.yaml') as file:
-    author_urls = yaml.safe_load(file)
-    
-centralized_author_urls = author_urls.get("author_urls", {})
-
-def readable_list(_s):
-  authors_with_links = [
-    f"<a href='{centralized_author_urls.get(aut, '#')}' target='_blank'>{aut}</a>" if aut in centralized_author_urls else aut 
-    for aut in _s
-  ]
-  if len(authors_with_links) < 3:
-    return ' and '.join(map(str, authors_with_links))
-  *a, b = authors_with_links
-  return f"{', '.join(map(str, a))}, and {b}"
-  # if len(_s) < 3:
-  #   return ' and '.join(map(str, _s))
-  # *a, b = _s
-  # return f"{', '.join(map(str, a))}, and {b}"
-
-def button(url, str, icon):
-    icon_base = icon[:2]
-    return f"""<a class="btn btn-outline-dark btn-sm", href="{url}" target="_blank" rel="noopener noreferrer">
-        <i class="{icon_base} {icon}" role='img' aria-label='{str}'></i>
-        {str}
-    </a>"""
-
-yaml_data = yaml.safe_load(open("list_publication.yaml"))
-pub_strs = {"pubs": {}, "wps": {}}
-for _, data in yaml_data.items():
-    title_str = data["title"]
-    #print(f"Processing: {title_str}")  # Debugging step
-    
-    authors = data.get("authors", ["me"])
-    authors = [aut if aut != "me" else "<strong>KY</strong>" for aut in authors]
-    author_str = readable_list(authors)
-    year_str = data["year"]
-
-    buttons = []
-    preprint = data.get("preprint")
-    if preprint is not None:
-        buttons.append(button(preprint, "Preprint", "bi-file-earmark-pdf"))
-
-    github = data.get("github")
-    if github is not None:
-        buttons.append(button(github, "Code", "bi-github"))
-
-    pub_url = data.get("published_url")
-    venue = data.get("venue")
-    flag  = data.get("flag")
-    working_paper = pub_url is None
-    
-    pub_str = f'{author_str}. ({year_str}) "{title_str}."'
-
-    # DIFFERENT TYPES
-    # 1. published (anywhere)
-    # 2. preprint  
-
-    # TYPES-strings
-    if flag=="published":
-      pub_str = f"<b>{title_str}</b><br> {author_str}. <br> <em>{venue}</em>."
-    elif flag=="preprint":
-      pub_str = f"<b>{title_str}</b><br> {author_str} ({year_str})."
-    
-    if flag == "published":
-      if pub_url:
-        buttons.append(button(pub_url, "Publisher's site", "ai-archive"))
-      # Ensure you append to the list even if the year already exists
-      if year_str not in pub_strs["pubs"]:
-        pub_strs["pubs"][year_str] = []
-      pub_strs["pubs"][year_str].append(
-        "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
-      )
-    # For preprints
-    elif flag == "preprint":
-      if year_str not in pub_strs["wps"]:
-        pub_strs["wps"][year_str] = []
-      pub_strs["wps"][year_str].append(
-        "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
-      )
-```
-
-
-## Published {#published}
+<div class="publication-search">
+<input id="pub-search" type="text" placeholder="Search publications..." />
+</div>
 
 ```{python}
-#| label: "journal-year"
-#| id: "journal-year"
-#| output: asis
-for year in sorted(pub_strs["pubs"].keys(), reverse=True):
-  display(Markdown(f"### {year} {{#pub-{year}}}"))
-  display(HTML(
-    "<ul class='list-group list-group-flush'>"
-    + "\n".join(reversed(pub_strs["pubs"][year]))
-    + "</ul>"
-  ))
-```
+#| label: publication-interactive-table
+#| echo: false
+#| warning: false
+#| message: false
 
-## Preprints {#preprints}
+# Global DataTables / itables options
+opt.classes = "display compact"
+opt.pageLength = len(display_df) if len(display_df) > 0 else 25
+opt.lengthMenu = [len(display_df)] if len(display_df) > 0 else [25]
+opt.searching = True
+opt.ordering = True
+opt.info = False
+opt.paging = False
+opt.autoWidth = False
+opt.responsive = True
 
-```{python}
-#| label: "preprint-year"
-#| id: "preprint-year"
-#| output: asis
-for year in sorted(pub_strs["wps"].keys(), reverse=True):
-  #display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
-  display(HTML(
-    "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["wps"][year]) + "</ul>"
-  ))
-```
-
-
-<!-- ## List of Coauthors -->
-
-```{python}
-#| label: "coauthor-markdown-fixed"
-#| output: asis
-import pandas as pd
-from IPython.display import Markdown
-
-# 1. count collaborations
-from collections import Counter
-collab = Counter()
-for item in yaml_data.values():
-    for aut in item.get("authors", []):
-        if aut != "me":
-            collab[aut] += 1
-
-# 2. build DataFrame (cast to list so from_records can index)
-records = list(collab.items())
-df = (
-    pd.DataFrame.from_records(records, columns=["Author", "Count"])
-      .sort_values("Count", ascending=False)
-      .reset_index(drop=True)
+show(
+    display_df,
+    allow_html=True,
+    escape=False,
+    order=[[0, "desc"], [1, "asc"]],
+    dom="tip",
+    language={
+        "search": "",
+        "searchPlaceholder": "Search publications..."
+    },
+    columnDefs=[
+        {
+            "targets": 0,
+            "width": "8%",
+            "className": "dt-center"
+        },
+        {
+            "targets": 1,
+            "width": "12%",
+            "className": "dt-center"
+        },
+        {
+            "targets": 2,
+            "width": "65%",
+            "className": "dt-left"
+        },
+        {
+            "targets": 3,
+            "width": "15%",
+            "className": "dt-center",
+            "orderable": False,
+            "searchable": False
+        },
+    ],
 )
-
-# 3. make each name a link if you have a URL for them
-def mk_link(name):
-    url = centralized_author_urls.get(name)
-    return f"[{name}]({url})" if url else name
-
-df["Author"] = df["Author"].map(mk_link)
-
-# 4. render as a Markdown table
-#display(Markdown(df.to_markdown(index=False)))
 ```
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-<!-- ::: -->
+  const input = document.getElementById("pub-search");
+
+  const interval = setInterval(() => {
+    const table = document.querySelector(".dataTable");
+
+    if (!table || !table.DataTable) return;
+
+    const dt = $(table).DataTable();
+
+    input.addEventListener("keyup", function () {
+      dt.search(this.value).draw();
+    });
+
+    clearInterval(interval);
+  }, 200);
+
+});
+</script>

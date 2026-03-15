@@ -15,7 +15,8 @@ toc-title: " "
 
 | Course                | Semester |
 |--------|:-------:|
-| MTH 4430 [Mathematics of Inferential Statistics](https://baruch-undergraduate.catalog.cuny.edu/courses/1454231)   | 23F, 24F|
+| MTH 4430 [Mathematics of Inferential Statistics](https://baruch-undergraduate.catalog.cuny.edu/courses/1454231)   | 23F, 24F, 25F|
+| MTH 4330 [Introduction to Machine Learning](https://mfeapp.baruch.cuny.edu/math/course/mth4330/) | 25F, 26S |
 | MTH 4130 [Mathematics of Data Analysis](https://baruch-undergraduate.catalog.cuny.edu/courses/0931901)            | 24F     |
 | MTH 4125 [Introduction to Stochastic Processes](https://baruch-undergraduate.catalog.cuny.edu/courses/0931891)    | 24S     |
 | MTH 2003 [Precalculus and Elements of Calculus 1A](https://baruch-undergraduate.catalog.cuny.edu/courses/0931351) | 23F     |

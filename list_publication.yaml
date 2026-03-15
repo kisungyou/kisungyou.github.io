@@ -1,6 +1,4 @@
-# flags
-#   - published : Peer-Reviewed Articles
-#   - preprint  : preprints 
+# flags: {journal, conference, preprint}
 #
 # Image Ratio 
 #   Ratio   : use 3:2 = width:height  
@@ -85,8 +83,10 @@ product_manifolds_median:
   preprint: https://arxiv.org/abs/2505.18844
   flag: preprint
   
+  
+  
 # ---------------------------------------------------------------
-# published
+# conference
 # ---------------------------------------------------------------
 c2022_network_distance_based_on_laplacian_flows:
   title: "Network Distance Based on Laplacian Flows on Graphs"
@@ -96,7 +96,7 @@ c2022_network_distance_based_on_laplacian_flows:
     - Lizhen Lin
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.1810.02906
-  flag: published
+  flag: conference
   github: https://github.com/kisungyou/NetworkDistance
   venue: IEEE International Conference on Big Data (Big Data)
   published_url: https://doi.org/10.1109/BigData55660.2022.10020500
@@ -107,7 +107,7 @@ c2023_on_the_spherical_laplace_distribution:
     - me
     - Dennis Shung
   year: 2023
-  flag: published
+  flag: conference
   preprint: https://doi.org/10.48550/arXiv.2208.11929
   venue: International Conference on Information Fusion (FUSION)
   published_url: http://dx.doi.org/10.23919/FUSION52260.2023.10224108
@@ -132,10 +132,35 @@ c2024_human_algorithmic_interaction:
     - Terika McCall
     - Dennis Shung
   year: 2024
-  flag: published
+  flag: conference
   venue: CHI Conference on Human Factors in Computing Systems
   published_url: https://doi.org/10.1145/3613904.3642024
+
+c2023_assessing_the_usability_of_gutgpt:
+  title: "Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical Decision Support System for Gastrointestinal Bleeding Risk"
+  authors:
+    - Colleen Chan
+    - me
+    - Sunny Chung
+    - Mauro Giuffrè
+    - Theo Saarinen
+    - Niroop Rajashekar
+    - Yuan Pu
+    - Yeo Eun Shin
+    - Loren Laine
+    - Ambrose Wong
+    - Rene Kizilcec
+    - Jasjeet Sekhon
+    - Dennis Shung
+  year: 2023
+  preprint: https://arxiv.org/abs/2312.10072
+  flag: conference
+  venue: Machine Learning for Health (ML4H) Symposium
   
+  
+# ---------------------------------------------------------------
+# journal
+# ---------------------------------------------------------------
 j2025_1_wasserstein_median:
   title: "On the Wasserstein median of probability measures"
   authors: 
@@ -144,7 +169,7 @@ j2025_1_wasserstein_median:
     - Mauro Giuffrè
   year: 2025
   preprint: https://doi.org/10.48550/arXiv.2209.03318
-  flag: published
+  flag: journal
   venue: Journal of Computational and Graphical Statistics
   published_url: https://doi.org/10.1080/10618600.2024.2374580
 
@@ -159,7 +184,7 @@ j2016_vision_based_detection:
   published_url: https://doi.org/10.1016/j.autcon.2016.06.008
   venue: Automation in Construction
   github:
-  flag: published
+  flag: journal
   
 j2019_volume_change:
   title: "Volume change pattern of decompression of mandibular odontogenic keratocyst"
@@ -174,7 +199,7 @@ j2019_volume_change:
   published_url: https://doi.org/10.1186/s40902-018-0184-y
   venue: Maxillofacial Plastic and Reconstructive Surgery
   github: 
-  flag: published
+  flag: journal
   
 j2020_data_transforming_augmentation:
   title: "Data transforming augmentation for heteroscedastic models"
@@ -189,7 +214,7 @@ j2020_data_transforming_augmentation:
   published_url: https://doi.org/10.1080/10618600.2019.1704295
   venue: Journal of Computational and Graphical Statistics
   github: 
-  flag: published
+  flag: journal
   
 j2021_revisiting_riemannian_geometry:
   title: "Re-visiting Riemannian geometry of symmetric positive definite matrices for the analysis of functional connectivity"
@@ -201,7 +226,7 @@ j2021_revisiting_riemannian_geometry:
   published_url: https://doi.org/10.1016/j.neuroimage.2020.117464
   venue: NeuroImage
   github: https://github.com/kisungyou/papers/tree/master/01_SPDtoolbox
-  flag: published
+  flag: journal
 
 j2022_spherical:
   title: "Parameter estimation and model-based clustering with spherical normal distribution on the unit hypersphere"
@@ -213,7 +238,7 @@ j2022_spherical:
   published_url: https://doi.org/10.1016/j.csda.2022.107457
   venue: Computational Statistics and Data Analysis
   github: https://kisungyou.com/Riemann
-  flag: published
+  flag: journal
   
 j2022_Rdimtools:
   title: "Rdimtools: An R package for Dimension Reduction and Intrinsic Dimension Estimation"
@@ -223,7 +248,7 @@ j2022_Rdimtools:
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2005.11107
   published_url: https://doi.org/10.1016/j.simpa.2022.100414
-  flag: published
+  flag: journal
   github: https://github.com/kisungyou/Rdimtools
   venue: Software Impacts
   
@@ -240,7 +265,7 @@ j2022_learning_subspaces_of_different_dimensions:
   published_url: https://doi.org/10.1080/10618600.2021.2000420
   venue: Journal of Computational and Graphical Statistics
   github: https://kisungyou.com/T4cluster
-  flag: published  
+  flag: journal  
   
 j2022_functional_connectivity_correlation:
   title: "Geometric learning of functional brain network on the correlation manifold"
@@ -251,7 +276,7 @@ j2022_functional_connectivity_correlation:
   published_url: https://www.nature.com/articles/s41598-022-21376-0
   venue: Scientific Reports
   github: https://github.com/kisungyou/papers/tree/master/02_CORRbox
-  flag: published
+  flag: journal
   
 j2023_single_cell_inflammatory:
   title: "Single-cell analysis reveals inflammatory interactions driving macular degeneration"
@@ -284,7 +309,7 @@ j2023_single_cell_inflammatory:
   year: 2023
   published_url: https://www.nature.com/articles/s41467-023-37025-7
   venue: Nature Communications
-  flag: published
+  flag: journal
 
 j2023_evaluating_chatgpt:
   title: "Evaluating ChatGPT in Medical Contexts: The Imperative to Guard Against Hallucinations and Partial Accuracies"
@@ -295,7 +320,7 @@ j2023_evaluating_chatgpt:
   year: 2023
   preprint: 
   published_url: https://doi.org/10.1016/j.cgh.2023.09.035
-  flag: published
+  flag: journal
   github:
   venue: Clinical Gastroenterology and Hepatology
 
@@ -312,7 +337,7 @@ j2024_systematic_review:
   year: 2024
   preprint:
   published_url: https://doi.org/10.1111/apt.18058
-  flag: published
+  flag: journal
   github:
   venue: Alimentary Pharmacology & Therapeutics
   
@@ -326,7 +351,7 @@ j2024_bayesian_optimal_twosample:
   preprint: https://doi.org/10.48550/arXiv.2112.02580
   venue: Bayesian Analysis
   published_url: https://doi.org/10.1214/23-BA1373
-  flag: published
+  flag: journal
   
 j2024_adaoption_hospitalist:
   title: "Adoption of a gastroenterology hospitalist model and the impact on inpatient endoscopic practice volume: a controlled interrupted time-series analysis"
@@ -341,7 +366,7 @@ j2024_adaoption_hospitalist:
   preprint:
   venue: iGIE
   published_url: https://doi.org/10.1016/j.igie.2024.04.008
-  flag: published
+  flag: journal
 
 j2024_detection_gi_bleeding:
   title: "Detection of Gastrointestinal Bleeding with Large Language Models to Aid Quality Improvement and Appropriate Reimbursement"
@@ -356,7 +381,7 @@ j2024_detection_gi_bleeding:
     - Hua Xu
     - Loren Laine
     - Dennis Shung
-  flag: published
+  flag: journal
   year: 2024
   venue: Gastroenterology
   published_url: https://doi.org/10.1053/j.gastro.2024.09.014
@@ -374,7 +399,7 @@ j2024_predicting_response:
     - Dennis Shung
     - Lory Crocè
     - The NSBB-Elasto-Response-Prediction Group
-  flag: published
+  flag: journal
   year: 2024
   venue: Hepatology International
   published_url: https://doi.org/10.1007/s12072-024-10649-7
@@ -387,7 +412,7 @@ j2024_optimizing_llm:
     - Nicola Pugliese
     - me
     - Dennis Shung
-  flag: published
+  flag: journal
   year: 2024
   venue: Liver International
   published_url: https://doi.org/10.1111/liv.15974
@@ -409,31 +434,12 @@ j2024_validation_ehr_ml:
     - Allen Hsiao
     - Jasjeet Sekhon
     - Loren Laine
-  flag: published
+  flag: journal
   year: 2024
   venue: Gastroenterology
   published_url: https://doi.org/10.1053/j.gastro.2024.06.030
 
-c2023_assessing_the_usability_of_gutgpt:
-  title: "Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical Decision Support System for Gastrointestinal Bleeding Risk"
-  authors:
-    - Colleen Chan
-    - me
-    - Sunny Chung
-    - Mauro Giuffrè
-    - Theo Saarinen
-    - Niroop Rajashekar
-    - Yuan Pu
-    - Yeo Eun Shin
-    - Loren Laine
-    - Ambrose Wong
-    - Rene Kizilcec
-    - Jasjeet Sekhon
-    - Dennis Shung
-  year: 2023
-  preprint: https://arxiv.org/abs/2312.10072
-  flag: published
-  venue: Machine Learning for Health (ML4H) Symposium
+
   
 j2025_2_EVAL_framework:
   title: "Expert of Experts Verification and Alignment (EVAL) Framework for Large Language Models Safety in Gastroenterology"
@@ -457,7 +463,7 @@ j2025_2_EVAL_framework:
     - Jasjeet Sekhon
     - Bradly Stadie
     - Dennis Shung
-  flag: published
+  flag: journal
   year: 2025
   venue: npj Digital Medicine
   published_url: https://doi.org/10.1038/s41746-025-01589-z
@@ -468,7 +474,7 @@ j2025_3_scalable_correlation:
     - me
     - Yelim Lee
     - Hae-Jeong Park
-  flag: published
+  flag: journal
   year: 2025
   venue: Scientific Reports
   preprint: https://arxiv.org/abs/2503.23653
@@ -496,7 +502,7 @@ j2025_4_gutgpt:
     - Jasjeet Sekhon
     - Loren Laine
     - Dennis Shung
-  flag: published
+  flag: journal
   year: 2025
   venue: npj Digital Medicine
   published_url: https://doi.org/10.1038/s41746-025-01896-5
@@ -507,7 +513,7 @@ j2026_1_vMF:
     - me
     - Dennis Shung
     - Mauro Giuffrè
-  flag: published
+  flag: journal
   year: 2026
   preprint: https://arxiv.org/abs/2504.14164
   venue: Statistics and Computing
