@@ -181,7 +181,7 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
 <div id="cell-publication-interactive-table" class="cell" data-message="false" data-execution_count="4">
 <div id="publication-interactive-table" class="cell-output cell-output-display">
 <!--| quarto-html-table-processing: none -->
-<table id="itables_e6a7533b_79b3_45ea_ad7a_44b34d930e66">
+<table id="itables_ad074d3f_3ac7_4c40_908a_4aae7c1e941a">
   <tbody>
     <tr>
       <td style="vertical-align:middle; text-align:left"><a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
@@ -251,7 +251,7 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
 <script type="module">
     import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.1/dt_bundle.js';
 
-    document.querySelectorAll("#itables_e6a7533b_79b3_45ea_ad7a_44b34d930e66:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_ad074d3f_3ac7_4c40_908a_4aae7c1e941a:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -283,13 +283,13 @@ gtag('config', 'G-YRWM5FEPWV', { 'anonymize_ip': true});
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   const input = document.getElementById("pub-search");
 
   const interval = setInterval(() => {
-    const table = document.querySelector(".dataTable");
+    const table = document.querySelector("table.dataTable");
 
-    if (!table || !table.DataTable) return;
+    if (!table) return;
+    if (!$.fn.dataTable.isDataTable(table)) return;
 
     const dt = $(table).DataTable();
 
@@ -299,7 +299,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearInterval(interval);
   }, 200);
-
 });
 </script>
 

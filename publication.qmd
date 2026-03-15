@@ -317,13 +317,13 @@ show(
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   const input = document.getElementById("pub-search");
 
   const interval = setInterval(() => {
-    const table = document.querySelector(".dataTable");
+    const table = document.querySelector("table.dataTable");
 
-    if (!table || !table.DataTable) return;
+    if (!table) return;
+    if (!$.fn.dataTable.isDataTable(table)) return;
 
     const dt = $(table).DataTable();
 
@@ -333,6 +333,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearInterval(interval);
   }, 200);
-
 });
 </script>
