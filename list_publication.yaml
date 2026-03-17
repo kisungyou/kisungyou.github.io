@@ -9,6 +9,14 @@
 # preprint
 # ---------------------------------------------------------------
 
+heterogeneity_wasserstein:
+  title: "On Heterogeneity in Wasserstein Space"
+  authors:
+    - me
+  year: 2026
+  preprint: https://arxiv.org/abs/2603.14815
+  flag: preprint
+  
 constant_metric_scaling:
   title: "Constant Metric Scaling in Riemannian Computation"
   authors:
