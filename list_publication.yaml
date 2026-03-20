@@ -527,3 +527,20 @@ j2026_1_vMF:
   venue: Statistics and Computing
   github: https://github.com/kisungyou/papers/tree/master/05-OTvMF
   published_url: https://doi.org/10.1007/s11222-026-10844-6
+  
+j2026_2_dapt:
+  title: "Antiplatelet Resumption Timing in Post-Percutaneous Coronary Intervention Gastrointestinal Bleeding"
+  authors:
+    - Darrick Li
+    - Yuan Pu
+    - Yihang Liu
+    - me
+    - Michael Nanna
+    - Alyssa Harris
+    - Joseph Sung
+    - Loren Laine
+    - Dennis Shung
+  flag: journal
+  year: 2026
+  venue: Alimentary Pharmacology & Therapeutics
+  published_url: https://doi.org/10.1111/apt.70615
