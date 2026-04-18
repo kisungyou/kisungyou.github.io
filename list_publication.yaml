@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+quotient_based_posterior_lsm:
+  title: "Quotient-Based Posterior Analysis for Euclidean Latent Space Models"
+  authors:
+    - me
+    - Mauro Giuffrè
+  year: 2026
+  preprint: https://arxiv.org/abs/2604.02739
+  flag: preprint
 
 heterogeneity_wasserstein:
   title: "On Heterogeneity in Wasserstein Space"
@@ -16,14 +24,7 @@ heterogeneity_wasserstein:
   year: 2026
   preprint: https://arxiv.org/abs/2603.14815
   flag: preprint
-  
-constant_metric_scaling:
-  title: "Constant Metric Scaling in Riemannian Computation"
-  authors:
-    - me
-  year: 2026
-  preprint: https://doi.org/10.48550/arXiv.2601.10992
-  flag: preprint
+
 
 particle_flow_barycenter:
   title: "A Particle-Flow Algorithm for Free-Support Wasserstein Barycenters"
@@ -34,6 +35,46 @@ particle_flow_barycenter:
   flag: preprint
 
 
+
+
+
+  
+
+
+
+  
+product_manifolds_median:
+  title: "Geometric medians on product manifolds"
+  authors:
+    - me
+    - Jiewon Park
+  year: 2025
+  preprint: https://arxiv.org/abs/2505.18844
+  flag: preprint
+  
+
+
+
+# ---------------------------------------------------------------
+# technical reports
+# ---------------------------------------------------------------
+constant_metric_scaling:
+  title: "Constant Metric Scaling in Riemannian Computation"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2601.10992
+  flag: technical
+
+
+arxiv_semantics_at_an_angle:
+  title: "Semantics at an Angle: When Cosine Similarity Works Until It Doesn't"
+  authors:
+    - me
+  year: 2025
+  preprint: https://arxiv.org/abs/2504.16318
+  flag: technical
+
 pca_and_svd:
   title: "PCA, SVD, and Centering of Data"
   authors:
@@ -41,7 +82,7 @@ pca_and_svd:
     - me
   year: 2023
   preprint: https://arxiv.org/abs/2307.15213
-  flag: preprint
+  flag: technical
   thumbnail_url: /images/publication/preprint_pca_and_svd.png
 
 
@@ -52,7 +93,7 @@ shape_preserving_dimensionality_reduction:
     - me
   year: 2021
   preprint: https://doi.org/10.48550/arXiv.2106.02096
-  flag: preprint
+  flag: technical
   thumbnail_url: /images/publication/preprint_shape_preserving_dimensionality_reduction.png
   
   
@@ -66,33 +107,10 @@ topological_latent_embedding:
     - Dennis Shung
   year: 2022
   preprint: https://doi.org/10.48550/arXiv.2208.12435
-  flag: preprint
+  flag: technical
   github: https://github.com/kisungyou/papers/tree/master/03_TopLSM
   thumbnail_url: /images/templates/no-image-yet.png
 
-
-  
-
-
-arxiv_semantics_at_an_angle:
-  title: "Semantics at an Angle: When Cosine Similarity Works Until It Doesn't"
-  authors:
-    - me
-  year: 2025
-  preprint: https://arxiv.org/abs/2504.16318
-  flag: preprint
-  
-product_manifolds_median:
-  title: "Geometric medians on product manifolds"
-  authors:
-    - me
-    - Jiewon Park
-  year: 2025
-  preprint: https://arxiv.org/abs/2505.18844
-  flag: preprint
-  
-  
-  
 # ---------------------------------------------------------------
 # conference
 # ---------------------------------------------------------------

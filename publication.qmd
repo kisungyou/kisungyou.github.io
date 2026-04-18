@@ -83,11 +83,11 @@ with open("list_authors.yaml", "r") as f:
 centralized_author_urls = author_yaml.get("author_urls", {})
 
 # ------------------------------------------------------------
-# Load publication records
 # Expected publication types:
 #   - journal
 #   - conference
 #   - preprint
+#   - technical
 # ------------------------------------------------------------
 with open("list_publication.yaml", "r") as f:
     yaml_data = yaml.safe_load(f) or {}
@@ -127,7 +127,8 @@ def type_badge(flag):
     mapping = {
         "journal": ("Journal", "#0d6efd"),
         "conference": ("Conference", "#198754"),
-        "preprint": ("Preprint", "#6c757d"),
+        "preprint": ("Preprint", "#fd7e14"),
+        "technical": ("Technical Report", "#6f42c1"),
     }
     label, color = mapping.get(flag, (str(flag).title(), "#6c757d"))
     return (
@@ -135,6 +136,10 @@ def type_badge(flag):
         f"border-radius:999px; font-size:0.80rem; font-weight:600; "
         f"color:white; background:{color};'>{label}</span>"
     )
+
+def type_sort_value(flag):
+    order = {"journal": 1, "conference": 2, "preprint": 3, "technical": 4}
+    return order.get(flag, 99)
 
 def icon_link(url, label, icon_class):
     url = normalize_url(url)
@@ -186,9 +191,6 @@ def build_links_cell(item):
         return "<span style='color:#aaa;'>—</span>"
     return "".join(links)
 
-def type_sort_value(flag):
-    order = {"journal": 1, "conference": 2, "preprint": 3}
-    return order.get(flag, 99)
 
 # ------------------------------------------------------------
 # Build rows
@@ -197,6 +199,7 @@ rows = []
 n_journal = 0
 n_conference = 0
 n_preprint = 0
+n_technical = 0
 
 for _, item in yaml_data.items():
     flag = str(item.get("flag", "")).strip().lower()
@@ -208,6 +211,8 @@ for _, item in yaml_data.items():
         n_conference += 1
     elif flag == "preprint":
         n_preprint += 1
+    elif flag == "technical":
+        n_technical += 1
 
     rows.append(
         {
@@ -238,20 +243,60 @@ display_df = df[["Year", "Type", "Work", "Links"]] if not df.empty else pd.DataF
 #| output: asis
 
 today_str = date.today().strftime("%B %d, %Y")
-total_count = n_journal + n_conference + n_preprint
+total_count = n_journal + n_conference + n_preprint + n_technical
+
+journal_text = (
+
+    f"<span style='color:#0d6efd; font-weight:600;'>"
+
+    f"{n_journal} journal {'article' if n_journal == 1 else 'articles'}"
+
+    f"</span>"
+
+)
+
+conference_text = (
+
+    f"<span style='color:#198754; font-weight:600;'>"
+
+    f"{n_conference} conference {'paper' if n_conference == 1 else 'papers'}"
+
+    f"</span>"
+
+)
+
+preprint_text = (
+    f"<span style='color:#fd7e14; font-weight:600;'>"
+    f"{n_preprint} {'submitted preprint' if n_preprint == 1 else 'submitted preprints'}"
+    f"</span>"
+)
+
+technical_text = (
+    f"<span style='color:#6f42c1; font-weight:600;'>"
+    f"{n_technical} {'archived technical report' if n_technical == 1 else 'archived technical reports'}"
+    f"</span>"
+)
 
 msg = (
+
     f"As of {today_str}, there are "
-    f"{n_journal} journal "
-    f"{'article' if n_journal == 1 else 'articles'}, "
-    f"{n_conference} conference "
-    f"{'paper' if n_conference == 1 else 'papers'}, and "
-    f"{n_preprint} "
-    f"{'preprint' if n_preprint == 1 else 'preprints'}. "
+
+    f"{journal_text}, "
+
+    f"{conference_text}, "
+
+    f"{preprint_text}, and "
+
+    f"{technical_text}. "
+
     "In the Links column, "
+
     "<i class='bi bi-box-arrow-up-right'></i> denotes the publisher’s webpage, "
-    "<i class='bi bi-journal-text'></i> denotes the preprint version, and "
-    "<i class='bi bi-github'></i> denotes the code repository."
+
+    "<i class='bi bi-journal-text'></i> links to the preprint server, and "
+
+    "<i class='bi bi-github'></i> is the code repository."
+
 )
 
 display(Markdown(msg))
