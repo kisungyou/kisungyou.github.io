@@ -50,18 +50,6 @@ particle_flow_barycenter:
 
 
 
-  
-product_manifolds_median:
-  title: "Geometric medians on product manifolds"
-  authors:
-    - me
-    - Jiewon Park
-  year: 2025
-  preprint: https://arxiv.org/abs/2505.18844
-  flag: preprint
-  
-
-
 
 # ---------------------------------------------------------------
 # technical reports
@@ -570,3 +558,16 @@ j2026_2_dapt:
   year: 2026
   venue: Alimentary Pharmacology & Therapeutics
   published_url: https://doi.org/10.1111/apt.70615
+  
+  
+j2026_3_product_manifolds_median:
+  title: "Geometric medians on product manifolds"
+  authors:
+    - Jiewon Park
+    - me
+  flag: journal
+  year: 2026
+  venue: Journal of Multivariate Analysis
+  published_url: https://doi.org/10.1016/j.jmva.2026.105653
+  preprint: https://arxiv.org/abs/2505.18844
+  
