@@ -3,3 +3,4 @@
 CV/
 
 **/*.quarto_ipynb
+.positai

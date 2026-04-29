@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+riemannian_gaussian_hyperbolic:
+  title: "Finite Mixture Modeling with Riemannian Gaussian Distributions on Hyperbolic Space"
+  authors:
+    - me
+  year: 2026
+  preprint: http://arxiv.org/abs/2604.24895
+  flag: preprint
+
 quotient_based_posterior_lsm:
   title: "Quotient-Based Posterior Analysis for Euclidean Latent Space Models"
   authors:
