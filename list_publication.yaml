@@ -8,6 +8,15 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+hwn_profile_likelihood:
+  title: "Profile Likelihood Inference for Anisotropic Hyperbolic Wrapped Normal Models on Hyperbolic Space
+  "
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2605.00363
+  flag: preprint
+  
 riemannian_gaussian_hyperbolic:
   title: "Finite Mixture Modeling with Riemannian Gaussian Distributions on Hyperbolic Space"
   authors:
