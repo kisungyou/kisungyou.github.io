@@ -8,6 +8,15 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+mcmc_intrinsic_ess:
+  title: "Intrinsic effective sample size for manifold-valued Markov chain Monte Carlo via kernel discrepancy
+"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2605.03266
+  flag: preprint
+
 hwn_profile_likelihood:
   title: "Profile Likelihood Inference for Anisotropic Hyperbolic Wrapped Normal Models on Hyperbolic Space
   "
