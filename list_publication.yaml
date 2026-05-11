@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+scale_selection_median:
+  title: "Scale selection for geometric medians on product manifolds"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2605.08001
+  flag: preprint
+  
 mcmc_intrinsic_ess:
   title: "Intrinsic effective sample size for manifold-valued Markov chain Monte Carlo via kernel discrepancy
 "
