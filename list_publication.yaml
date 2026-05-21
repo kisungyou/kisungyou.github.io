@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+mom_pca:
+  title: "Scale-Calibrated Median-of-Means for Robust Distributed Principal Component Analysis"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2605.20681
+  flag: preprint
+  
 scale_selection_median:
   title: "Scale selection for geometric medians on product manifolds"
   authors:
