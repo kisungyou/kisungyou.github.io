@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+density_evolution:
+  title: "Density Evolution: A Multiscale View of Density Estimation"
+  authors:
+    - me
+  year: 2026
+  preprint: https://arxiv.org/abs/2606.00233
+  flag: preprint
+  
 mom_pca:
   title: "Scale-Calibrated Median-of-Means for Robust Distributed Principal Component Analysis"
   authors:
