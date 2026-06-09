@@ -203,7 +203,8 @@ n_technical = 0
 
 for _, item in yaml_data.items():
     flag = str(item.get("flag", "")).strip().lower()
-    year = item.get("year", "")
+    raw_year = item.get("year", "")
+    year = "" if flag == "preprint" else raw_year
 
     if flag == "journal":
         n_journal += 1

@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+barycentric_projection_manifolds:
+  title: "Barycentric Projections of Optimal Transport Plans on Riemannian Manifolds"
+  authors:
+    - me
+  year: 2026
+  preprint: https://arxiv.org/abs/2606.07926
+  flag: preprint
+
 density_evolution:
   title: "Density Evolution: A Multiscale View of Density Estimation"
   authors:
@@ -79,7 +87,13 @@ particle_flow_barycenter:
   flag: preprint
 
 
-
+riemannian_gaussian_hyperbolic:
+  title: "Finite Mixture Modeling with Riemannian Gaussian Distributions on Hyperbolic Space"
+  authors:
+    - me
+  year: 2026
+  preprint: http://arxiv.org/abs/2604.24895
+  flag: preprint
 
 
   
@@ -90,14 +104,6 @@ particle_flow_barycenter:
 # ---------------------------------------------------------------
 # technical reports
 # ---------------------------------------------------------------
-riemannian_gaussian_hyperbolic:
-  title: "Finite Mixture Modeling with Riemannian Gaussian Distributions on Hyperbolic Space"
-  authors:
-    - me
-  year: 2026
-  preprint: http://arxiv.org/abs/2604.24895
-  flag: technical
-
 constant_metric_scaling:
   title: "Constant Metric Scaling in Riemannian Computation"
   authors:
