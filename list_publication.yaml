@@ -8,6 +8,17 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+direct_median:
+  title: "Fast Computation of Free-Support Wasserstein Medians"
+  authors:
+    - me
+    - Mauro Giuffrè
+    - Dennis Shung
+  year: 2026
+  preprint: http://arxiv.org/abs/2606.19148
+  flag: preprint
+    
+  
 barycentric_projection_manifolds:
   title: "Barycentric Projections of Optimal Transport Plans on Riemannian Manifolds"
   authors:
