@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  
+
 freeze: auto
 
 website:
@@ -10,7 +10,7 @@ website:
   site-url: https://kisungyou.com
   google-analytics: "G-YRWM5FEPWV"
   open-graph: true
-  twitter-card: 
+  twitter-card:
     creator: "@kisung_you"
     site: "@kisung_you"
     card-style: "summary_large_image"
@@ -54,3 +54,32 @@ editor: source
 
 execute:
   cache: false # uses caching for faster builds
+# project:
+#   type: website
+#   output-dir: docs
+# 
+# freeze: auto
+# 
+# website:
+#   title: "Kisung You"
+#   description: "Personal website."
+#   site-url: https://kisungyou.com
+#   open-graph: true
+# 
+# format:
+#   html:
+#     theme: none
+#     minimal: true
+#     css: styles.css
+#     toc: false
+#     page-layout: full
+#     include-before-body: _nav.html
+#     anchor-sections: false
+#     code-copy: false
+#     html-math-method: mathjax
+# 
+# execute:
+#   echo: false
+#   warning: false
+#   message: false
+#   cache: false

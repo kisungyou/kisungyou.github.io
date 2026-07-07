@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+gid:
+  title: "Geometric Information Decomposition for Weighted Empirical Measures on the Sphere"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2607.02943
+  flag: preprint
+
 direct_median:
   title: "Fast Computation of Free-Support Wasserstein Medians"
   authors:

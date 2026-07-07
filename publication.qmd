@@ -279,6 +279,16 @@ technical_text = (
 )
 
 msg = (
+  "In the Links column, "
+
+  "<i class='bi bi-box-arrow-up-right'></i> denotes the publisher’s webpage, "
+
+  "<i class='bi bi-journal-text'></i> links to the preprint server, and "
+
+  "<i class='bi bi-github'></i> is the code repository."
+)
+
+msg_count = (
 
     f"As of {today_str}, there are "
 
