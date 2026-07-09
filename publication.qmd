@@ -128,7 +128,7 @@ def type_badge(flag):
         "journal": ("Journal", "#0d6efd"),
         "conference": ("Conference", "#198754"),
         "preprint": ("Preprint", "#fd7e14"),
-        "technical": ("Technical Report", "#6f42c1"),
+        "technical": ("Dormant", "#6f42c1"),
     }
     label, color = mapping.get(flag, (str(flag).title(), "#6c757d"))
     return (

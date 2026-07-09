@@ -8,6 +8,14 @@
 # ---------------------------------------------------------------
 # preprint
 # ---------------------------------------------------------------
+hkep:
+  title: "Heat-Kernel Entropy Profiles and Geometric Effective Sample Size for Weighted Measures on Manifolds"
+  authors:
+    - me
+  year: 2026
+  preprint: https://doi.org/10.48550/arXiv.2607.06696
+  flag: preprint
+  
 gid:
   title: "Geometric Information Decomposition for Weighted Empirical Measures on the Sphere"
   authors:
