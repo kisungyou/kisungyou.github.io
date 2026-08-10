@@ -1,8 +1,9 @@
 ---
-pagetitle: "KY-Publications"
+pagetitle: "Publications"
 title: " "
 echo: false
 jupyter: python3
+freeze: false
 section-divs: true
 toc: false
 toc-location: right

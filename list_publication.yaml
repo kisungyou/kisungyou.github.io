@@ -648,3 +648,43 @@ j2026_3_product_manifolds_median:
   published_url: https://doi.org/10.1016/j.jmva.2026.105653
   preprint: https://arxiv.org/abs/2505.18844
   
+j2026_4_ELM:
+  title: "Validation of a pan-ELastography Machine-learning (ELM) score to predict clinically significant portal hypertension in compensated advanced chronic liver disease"
+  authors:
+    - Mauro Giuffrè
+    - Simone Kresevic
+    - Federico Ravaioli
+    - Romanas Zykus
+    - Pierre-Emmanuel Rautou
+    - Laure Elkrief
+    - Luigi Colecchia
+    - Sandro Kukic
+    - Mislav Barisic-Jaman
+    - Ivica Grgurevic
+    - Horia Stefanescu
+    - Masashi Hirooka
+    - Mirella Fraquelli
+    - Matteo Rosselli
+    - Pik Eu Jason Chang
+    - Lory Crocè
+    - Milos Ajcevic
+    - Fabio Piscaglia
+    - Thomas Reiberger
+    - Elba Llop
+    - Sebastian Mueller
+    - Yuly Mendoza
+    - Ángela Puente
+    - José Ignacio Fortea
+    - Sang Gyun Kim
+    - me
+    - Giovanni Marasco
+    - Francesco Azzaroli
+    - Annalisa Berzigotti
+    - Dennis Shung
+    - Antonio Colecchia
+    - Elton Dajti
+    - "A study by the Baveno Cooperation: an EASL Consortium, Study group"
+  flag: journal
+  year: 2026
+  venue: Journal of Hepatology
+  published_url: https://doi.org/10.1016/j.jhep.2026.06.032

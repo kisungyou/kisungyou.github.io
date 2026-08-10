@@ -4,6 +4,13 @@
 #   network: network analysis
 #   geom: geometry and topology
 
+- title: "GeoJAX"
+  description: |
+    Riemannian geometry and manifold optimization in JAX
+  github: https://github.com/kisungyou/geojax
+  pypi: https://pypi.org/project/geojax/
+  topic: geom
+  
 - title: "CORRbox"
   description: |
     Scalable Learning with Correlation-based Functional Networks

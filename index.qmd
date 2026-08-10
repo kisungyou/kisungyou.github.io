@@ -1,6 +1,6 @@
 ---
 freeze: false
-pagetitle: "KY-Home"
+pagetitle: "Home"
 title: "Kisung You"
 about:
   # see "https://quarto.org/docs/reference/projects/websites.html#about"
@@ -30,6 +30,7 @@ execute:
   cache: false
   echo: false
   engine: knitr
+  freeze: false
 ---
 
 ::: column-page
@@ -37,7 +38,8 @@ execute:
 ### Welcome!
 
 
-I am an assistant professor in the Department of Mathematics at [Baruch College](https://www.baruch.cuny.edu/) and at [The Graduate Center](https://www.gc.cuny.edu/), both part of the [City University of New York](https://www.cuny.edu/).  My research integrates tools from statistics, differential geometry, and computational mathematics to develop new methods for complex scientific problems, with a strong focus on biomedical data analysis. I am also passionate about high‑performance computing and open‑source software development, aiming to make advanced methods practically accessible across disciplines.
+I am an assistant professor in the Department of Mathematics at [Baruch College](https://www.baruch.cuny.edu/) and at [The Graduate Center](https://www.gc.cuny.edu/), both part of the [City University of New York](https://www.cuny.edu/).  I am also a research affiliate in the Department of 
+Psychiatry at [Yale University](https://www.yale.edu/). My research draws on statistics, differential geometry, and computational mathematics to develop novel methodology for complex scientific problems, with a particular, though not exclusive, emphasis on biomedical data analysis. I am especially interested in high-performance scientific computing and in developing reliable, reusable computational tools, with code shared when appropriate to support transparency and reproducibility.
 
 #### 📰 News
 
